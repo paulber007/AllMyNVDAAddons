@@ -8,7 +8,7 @@
     "NVDAExtensionGlobalPlugin": {
         "url": "NVDAExtensionGlobalPlugin", 
         "release": "8.1", 
-        "dev": "8.2-dev22"
+        "dev": "8.2-dev30"
     }, 
     "wordAccessEnhancement": {
         "url": "wordAccessEnhancement", 

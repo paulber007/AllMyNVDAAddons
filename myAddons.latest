@@ -9,7 +9,7 @@ lastAddonVersions = {
 	"NVDAExtensionGlobalPlugin": {
 		"url": "NVDAExtensionGlobalPlugin",
 		"release":{"version": "8.1", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.2"},
-		"dev" :{"version": "8.2-dev38", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" :{"version": "8.2-dev39", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"vlcAccessEnhancement": {
 		"url" : "VLCAccessEnhancement",

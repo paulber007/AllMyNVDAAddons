@@ -14,7 +14,7 @@ lastAddonVersions = {
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
 		"release":{"version": "8.1", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.2"},
-		"dev" :{"version": "8.2-dev65", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" :{"version": "8.2-dev66", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"vlcAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",
@@ -24,7 +24,7 @@ lastAddonVersions = {
 	"wordAccessEnhancement": {
 		"localURL": "wordAccessEnhancement",
 		"release":{"version": "1.0", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.2"},
-		"dev":{"version": "1.0-dev30", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev":{"version": "1.0-dev31", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.2"},
 		},
 	}
 

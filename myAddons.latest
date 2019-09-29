@@ -4,7 +4,7 @@ lastAddonVersions = {
 	"apprentiClavierAccessEnhancement": {
 		"localURL": "apprentiClavierAccessEnhancement",
 		"release" : {"version": None},
-		"dev" : {"version": "1.0-dev12", "minimumNVDAVersion" : "2019.1.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" : {"version": "1.0-dev13", "minimumNVDAVersion" : "2019.1.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"audacityAccessEnhancement": {
 		"localURL": "audacityAccessEnhancement",

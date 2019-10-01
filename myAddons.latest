@@ -4,7 +4,7 @@ lastAddonVersions = {
 	"apprentiClavierAccessEnhancement": {
 		"localURL": "apprentiClavierAccessEnhancement",
 		"release" : {"version": None},
-		"dev" : {"version": "1.0-dev16", "minimumNVDAVersion" : "2019.1.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" : {"version": "1.0-dev17", "minimumNVDAVersion" : "2019.1.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"audacityAccessEnhancement": {
 		"localURL": "audacityAccessEnhancement",
@@ -14,7 +14,7 @@ lastAddonVersions = {
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
 		"release":{"version": "8.1", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.2"},
-		"dev" :{"version": "8.2-dev73", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" :{"version": "8.2-dev74", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"vlcAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",

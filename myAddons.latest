@@ -16,7 +16,7 @@ lastAddonVersions = {
 		"release":{"version": "8.1", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.2"},
 		"dev" :{"version": "8.2-dev90", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
-	"vlcAccessEnhancement": {
+	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",
 		"release" :{"version": "1.3.1", "minimumNVDAVersion": "2018.4", "lastTestedNVDAVersion": "2019.2",},
 				"dev":{"version": "2.0-dev7", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},

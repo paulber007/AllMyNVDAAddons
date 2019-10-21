@@ -1,4 +1,5 @@
 lastAddonVersions = {
+	"inMaintenance" : True,
 	"baseURL" : "https://rawgit.com/paulber007/AllMyNVDAAddons/master",
 	"devURL" : "dev",
 	"apprentiClavierAccessEnhancement": {
@@ -9,7 +10,7 @@ lastAddonVersions = {
 	"audacityAccessEnhancement": {
 		"localURL": "audacityAccessEnhancement",
 		"release" : {"version": None},
-		"dev" : {"version": "1.3-dev12", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" : {"version": "1.3-dev14", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",

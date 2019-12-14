@@ -1,6 +1,6 @@
 lastAddonVersions = {
-	"inMaintenance" : False,
-	"baseURL" : "https://rawgit.com/paulber007/AllMyNVDAAddons/master",
+	"inMaintenance" : True,
+	"baseURL" : "https://github.com/paulber007/AllMyNVDAAddons/raw/master",
 	"devURL" : "dev",
 	"apprentiClavierAccessEnhancement": {
 		"localURL": "apprentiClavierAccessEnhancement",
@@ -15,7 +15,7 @@ lastAddonVersions = {
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
 		"release":{"version": "8.1", "minimumNVDAVersion" : "2018.4.1", "lastTestedNVDAVersion": "2019.2"},
-		"dev" :{"version": "9.0-beta1", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev" :{"version": "9.0-beta2", "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",

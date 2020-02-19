@@ -18,7 +18,7 @@ lastAddonVersions = {
 		"dev" :{"version": None, "minimumNVDAVersion" : "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"radioSureAccessEnhancement": {
-		"localURL" : "radioAccessEnhancement",
+		"localURL" : "radioSureAccessEnhancement",
 		"release" :{"version": "1.0", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3",},
 		"dev":{"version": None, "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},

@@ -22,6 +22,11 @@ lastAddonVersions = {
 		"release" :{"version": "1.0", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3",},
 		"dev":{"version": None, "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
+	"recuvaAccessEnhancement": {
+		"localURL" : "recuvaAccessEnhancement",
+		"release" :{"version": None, "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3",},
+		"dev":{"version": "1.0-dev5", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},
+		},
 	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",
 		"release" :{"version": "2.0.2", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3",},

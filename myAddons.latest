@@ -25,7 +25,7 @@ lastAddonVersions = {
 	"recuvaAccessEnhancement": {
 		"localURL" : "recuvaAccessEnhancement",
 		"release" :{"version": None, "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3",},
-		"dev":{"version": "1.0-dev5", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},
+		"dev":{"version": "1.0-dev6", "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3"},
 		},
 	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",

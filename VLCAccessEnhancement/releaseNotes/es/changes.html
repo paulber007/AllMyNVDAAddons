@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
+<title>Reproductor multimedia VLC: complementos de accesibilidad 2.4-dev8</title>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Reproductor multimedia VLC: complementos de accesibilidad - Historial</H1>
+<FONT SIZE="4">
+<I>Auteur: paulber19 con la participación muy activa de  Daniel Poiraud.</I><BR>
+</FONT></CENTER>
+
+<P>
+URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
+</P>
+<P>
+GitHub repository: [<A HREF="https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git">https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git</A>]
+</P>
+<A NAME="toc1"></A>
+<H2>1. Versión 2.3 (28/07/2020)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2020.2.
+<P></P>
+</UL>
+
+<OL>
+<LI>Versión 2.2 (18/05/2020) +
+</OL>
+
+<UL>
+<LI>corrección de la regresión en la reanudación de la reproducción de medios.
+<LI>pausar los medios durante un salto hacia adelante en los últimos 3 segundos para evitar detener los medios mediante VLC.
+</UL>
+
+<A NAME="toc2"></A>
+<H2>2. Versión 2.1.1 (03/04/2020)</H2>
+<P>
+Se corrigió el historial de cambios de extensión.
+</P>
+<A NAME="toc3"></A>
+<H2>3. Versión 2.1 (03/04/2020)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2020.1,
+<LI>cumplimiento de NVDA para la prueba de compatibilidad de extensiones con NVDA.
+</UL>
+
+<A NAME="toc4"></A>
+<H2>4. Version 2.0.2 (14/02/2020)</H2>
+<P>
+Enlace de descarga de extensión fija.
+</P>
+<A NAME="toc5"></A>
+<H2>5. Version 2.0.1 (09/02/2020)</H2>
+<UL>
+<LI>corrección de la no presentación del mensaje pidiendo al usuario que detenga VLC.
+<LI>eliminación de instrucciones de rastreo.
+</UL>
+
+<A NAME="toc6"></A>
+<H2>6. Versión 2.0 (07/02/2020)</H2>
+<UL>
+<LI>Compatibilidad con NVDA 2019.3
+<LI>Se añade la actualización automática del complemento
+<LI>Implementado en la opción  el anuncio automático de los cambios del nivel de volumen y el tiempo transcurrido.
+<LI>Anuncio de ocultar la barra de menús.
+<LI>Gestión del atajo  habilitando el menú "Interfaz mínima".
+<LI>Gestión del atajo habilitando el menú "Efectos y filtros".
+<LI>Mejora del anuncio del nombre y del nivel de los potenciómetros.
+<LI>Acceso  vía el panel virtual, a los diversos elementos de control de reproducción del medio  (código fuente  de base de Javi Domínguez).
+<LI>Tomada en cuenta la ausencia  de tiempo total de ciertos medios durante el anuncio del tiempo  transcurrido, total y restante. 
+<LI>Eliminación de texto HTML incluido en la descripción de ciertos controles (código fuente  de base de Javi Domínguez).
+<LI>Mejora de la accesibilidad en la lista de reproducción.
+<LI>Mejora de la accesibilidad de los campos de edición  (código fuente  de base de Javi Domínguez).
+<LI>En el diálogo "metadatos":
+ <UL>
+ <LI>Anuncio de los títulos de los  cuadros de edición.
+ <LI>Corrección  del bloqueo  en los desplazamientos vía la tecla de tabulación  (código fuente  de base de Javi Domínguez).
+ </UL>
+<LI>Reordenamiento  del menú  de ajustes del complemento.
+</UL>
+
+<A NAME="toc7"></A>
+<H2>7. Versión 1.3.1 (11/06/2019)</H2>
+<UL>
+<LI>Corrección del archivo buildVars.py 
+<LI>Se añade traducción al español
+</UL>
+
+<A NAME="toc8"></A>
+<H2>8. Versión 1.3 (01/06/2019)</H2>
+<P>
+Compatibilidad con NVDA 2019.2.0 (actualización del manifest.ini).
+</P>
+<A NAME="toc9"></A>
+<H2>9. Versión 1.2 (06/03/2019)</H2>
+<UL>
+<LI>Reemplazo de los botones "Sí" y "No" con los botones "Aceptar" y "Cancelar" en los cuadros de confirmación para usar la tecla "Escape".
+<LI>Reemplazo del termino "module complémentaire " por "extension impuesto por los traductores de NVDA en francés).
+<LI>Compatibilidad con NVDA 2019.1.0.
+<LI>Preparación para la compatibilidad con python3.
+</UL>
+
+<A NAME="toc10"></A>
+<H2>10. Versión 1.1 (21/12/2018)</H2>
+<UL>
+<LI>Corrección de no reanudar la reproducción cuando la lista de medios recientes tiene solo un medio,
+<LI>Corrección de la documentación,
+<LI>Puesta en compatibilidad con versiones alpha 2019.1 de NVDA.
+</UL>
+
+<A NAME="toc11"></A>
+<H2>11. Versión 1.0 (29/10/2018)</H2>
+<P>
+Para evitar confusiones con otros complementos para VLC, el nombre del complemento cambia a "VLCAccessEnhancement" y en el   Administrador de Complementos, se llama "Reproductor multimedia VLC: complementos de accesibilidad".
+</P>
+<P>
+Novedades:
+</P>
+<UL>
+<LI>Puesta en compatibilidad con NVDA 2018.3,
+<LI>Cambio en el nombre del complemento para evitar confusiones con otros complementos para VLC.
+<LI>Anuncia la indicación de la posibilidad de reanudar la reproducción interrumpida en la posición memorizada por VLC y reanuda la reproducción con el gesto de entrada "alt+control+r",
+<LI>Se añade el botón para eliminar el archivo de configuración de VLC,
+</UL>
+
+<P>
+Cambio interno::
+</P>
+<UL>
+<LI>Reelaboración completa del código,
+<LI>Archivo style.css renombrado en style_md.css,
+<LI>Reconversión del archivo del manual del usuario para la conformidad en la  forma con los complementos internacionales,
+<LI>Renombrado el menú de configuración del complemento.
+</UL>
+
+<A NAME="toc12"></A>
+<H2>12. Historial anterior</H2>
+<A NAME="toc13"></A>
+<H3>12.1. Versión 3.0 (19/06/2018)</H3>
+<P>
+Esta versión es compatible con VLC 3.0, incompatible con versiones anteriores.
+</P>
+<P>
+Novedades:
+</P>
+<UL>
+<LI>Verbalización del indicador de repetición del medio,
+<LI>Lectura correcta de la barra de estado,
+<LI>Anuncio del estado   reproduciendo o en pausa con el sonido silenciado al enfocar la ventana principal.
+</UL>
+
+<P>
+Cambios:
+</P>
+<UL>
+<LI>El archivo de configuración de VLC ya no se modifica automáticamente para definir atajos de teclado.  Su implementación se realiza manualmente por el usuario con la ayuda de un simple botón,
+<LI>El cuadro de diálogo "Ir a tiempo" de VLC ya no se verbaliza.
+<LI>El nivel de volumen ahora se anuncia con cada cambio.
+</UL>
+
+<A NAME="toc14"></A>
+<H3>12.2. Versión 2.3.1</H3>
+<P>
+Correcciones de errores (regresión de "nvda+control+h")
+</P>
+<A NAME="toc15"></A>
+<H3>12.3. Versión 2.3</H3>
+<UL>
+<LI>Se añade los scripts para Reanudar la reproducción
+<LI>Se añade la gestión de un archivo de configuración para el complemento
+</UL>
+
+<A NAME="toc16"></A>
+<H3>12.4. Versión 2.2</H3>
+<UL>
+<LI>Configuración del archivo vlcrc para cambiar las teclas de variaciones de velocidad,
+<LI>Anuncio de la duración reproducida durante los saltos de  reproducción,
+<LI>Anuncio del silenciado/desilenciado del sonido,
+<LI>Anuncio del pasaje en pausa,
+<LI>Verbalización del cuadro de diálogo de VLC "Ir a tiempo",
+<LI>Modificación del cuadro de diálogo del complemento "Ir a tiempo".
+</UL>
+
+<A NAME="toc17"></A>
+<H3>12.5. Cambios para la versión 2.0</H3>
+<P>
+Primera versión multilingüe.
+</P>
+
+</body>
+</html>

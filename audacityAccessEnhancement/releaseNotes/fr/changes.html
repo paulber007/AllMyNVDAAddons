@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
+<title>Éditeur multi-piste Audacity: complément d'accessibilité</title>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Éditeur multi-piste  Audacity: complément d'accessibilité - Historique</H1>
+<FONT SIZE="4">
+<I>Auteur: paulber19</I><BR>
+</FONT></CENTER>
+
+<P>
+URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
+</P>
+<P>
+Dépot GitHub: [<A HREF="https://github.com/paulber19/audacityAccessEnhancementNVDAAddon.git">https://github.com/paulber19/audacityAccessEnhancementNVDAAddon.git</A>]
+</P>
+<H2>1. v2.1-dev (10/10/2020)</H2>
+<UL>
+<LI>compatibilité avec NVDA 2020.3
+<LI>nettoyage du code (corrections des erreurs détectées par Flake8)
+<LI>ajout du bouton "Quoi de neuf" dans le dialogue proposant l'installation d'une nouvelle mise à jour.
+</UL>
+
+<H2>2. v2.0 (01/08/2020)</H2>
+<P>
+Compatibilité avec audacity 2.4.2 et 2.4.1
+</P>
+<UL>
+<LI>compatibilité avec NVDA 2020.2
+<LI>ajout de l'option pour désactiver l'annonce améliorée des zones de sélection numérique.
+<LI>présentation des paramètres de l'extension sous forme de catégories.
+<LI>modification du code pour rechercher les objets avec leur controlID
+</UL>
+
+<H2>3. v1.4.5 (19/05/2020)</H2>
+<P>
+Correction de bugs:
+</P>
+<UL>
+<LI>mauvais support de la version 2.3.2.
+</UL>
+
+<H2>4. v1.4.4 (11/05/2020)</H2>
+<P>
+Ajout traduction turque
+</P>
+<H2>5. v1.4.3 (08/05/2020)</H2>
+<P>
+Corrections de bogues:
+</P>
+<UL>
+<LI>mauvaise détection de la barre d'outils "Transport".
+<LI>erreur lorsque le focus  arrives sur un timer  dans le dialogue "changer la vitesse".
+</UL>
+
+<H2>6. v1.4.2 (09/04/2020)</H2>
+<P>
+Ajout traduction arabe.
+</P>
+<H2>7. v1.4.1 (03/04/2020)</H2>
+<P>
+Correction de l'historique des changements de l'extension.
+</P>
+<H2>8. v1.4 (03/04/2020)</H2>
+<UL>
+<LI>mise en compatibilité avec NVDA 2020.1,
+<LI>mise en conformité avec NVDA pour le test de compatibilité des extensions avec NVDA.
+</UL>
+
+<H2>9. v1.3 (20/10/2019)</H2>
+<UL>
+<LI>Compatibilité avec les versions alpha de NVDA 2019.3.
+<LI>recherche de mise à jour automatique.
+<LI>correction de la documentation.
+<LI>traduction de l'extension en Espagnol par Rémy Ruiz, changements par Gunther Melendez.
+</UL>
+
+<H2>10. v1.2 (01/06/2019)</H2>
+<P>
+Compatibilité avec NVDA 2019.2 (mise à jour du manifest.ini)
+</P>
+<H2>11. v1.1 (16/03/2019)</H2>
+<UL>
+<LI>modification du manifest.ini pour compatibilité avec NVDA 2019.1.0
+<LI>remplacement du terme "module complémentaire" par "extension" imposé par les traducteurs de NVDA.
+<LI>préparation à la compatibilité avec python 3.
+</UL>
+
+<H2>12. v1.0.2 (28/12/2018)</H2>
+<P>
+Correction de la mauvaise annonce de la sélection.
+</P>
+<H2>13. v1.0.1 (22/12/2018)</H2>
+<P>
+Petite correction de documentation.
+</P>
+<H2>14. v1.0 (20/12/2018)</H2>
+<P>
+-Le numéro de version repart à 1.0 à cause  du changement du nom de l'extension,
+</P>
+<UL>
+<LI>compatibilité avec audacity 2.3,
+<LI>affichage des  scripts   sous forme de liste dans le dialogue "Scripts de l'interpréteur" avec la possibilité de lancer le script sélectionné,
+<LI>amélioration de l'accessibilité des zones d'édition des temps dans la boite de dialogue "Enregistrement temporisé",
+<LI>refonte importante du code.
+</UL>
+
+<H2>15. v3.2 (19/06/2018)</H2>
+<UL>
+<LI>compatibilité avec NVDA 2018.2,
+<LI>gestion des paramètres  de l'extension à l'installation ou désinstallation de l'extension (mise en place du fichier install.py),
+<LI>nettoyage et réorganisation du code.
+</UL>
+
+<H2>16. v3.1 (07/01/2018)</H2>
+<UL>
+<LI>mise en place de l'extension sous la forme addon template et sous dépot github.
+</UL>
+
+<H2>17. v3.0.1 (04/01/2018)</H2>
+<UL>
+<LI>correction du non affichage menu "Paramètres de configuration de l'extension".
+<LI>ajout directive pour compatibilité avec python 3.
+</UL>
+
+<H2>18. v3.0 (11/2017)</H2>
+<UL>
+<LI>compatibilité avec Audacity 2.2.0,
+<LI>mise en place d'un intercepteur de touches clavier en remplacement du temporisateur de surveillance,
+<LI>mise en place d'un fichier de configuration,
+<LI>nouveaux scripts:
+ <UL>
+ <LI>annoncer les vumètres et curseurs de lecture ou enregistrement,
+ <LI>annoncer la durée de la sélection,
+ <LI>annoncer la position du centre de la sélection,
+ </UL>
+<LI>annoncer la vitesse de lecture,
+ <UL>
+ <LI>afficher le guide d'Audacity,
+ </UL>
+<LI>afficher le manuel utilisateur de l'extension.
+</UL>
+
+<P>
+-  restriction de l'utilisation de certains  scripts à  la vue de piste conformément à la documentation,
+</P>
+<UL>
+<LI>structuration de l'extension pour le dépot sur github.
+<LI>mise à jour du manuel utilisateur.
+</UL>
+
+<H2>19. v2.3 (08/2017)</H2>
+<UL>
+<LI>script "alt+control+f4" pour activer ou désactiver l'annonce des changements de sélection,
+<LI>compatibilité avec audacity v2.1.3,
+<LI>reprise du code.
+</UL>
+
+<H2>20. v2.2 (06/2015)</H2>
+<UL>
+<LI>restructuration du code
+</UL>
+
+<H2>21. v2.1 (10/2014)</H2>
+<UL>
+<LI>compatibilité avec NVDA 2014.3
+<LI>compatibilité avec Audacity v2.06
+</UL>
+
+<H2>22. v2.0 (05/2014)</H2>
+<UL>
+<LI>mise en place d'une surveillance des champ position et sélection pour annoncer les changements.
+</UL>
+
+<H2>23. v1.0 (01/2014)</H2>
+<P>
+Création de l'extension.
+</P>
+
+</body>
+</html>

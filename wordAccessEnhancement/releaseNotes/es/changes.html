@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
+<title>Editor de texto Microsoft Word: complemento de accesibilidad</title>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Editor de texto Microsoft Word: complemento de accesibilidad - Historial</H1>
+<FONT SIZE="4">
+<I>Autor: paulber19</I><BR>
+</FONT></CENTER>
+
+<P>
+URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
+</P>
+<P>
+Repositorio en GitHub: <A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git</A>
+</P>
+<H2>1. v2.2-dev (14/10/2020)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2020.3.
+<LI>limpieza del código con validación Flake8.
+<LI>añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
+</UL>
+
+<H2>2. v2.1 (28/07/2020)</H2>
+<UL>
+<LI>Compatibilidad con NVDA 2020.2
+<P></P>
+</UL>
+
+<OL>
+<LI>v2.0 (16/04/2020) +
+</OL>
+
+<UL>
+<LI>puesta en compatibilidad con NVDA 2020.1.
+<LI>se añade los scripts para pasar a la primera o la última celda de la tabla.
+<LI>se añade el anuncio de la llegada en la primera o la última celda.
+<LI>selección de la celda después de una órden de desplazamiento en una tabla (para tener el mismo comportamiento estándar que al desplazarse mediante tabulación).
+<LI>el número de fila o columna se anuncia de acuerdo con la opción "Coordenadas de celda" de la categoría "Formateado de documentos" de NVDA.
+<LI>adaptación de los scripts para el corrector ortográfico de Word 2019.
+<LI>lectura automática de comentarios y notas al pie de página (NVDA 2019.3 y más).
+<LI>corrección de un largo tiempo de respuesta al final del documento y cuando se desplaza por párrafo.
+<LI>puesta en conformidad con NVDA para la prueba de compatibilidad de los complementos con NVDA.
+<LI>teclas de navegación rápida configurable según el idioma de NVDA.
+</UL>
+
+<H2>3. v1.0.1 (07/03/2020)</H2>
+<UL>
+<LI>corrección de documentación.
+<LI>traducción del complemento en español por Gunther Melendez, cambios por Rémy Ruiz.
+</UL>
+
+<H2>4. v1.0 (07/02/2020)</H2>
+<P>
+Este complemento cambia de nombre para evitar confusiones con otros complementos. Su versión comienza nuevamente en 1.0.
+</P>
+<UL>
+<LI>Compatibilidad con NVDA 2019.3.
+<LI>modificación de gestos de entrada:
+ <UL>
+ <LI>reemplazo de la tecla NVDA con la tecla "windows" en combinación con la tecla "alt".
+ <LI>eliminación de gestos de entrada de scripts de movimiento con anuncio de todas las celdas.
+ </UL>
+<LI>se añade script para activar o desactivar el anuncio de las celdas de la fila o la columna durante una consulta o un desplazamiento en una tabla.
+<LI>se añade la capa de órdenes para tablas que ofrece la posibilidad de utilizar las teclas de flecha para moverse en las tablas.
+<LI>se añade script para anunciar la celda actual.
+<LI>se añade script "Información del documento".
+<LI>accesibilidad mejorada del corrector ortográfico de Word 2013 y 2016.
+<LI>eliminación del anuncio del nivel de título durante una modificación (compatible con NVDA).
+<LI>eliminación, en modo navegación, del movimiento allí debido a un error ortográfico por "*" (compatible con NVDA: órden "w").
+<LI>se añade la posibilidad de anunciar el contenido del primer o segundo campo con la tecla "espacio" en la lista de elementos (ver diálogo "Elección").
+<LI>script Anunciar la posición del cursor: muestra información en la pantalla presionando dos veces el gesto.
+<LI>buscar actualización automática.
+</UL>
+
+<H2>5. v3.1 (10 de Avril del 2016)</H2>
+<UL>
+<LI>se añade el anuncio de columna para las órdenes de teclado "key_line_page"
+</UL>
+
+<H2>6. v3.0 (10 de Marzo del 2016)</H2>
+<UL>
+<LI>eliminación de scripts de movimiento rápido (duplicado con modo de navegación NVDA),
+<LI>eliminación de los scripts para anunciar el título de las filas o columnas en la segunda pulsación (ahora usando la opción incluida en NVDA),
+<LI>compatibilidad con NVDA 2016.1.
+</UL>
+
+<H2>7. v2.5 (22 de Junio del 2015) ((no publicado))</H2>
+<UL>
+<LI>cambio de las órdenes de teclado: "nvda+control+f6" a "alt+suprimir" y nvda +suprimir teclado numérico".
+<LI>indicación de la posición relativa al borde izquierdo y superior (órdenes "alt + suprimir", "alt + suprimir teclado numérico")
+<LI>se añade búsqueda de objetos en la página actual (órdenes nvda + alt + f5)
+<LI>compatibilidad con el modo exploración de NVDA (cambio de accesos directos de navegación)
+</UL>
+
+<H2>8. v2.4 (11 de Junio del 2015)</H2>
+<UL>
+<LI>la corrección de bloqueo apareció desde NVDA 2015.1
+<LI>se añade script para seleccionar el modo de navegación rápida
+</UL>
+
+<H2>9. v2.3 (14 de Diciembre del 2014)</H2>
+<UL>
+<LI>se añade órdenes para mover el foco a la frase anterior o siguiente ("alt + flecha arriba o flecha abajo")
+<LI>corrección de documentación y traducción
+<LI>corrección manifest.ini
+</UL>
+
+<H2>10. v2.2 (15 de Noviembre del 2014)</H2>
+<UL>
+<LI>se añade la navegación rápida
+<LI>separación en dos categorías de objetos gráficos (los de la capa de texto, los de la capa de dibujo)
+<LI>se añade script "nvda + alt + r" para leer la modificación del texto en el cursor,
+<LI>se añade script "nvda + alt + e" para leer la nota final o nota al pie del cursor
+</UL>
+
+<H2>11. v2.1 (1 de Octubre del 2014)</H2>
+<UL>
+<LI>se añade el botón "Buscar y mostrar",
+<LI>se añade atajos para botones de cuadro de diálogo,
+<LI>corrección de documentación
+<LI>modificación del color de fondo de los elementos de las listas.
+<LI>corrección del defecto de selección presionando el botón "Buscar y copiar al portapapeles"
+</UL>
+
+<H2>12. v2.0 (24 de Setiembre del 2014)</H2>
+<UL>
+<LI>compatibilidad con la versión 2014.3
+<LI>se añade scripts para tablas
+<LI>se añade script para activar o desactivar el salto de los párrafos vacíos
+</UL>
+
+<H2>13. v1.0 (24 de Enero del 2014)</H2>
+<UL>
+<LI>Creación del complemento.
+</UL>
+
+
+</body>
+</html>

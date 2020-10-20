@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
+<title>Éditeur de texte Microsoft Word: complément d'accessibilité</title>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Éditeur de texte Microsoft Word: complément d'accessiblité - Historique</H1>
+<FONT SIZE="4">
+<I>Auteur: paulber19</I><BR>
+</FONT></CENTER>
+
+<P>
+URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
+</P>
+<P>
+Dépot GitHub: [<A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git</A>]
+</P>
+<H2>1. v2.2-dev (14/10/2020)</H2>
+<UL>
+<LI>compatibilité avec NVDA 2020.3.
+<LI>nettoyage du code avec validation Flake8.
+<LI>ajout du bouton "Quoi de neuf" dans le dialogue proposant l'installation d'une nouvelle mise à jour.
+</UL>
+
+<H2>2. v2.1 (28/07/2020)</H2>
+<P>
+Compatibilité avec NVDA 2020.2
+</P>
+<H2>3. v2.0 (16/04/2020)</H2>
+<UL>
+<LI>mise en compatibilité avec NVDA 2020.1.
+<LI>ajout des scripts pour se déplacer à la première ou dernière cellule du tableau.
+<LI>ajout de l'annonce de l'arrivée sur la première ou dernière cellule du tableau.
+<LI>sélection de la cellule après une commande de déplacement dans un tableau (pour avoir le même comportement  standard que lors d'un déplacement par tabulation).
+<LI>le numéro de ligne ou colonne est annoncé conformément à l'option "Coordonnées des cellules" de la catégorie "Mise en forme des documents" de NVDA.
+<LI>adaptation des scripts pour le correcteur orthographique de Word 2019.
+<LI>lecture automatique des commentaires  et note de bas de page (NVDA 2019.3 et plus).
+<LI>correction d'un temps de réponse trop long en fin de document et   lors d'un déplacement par paragraphe.
+<LI>mise en conformité   avec NVDA pour le test de compatiblité des extensions avec NVDA.
+<LI>touches de navigation rapide configurable  suivant le langage de NVDA.
+</UL>
+
+<P>
+Changements:
+</P>
+<UL>
+<LI>la commande "y" pour sauter de champ en champ  est remplacé par "z".
+<LI>le geste de commande "windows+alt+," est remplacé par "windows+alt+k".
+<LI>le geste de commande "windows+alt+;" est remplacé par "windows+alt+l".
+</UL>
+
+<H2>4. v1.0.1 (07/03/2020)</H2>
+<UL>
+<LI>correction de la documentation.
+<LI>traduction de l'extension en Espagnol par Gunther Melendez, changements par Rémy Ruiz.
+</UL>
+
+<H2>5. v1.0 (07/02/2020)</H2>
+<P>
+Cette extension change de nom  pour éviter toute confusion avec d'autres extensions. Sa version repart à 1.0.
+</P>
+<UL>
+<LI>Compatibilité avec NVDA 2019.3.
+<LI>modification de gestes de commandes:
+ <UL>
+ <LI>remplacement de la touche NVDA par la touche "windows" dans les combinaisons avec la touche "alt".
+ <LI>suppression   des gestes de commandes des scripts de  déplacement avec annonce de toutes les cellules.
+ </UL>
+<LI>ajout du script pour activer ou désactiver    l'annonce des cellules de la ligne ou de la colonne lors d'une consultation ou d'un déplacement dans un tableau.
+<LI>ajout de la couche de commande  pour tableau amenant la possibilité d'utiliser    les touches de direction pour se déplacer dans les tableaux.
+<LI>ajout du script pour annoncer la cellule courante.
+<LI>ajout du script "Informations sur le document".
+<LI>amélioration de l'accessibilité du correcteur orthographique de Word 2013 et 2016.
+<LI>suppression de l'annonce du niveau de titre lors d'une modification (prise en charge par NVDA).
+<LI>suppression, en mode navigation,  du déplacement à là faute d'ortographe  par "*" (pris en charge par NVDA: commande "w").
+<LI>ajout de la possiblité d'annoncer le contenu du premier ou second  champ avec la touche "espace" dans la liste  des éléments (voir dialogue "Choix").
+<LI>script Annoncer la position du curseur: affichage de l'information à l'écran  sur double appui du geste.
+<LI>recherche de mise à jour automatique.
+</UL>
+
+<H2>6. v3.1 (10 Avril 2016)</H2>
+<UL>
+<LI>ajout de l'annonce de la colonne pour la commande clavier "key_line_page"
+</UL>
+
+<H2>7. v3.0 (10 Mars 2016)</H2>
+<UL>
+<LI>suppression des scripts de déplacement rapide (doublon avec le mode de navigation de NVDA),
+<LI>suppression des scripts pour annoncer au second appui le titre des lignes ou colonnes (utilisation maintenant de l'option incluse dans  NVDA),
+<LI>compatibilité avec NVDA 2016.1.
+</UL>
+
+<H2>8. v2.5 (22 Juin 2015) (non diffusée)</H2>
+<UL>
+<LI>changement de commande clavier: "nvda+control+f6" en "alt+effacement" et nvda + numpad effacement".
+<LI>indication de la position par rapport au bord gauche et supérieur (commande "alt + effacement", "alt + numpad effacement")
+<LI>ajout de la recherche des objets dans la page courante (commande nvda+alt+f5)
+<LI>compatibilité avec le mode navigation de NVDA (changement des raccourcis de navigation)
+</UL>
+
+<H2>9. v2.4 (11 Juin 2015)</H2>
+<UL>
+<LI>correction de blocage  apparu depuis NVDA 2015.1
+<LI>ajout du script pour sélectionner le mode de navigation rapide
+</UL>
+
+<H2>10. v2.3 (14 Décembre 2014)</H2>
+<UL>
+<LI>ajout commande pour déplacer le focus à la précédente ou prochaine phrase ("alt+ Flèche haut ou bas")
+<LI>correction de documentation et traduction
+<LI>correction manifest.ini
+</UL>
+
+<H2>11. v2.2 (1 15 Novembre 2014)</H2>
+<UL>
+<LI>ajout de la navigation rapide
+<LI>séparation en deux catégories des objets graphique (ceux de la couche texte, ceux de la couche dessin)
+<LI>ajout du script "nvda+alt+r" pour lire la modification de texte au curseur,
+<LI>ajout du script "nvda+alt+e" pour lire la note de fin ou de bas de page  au curseur
+</UL>
+
+<H2>12. v2.1 (1 Octobre 2014)</H2>
+<UL>
+<LI>ajout du bouton "Rechercher et afficher",
+<LI>ajout des raccourcis pour les boutons des boites de dialogue,
+<LI>Correction de la documentation
+<LI>modification de la couleur de fond des éléments des listes.
+<LI>correction du défaut de sélection sur appui sur bouton "Rechercher et copier dans presse-papier"
+</UL>
+
+<H2>13. v2.0 (24 Septembre 2014)</H2>
+<UL>
+<LI>compatibilité avec La version 2014.3
+<LI>ajout des scripts pour tableaux
+<LI>ajout du script d'activation ou désactivation du saut des paragraphes vides
+</UL>
+
+<H2>14. v1.0 (24 janvier 2014)</H2>
+<UL>
+<LI>Création de l'extension (anciennement module complémentaire).
+</UL>
+
+
+</body>
+</html>

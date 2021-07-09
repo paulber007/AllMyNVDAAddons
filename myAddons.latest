@@ -25,7 +25,7 @@ lastAddonVersions = {
 	"radioSureAccessEnhancement": {
 		"localURL" : "radioSureAccessEnhancement",
 		"release" :{"version": "2.3.1", "minimumNVDAVersion": "2019.3", "lastTestedNVDAVersion": "2021.1",},
-		"dev":{"version": None, "minimumNVDAVersion": "2019.3", "lastTestedNVDAVersion": "2021.1"},
+		"dev":{"version": "2.3.2-dev1", "minimumNVDAVersion": "2019.3", "lastTestedNVDAVersion": "2021.1"},
 		},
 	"recuvaAccessEnhancement": {
 		"localURL" : "recuvaAccessEnhancement",

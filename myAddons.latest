@@ -15,7 +15,7 @@ lastAddonVersions = {
 	"notepadPlusPlusAccessEnhancement": {
 		"localURL" : "notepadPlusPlusAccessEnhancement",
 		"release" :{"version": None, "minimumNVDAVersion": "2019.1", "lastTestedNVDAVersion": "2019.3",},
-		"dev":{"version": "2.1-dev7", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2021.3"},
+		"dev":{"version": "2.1-dev8", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2021.3"},
 		},
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",

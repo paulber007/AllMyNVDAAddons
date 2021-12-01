@@ -9,8 +9,8 @@ lastAddonVersions = {
 		},
 	"audacityAccessEnhancement": {
 		"localURL": "audacityAccessEnhancement",
-		"release" : {"version": "2.4.1", "minimumNVDAVersion" : "2019.3", "lastTestedNVDAVersion": "2021.1"},
-		"dev" : {"version": "2.5-dev9", "minimumNVDAVersion" : "2019.3", "lastTestedNVDAVersion": "2021.3"},
+		"release" : {"version": "2.5", "minimumNVDAVersion" : "2020.4", "lastTestedNVDAVersion": "2021.3"},
+		"dev" : {"version": None, "minimumNVDAVersion" : "2019.3", "lastTestedNVDAVersion": "2021.3"},
 		},
 	"notepadPlusPlusAccessEnhancement": {
 		"localURL" : "notepadPlusPlusAccessEnhancement",

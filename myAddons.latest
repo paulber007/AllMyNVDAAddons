@@ -40,6 +40,6 @@ lastAddonVersions = {
 	"wordAccessEnhancement": {
 		"localURL": "wordAccessEnhancement",
 		"release":{"version": "3.0", "minimumNVDAVersion": "2019.3", "lastTestedNVDAVersion": "2021.1"},
-		"dev":{"version": "3.1-dev13", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2021.3"},
+		"dev":{"version": "3.1-dev14", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2021.3"},
 		},
 	}

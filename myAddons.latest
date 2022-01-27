@@ -1,5 +1,5 @@
 lastAddonVersions = {
-	"inMaintenance" : False,
+	"inMaintenance" : True,
 	"baseURL" : "https://github.com/paulber007/AllMyNVDAAddons/raw/master",
 	"devURL" : "dev",
 	"apprentiClavierAccessEnhancement": {

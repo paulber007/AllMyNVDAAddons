@@ -1,5 +1,5 @@
 lastAddonVersions = {
-	"inMaintenance" : True,
+	"inMaintenance" : False,
 	"baseURL" : "https://github.com/paulber007/AllMyNVDAAddons/raw/master",
 	"devURL" : "dev",
 	"apprentiClavierAccessEnhancement": {
@@ -19,7 +19,7 @@ lastAddonVersions = {
 		},
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
-		"release":{"version": "11.0", "minimumNVDAVersion" : "2020.4", "lastTestedNVDAVersion": "2022.1"},
+		"release":{"version": None, "minimumNVDAVersion" : "2020.4", "lastTestedNVDAVersion": "2022.1"},
 		"dev" :{"version": None, "minimumNVDAVersion" : "2019.3", "lastTestedNVDAVersion": "2022.1"},
 		},
 	"radioSureAccessEnhancement": {
@@ -39,7 +39,7 @@ lastAddonVersions = {
 		},
 	"wordAccessEnhancement": {
 		"localURL": "wordAccessEnhancement",
-		"release":{"version": "3.1", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2021.3"},
-		"dev":{"version": "3.2-dev15", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2022.1"},
+		"release":{"version": "3.2", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2021.3"},
+		"dev":{"version": None, "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2022.1"},
 		},
 	}

@@ -1,3 +1,3 @@
-This folder contains the latest developpement 's versionsbefore next release version.
+This folder contains the latest developpement 's versions.
 
 The "changes.html" file contains the history of the add-on.

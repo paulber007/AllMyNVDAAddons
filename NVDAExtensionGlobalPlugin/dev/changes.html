@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 11.3-dev20</title>
+<title>NVDA global commands extension 11.3-dev24</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -39,12 +39,20 @@ Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
 <H2>1. v11.3 (July/04/2022)</H2>
 <P>
+New:
+</P>
+<UL>
+<LI>added scripts to move the cursor to the next/previous line of text containing an irregularity detected by the text analyzer.
+</UL>
+
+<P>
 Changes:
 </P>
 <UL>
 <LI>addition of the vertical Tabulation symbol in the "Punctuations" category and its pronunciation.
 <LI>removed some symbols whose pronunciation is already defined by NVDA.
 <LI>base undefined symbols in NVDA are now injected on every voice change. Installing the extension no longer creates a symbol file.
+<LI>removed scripts to move cursor to first/last cell of row/column in a table. These scripts are now provided by NVDA. However, they are kept for versions lower than 2022.2.
 </UL>
 
 <P>

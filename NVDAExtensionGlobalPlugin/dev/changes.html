@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 11.3-dev24</title>
+<title>NVDA global commands extension 11.3-dev32</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -53,6 +53,7 @@ Changes:
 <LI>removed some symbols whose pronunciation is already defined by NVDA.
 <LI>base undefined symbols in NVDA are now injected on every voice change. Installing the extension no longer creates a symbol file.
 <LI>removed scripts to move cursor to first/last cell of row/column in a table. These scripts are now provided by NVDA. However, they are kept for versions lower than 2022.2.
+<LI>the new scripts of NVDA version 2022.2 and future version 2022.3 concerning tables are moved to the "Table" category added by the add-on in the "Input gestures" dialog.
 </UL>
 
 <P>
@@ -63,6 +64,13 @@ Bug fixes:
 <LI>when opening the emojis panel in Windows 11, the direction arrows can be used again when the cursor is in the editing area.
 <LI>work around NVDA bug causing a series of errors in the log when typing in the "Filter by:" field of the "command gestures" dialog.
 <LI>fixed the malfunction of the text parser in a UIA document.
+</UL>
+
+<P>
+Compatibility:
+</P>
+<UL>
+<LI>resumption of the code of the documentBaseEx.py module to adapt to the modifications made in the "documentBase.py" module of NVDA in the versions 2022.2 and future 2022.3.
 </UL>
 
 <H2>2. v11.2 (May/23/2022)</H2>

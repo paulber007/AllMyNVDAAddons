@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 11.4-dev28</title>
+<title>NVDA global commands extension 11.4-dev31</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -57,6 +57,7 @@ fixed issue when "nvda+j" is typed while voice switch mode is enabled. This mode
 <LI>fixed incorrect display of application context information for an application that contains control characters in their product name (like Agenda, ApprentiClavier).
 <LI>gestures added in the "Miscellaneous" category of the "Input gestures" dialog are now correctly displayed in the "Miscellaneous" category of the "User input gestures" dialog.
 <LI>under W11, the icons of the notification area are now correctly presented in the list of the dialog displayed by "nvda+f11" or "nvda+J" followed by f11. It was missing the icons like "system network status", system volume status", "system clock" and "show desktop".
+<LI>work around NVDA bug with PowerPoint (Office 365, 2019 and 2016) when putting focus on an obscured text shape, resulting in recursion overflow (infinite loop)
 </UL>
 
 <P>
@@ -65,6 +66,7 @@ Others:
 <UL>
 <LI>added code written by Joseph Lee in his "Office desk"add-on" for the W11 search box and notifications.
 <LI>improvement of the announcement of the editing commands "control+c", "control+v", "control+x" and "control+z" when these commands are not released.
+<LI>removal of the display of windows as "Microsoft Text Input Application" from the list of current applications in the "List of windows" dialog.
 </UL>
 
 <H2>2. v11.3 (September/10/2022)</H2>

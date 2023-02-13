@@ -20,7 +20,7 @@ lastAddonVersions = {
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
 		"release":{"version": "11.4.2", "minimumNVDAVersion" : "2020.4", "lastTestedNVDAVersion": "2022.4"},
-		"dev" :{"version": None, "minimumNVDAVersion" : "2020.4", "lastTestedNVDAVersion": "2022.4"},
+		"dev" :{"version": "12.0-dev21", "minimumNVDAVersion" : "2021.1", "lastTestedNVDAVersion": "2023.1"},
 		},
 	"radioSureAccessEnhancement": {
 		"localURL" : "radioSureAccessEnhancement",

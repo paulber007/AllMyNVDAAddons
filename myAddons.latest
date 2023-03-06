@@ -35,7 +35,7 @@ lastAddonVersions = {
 	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",
 		"release" :{"version": "2.10", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2023.1",},
-		"dev":{"version": None, "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2023.1"},
+		"dev":{"version": "2.11-dev1", "minimumNVDAVersion": "2020.4", "lastTestedNVDAVersion": "2023.1"},
 		},
 	"wordAccessEnhancement": {
 		"localURL": "wordAccessEnhancement",

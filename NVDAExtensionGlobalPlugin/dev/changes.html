@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 12.1-dev35</title>
+<title>NVDA global commands extension 13.0-dev15</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -23,13 +23,13 @@ URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/NVDAExtensionGlobalPlugin/NVDAExtensionGlobalPlugin-12.1.nvda-addon">Current version: 12.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/NVDAExtensionGlobalPlugin/NVDAExtensionGlobalPlugin-13.0.nvda-addon">Current version: 13.0</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/NVDAExtensionGlobalPlugin/NVDAExtensionGlobalPlugin-12.0.7.nvda-addon">Previous Version: 12.0.7</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/NVDAExtensionGlobalPlugin/dev">Development's versions</A>
 </UL>
 
 <P>
-Sorry, but this document is an automatic translation from french language.
+Sorry, but this document is an automatic translation from French language.
 </P>
 <P>
 Only the versions of the type major.minor (for example v3.1) are listed in this history.
@@ -37,24 +37,40 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. v12.1 (March/27/2023)</H2>
+<H2>1. v12.1 (April/17/2023)</H2>
 <P>
 New:
 </P>
 <UL>
-<LI>by configuration, it is possible to automatically save the current voice parameters of the current selector before switching to another selector.
-<LI>improved per-word keyboard echo.
-<LI>possibility to adjust the volume of NVDA tones.
-<P></P>
+<LI>By configuration, it is possible to automatically save the current voice parameters of the current selector before switching to another selector.
+<LI>Improved per-word keyboard echo.
+<LI>Possibility to adjust the volume of NVDA tones.
+<LI>Possibility to modify the gain of the sounds of NVDA and the extension.v
+<LI>signaling when NVDA starts up that the "clipSpeak" add-on is working which conflicts with the "Clipboard command announcement" functionnality.
+<LI>report on NVDA startup of caps lock enabled state.
+</UL>
+
+<P>
 Compatibility:
-<LI>the display of the list of icons in the notification area is now operational under versions of Windows 11 greater than or equal to version 22h2 build 22621.1344.
+</P>
+<UL>
+<LI>The display of the list of icons in the notification area is now operational under versions of Windows 11 greater than or equal to version 22h2 build 22621.1344.
+<LI>taking into account the possible use of wasapi by NVDA.
 </UL>
 
 <P>
 Various:
 </P>
 <UL>
-<LI>upgraded markdown2.py file to version 2.4.9.
+<LI>Upgraded markdown2.py file to version 2.4.9.
+<LI>Following a technical problem of NVDA, under Windows 11, without identified solution, the logs (current and old) of NVDA will open in wordpad instead of notepad.
+</UL>
+
+<P>
+Changes
+</P>
+<UL>
+<LI>"NVDA Audio Manager and Active Applications" dialog has been renamed to "Audio Source Manager".
 </UL>
 
 <H2>2. v12.0 (February/22/2023)</H2>
@@ -67,36 +83,36 @@ New:
 <UL>
 <LI>enhancements for Windows Explorer:
  <UL>
- <LI>a script to announce the access path of the folder or the file which is under the cursor of the Windows explorer, or copy this path in the clipboard.
- <LI>a script to announce, going up the folder tree, the name of the folders making up the path of the folder containing the element under the cursor.
+ <LI>A script to announce the access path of the folder or the file which is under the cursor of the Windows explorer, or copy this path in the clipboard.
+ <LI>A script to announce, going up the folder tree, the name of the folders making up the path of the folder containing the element under the cursor.
  </UL>
-<LI>possibility to block the "Insert" and "Caps lock" keys.
-<LI>possibility to limit the repetition of keys
+<LI>Possibility to block the "Insert" and "Caps lock" keys.
+<LI>Possibility to limit the repetition of keys
 </UL>
 
 <P>
 Bug fixes:
 </P>
 <UL>
-<LI>reminder: version 11.4.2 fixed the problem of regression of the automatic update of the extension. Versions prior to this version must be updated manually.
-<LI>the "Manage user configuration" sub-menu will no longer appear several times after reloading the add-on.
+<LI>Reminder: version 11.4.2 fixed the problem of regression of the automatic update of the extension. Versions prior to this version must be updated manually.
+<LI>The "Manage user configuration" sub-menu will no longer appear several times after reloading the add-on.
 </UL>
 
 <P>
 Changes:
 </P>
 <UL>
-<LI>the scripts concerning the voice history no longer directly copy the recording to the clipboard. This copy is now done by double-pressing the command gesture of the script to announce the current record.
-<LI>the "readme.md" file is deleted for languages ​​other than English (en) and should no longer be translated.
+<LI>The scripts concerning the voice history no longer directly copy the recording to the clipboard. This copy is now done by double-pressing the command gesture of the script to announce the current record.
+<LI>The "readme.md" file is deleted for languages ​​other than English (en) and should no longer be translated.
 </UL>
 
 <P>
 Updating the code :
 </P>
 <UL>
-<LI>removed the code regarding the announcement of the focused word after word deletion introduced in NVDA 2020.3.
-<LI>removal of the code concerning the correction made in the BoxSizerHelper class of guiHelper.py from NVDA 2021.1
-<LI>removed code supporting versions prior to NVDA 2021.1. The modules concerned are:
+<LI>Removed the code regarding the announcement of the focused word after word deletion introduced in NVDA 2020.3.
+<LI>Removal of the code concerning the correction made in the BoxSizerHelper class of guiHelper.py from NVDA 2021.1
+<LI>Removed code supporting versions prior to NVDA 2021.1. The modules concerned are:
  <UL>
  <LI>browseModeEx: <U>init</U>.py, documentBaseEx.py, NVDAObjectsUIA.py, virtualBuffers.py
  <LI>commandKeysSelectiveAnnouncementAndRemanence: <U>init</U>.py

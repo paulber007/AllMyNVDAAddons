@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 13.0-dev19</title>
+<title>NVDA global commands extension 13.0-dev50</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -37,24 +37,25 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. v13.0 (June/05/2023)</H2>
+<H2>1. v13.0 (July/03/2023)</H2>
 <P>
 New:
 </P>
 <UL>
-<LI>By configuration, it is possible to automatically save the current voice parameters of the current selector before switching to another selector.
-<LI>Improved per-word keyboard echo.
-<LI>Possibility to adjust the volume of NVDA tones.
-<LI>Possibility to modify the gain of the sounds of NVDA and the extension.v
-<LI>signaling when NVDA starts up that the "clipSpeak" add-on is working which conflicts with the "Clipboard command announcement" functionnality.
+<LI>by configuration, it is possible to automatically save the current voice parameters of the current selector before switching to another selector.
+<LI>improved per-word keyboard echo to correctly announce corrected or split words.
+<LI>improvement of the "Sound control" functionality to take into account all the active audio output devices and not only the Windows default one.
+<LI>possibility to adjust the volume of tonalités emitted by NVDA when Wasapi is not used.
+<LI>possibility to modify the gain of the sounds of NVDA and the add-on.
 <LI>report on NVDA startup of caps lock enabled state.
+<LI>signaling when NVDA starts up that the clipSpeak add-on is working which conflicts with the Announce feature of the function associated with the editing commands.
 </UL>
 
 <P>
 Compatibility:
 </P>
 <UL>
-<LI>The display of the list of icons in the notification area is now operational under versions of Windows 11 greater than or equal to version 22h2 build 22621.1344.
+<LI>the display of the list of icons in the notification area is now operational under versions of Windows 11 greater than or equal to version 22h2 build 22621.1344.
 <LI>taking into account the possible use of wasapi by NVDA.
 </UL>
 
@@ -62,16 +63,25 @@ Compatibility:
 Various:
 </P>
 <UL>
-<LI>Upgraded markdown2.py file to version 2.4.9.
-<LI>Following a technical problem of NVDA, under Windows 11, without identified solution, the logs (current and old) of NVDA will open in wordpad instead of notepad.
-<LI>l'extension est désactivée pendant l'installation d'une  mise à jour de NVDA.
+<LI>following a technical problem of NVDA, under Windows 11, without identified solution, the logs (current and old) of NVDA will open in wordpad instead of notepad.
+<LI>the add-on is disabled during the installation of an NVDA update.
 </UL>
 
 <P>
-Changes
+Changes:
 </P>
 <UL>
 <LI>"NVDA Audio Manager and Active Applications" dialog has been renamed to "Audio Source Manager".
+<LI>this dialog now presents the list of active audio output devices and allows to manage the audio sources of a particular device.
+</UL>
+
+<P>
+Developments:
+</P>
+<UL>
+<LI>the code for the "Sound Control" functionality has been completely restructured. Thanks to the author of the "volumeAdjustment" (Oleksandr Gryshchenko) add-on whose structure of his code served as a reference.
+<LI>upgraded markdown2.py file to version 2.4.9.
+<LI>updated pycaw library to version v20230407.
 </UL>
 
 <H2>2. v12.0 (February/22/2023)</H2>

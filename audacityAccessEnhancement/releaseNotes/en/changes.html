@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Audacity multi-track editor: accessibility enhancement 2.8</title>
+<title>Audacity multi-track editor: accessibility enhancement 2.9</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Audacity multi-track editor: accessibility enhancement - History</H1>
@@ -23,15 +23,20 @@ URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.8.nvda-addon">Current stable version: 2.8</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.7.1.nvda-addon">Previous stable Version: 2.7.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.9.nvda-addon">Current stable version: 2.9</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.8.nvda-addon">Previous stable Version: 2.8</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/audacityAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v2.8 (February/14/2023)</H2>
+<H2>1. v2.9 (August/03/2023)</H2>
+<UL>
+<LI>the audio position is no longer announced after restarting playback. This happened with Audacity versions 3.2.2 and above. In these versions, the state of the "play" and "pause" buttons is no longer available with MSAA), unlike previous versions.
+</UL>
+
+<H2>2. v2.8 (February/14/2023)</H2>
 <UL>
 <LI>compatibility with audacity 3.2.3
 <LI>compatibility with NVDA 2023.1
@@ -45,7 +50,7 @@ Changes:
 <LI>updating the Audacity guide for versions  3.2.3 ( <A HREF="https://vip.chowo.co.uk/wp-content/uploads/jaws/Audacity-3.2.3-Guide.html">see guide written by David Bell</A> )
 </UL>
 
-<H2>2. v2.7 (May/26/2022)</H2>
+<H2>3. v2.7 (May/26/2022)</H2>
 <P>
 Bug fixes:
 </P>
@@ -61,7 +66,7 @@ Changes:
 <LI>updating the Audacity guide for versions 3.1.0 to 3.1.3 ( <A HREF="Guide.html">see guide written by David Bell https://vip.chowo.co.uk/wp-content/uploads/jaws/Audacity-3.1.0-</A> )
 </UL>
 
-<H2>3. v2.6 (02/04/2022)</H2>
+<H2>4. v2.6 (02/04/2022)</H2>
 <UL>
 <LI>Compatibility with NVDA 2022.1
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -75,41 +80,41 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>4. v2.5 (12/01/2021)</H2>
+<H2>5. v2.5 (12/01/2021)</H2>
 <UL>
 <LI>Compatibility with NVDA 2021.3
 <LI>removed the warning message indicating that the extension has not been tested with the version of Audacity used.
 </UL>
 
-<H2>5. v2.4.1 (06/25/2021)</H2>
+<H2>6. v2.4.1 (06/25/2021)</H2>
 <P>
 Adding turkish translation
 </P>
-<H2>6. v2.4 (06/18/2021)</H2>
+<H2>7. v2.4 (06/18/2021)</H2>
 <UL>
 <LI>Compatibility with NVDA 2021.1. Versions of NVDA prior to 2019.3 are not supported.
 <LI>removal of the code concerning Python 2.7.
 <LI>compatibility with audacity 3.0.2.
 </UL>
 
-<H2>7. v2.3 (08/04/2021)</H2>
+<H2>8. v2.3 (08/04/2021)</H2>
 <P>
 Compatibility with Audacity 3.0
 </P>
-<H2>8. v2.2 (18/12/2020)</H2>
+<H2>9. v2.2 (18/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.4
 <LI>addition of the "View history" button in the "Update" category of the add-on's parameters.
 </UL>
 
-<H2>9. v2.1 (27/10/2020)</H2>
+<H2>10. v2.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.3
 <LI>code cleaning (corrections of errors detected by Flake8)
 <LI>addition of the "What's new" button in the dialog proposing the installation of a new update.
 </UL>
 
-<H2>10. Version 2.0 (01/08/2020)</H2>
+<H2>11. Version 2.0 (01/08/2020)</H2>
 <P>
 Compatibility with audacity 2.4.2 and 2.4.1.
 </P>
@@ -120,7 +125,7 @@ Compatibility with audacity 2.4.2 and 2.4.1.
 <LI>code modified for searching object based on controlID
 </UL>
 
-<H2>11. Version 1.4.5 (19/05/2020)</H2>
+<H2>12. Version 1.4.5 (19/05/2020)</H2>
 <P>
 Bugs's correction:
 </P>
@@ -128,11 +133,11 @@ Bugs's correction:
 <LI>bad support of audacity 2.3.2 version.
 </UL>
 
-<H2>12. Version 1.4.4 (11/05/2020)</H2>
+<H2>13. Version 1.4.4 (11/05/2020)</H2>
 <P>
 Adding turkish translation
 </P>
-<H2>13. Version 1.4.3 (08/05/2020)</H2>
+<H2>14. Version 1.4.3 (08/05/2020)</H2>
 <P>
 Bug corrections:
 </P>
@@ -141,21 +146,21 @@ Bug corrections:
 <LI>error when timer in Speed change dialog gains focus.
 </UL>
 
-<H2>14. Version 1.4.2.1 (06/04/2020)</H2>
+<H2>15. Version 1.4.2.1 (06/04/2020)</H2>
 <P>
 Adding arabic translation
 </P>
-<H2>15. Version 1.4.1 (03/04/2020)</H2>
+<H2>16. Version 1.4.1 (03/04/2020)</H2>
 <P>
 updating of history of add-on's changes.
 </P>
-<H2>16. Version 1.4 (03/04/2020)</H2>
+<H2>17. Version 1.4 (03/04/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.1,
 <LI>compliance for NVDA extension compatibility test
 </UL>
 
-<H2>17. v1.3 (01/10/2019)</H2>
+<H2>18. v1.3 (01/10/2019)</H2>
 <P>
 -Compatibility with NVDA 2019.3.
 </P>
@@ -165,26 +170,26 @@ updating of history of add-on's changes.
 <LI>translation of the addon in Spanish by Rémy Ruiz, changes by Gunther Melendez.
 </UL>
 
-<H2>18. v1.2 (01/06/2019)</H2>
+<H2>19. v1.2 (01/06/2019)</H2>
 <UL>
 <LI>Modification of manifest.ini file for compatibility with NVDA 2019.2.0.
 </UL>
 
-<H2>19. v1.1 (16/03/2019)</H2>
+<H2>20. v1.1 (16/03/2019)</H2>
 <UL>
 <LI>Modification of manifest.ini file for compatibility with NVDA 2019.1.0.
 <LI>code changes for compatibility with python 3.
 </UL>
 
-<H2>20. v1.0.2 (28/12/2018)</H2>
+<H2>21. v1.0.2 (28/12/2018)</H2>
 <P>
 Correction of bad announcement of selection.
 </P>
-<H2>21. v1.0.1 (22/12/2018)</H2>
+<H2>22. v1.0.1 (22/12/2018)</H2>
 <P>
 Small documentation correction.
 </P>
-<H2>22. v1.0 (20/12/2018)</H2>
+<H2>23. v1.0 (20/12/2018)</H2>
 <UL>
 <LI>version number restarted to 1.0 cause of name change,
 <LI>compatibility with Audacity 2.3.0,
@@ -193,25 +198,25 @@ Small documentation correction.
 <LI>major overhaul of the code.
 </UL>
 
-<H2>23. v3.2 (19/06/2018)</H2>
+<H2>24. v3.2 (19/06/2018)</H2>
 <UL>
 <LI>compatibility with NVDA 2018.2,
 <LI>settings management on installation or uninstallation (adding install.py file),
 <LI>clean-up and repackaging of code.
 </UL>
 
-<H2>24. v3.1 (07/01/2018)</H2>
+<H2>25. v3.1 (07/01/2018)</H2>
 <UL>
 <LI>addon modified to be in the addon template form and stored in git hub repository.
 </UL>
 
-<H2>25. v3.0.1 (04/01/2018)</H2>
+<H2>26. v3.0.1 (04/01/2018)</H2>
 <UL>
 <LI>settings addon menu bug fix,
 <LI>adding future directive for python 3 compatibility.
 </UL>
 
-<H2>26. v3.0 (11/2017)</H2>
+<H2>27. v3.0 (11/2017)</H2>
 <UL>
 <LI>compatibility with Audacity 2.2.0,
 new - scripts to announce the peak meters and sliders for playback or recording,
@@ -224,30 +229,30 @@ new - scripts to announce the peak meters and sliders for playback or recording,
 <LI>update the user manual.
 </UL>
 
-<H2>27. v2.3 (08/2017)</H2>
+<H2>28. v2.3 (08/2017)</H2>
 <UL>
 <LI>script "alt+control+f4" to activate or deactivate the announcement of the selection changes,
 <LI>compatibility with audacity v2.1.3,
 <LI>resumption of the code.
 </UL>
 
-<H2>28. v2.2 (06/2015)</H2>
+<H2>29. v2.2 (06/2015)</H2>
 <UL>
 <LI>restructuring of the code
 </UL>
 
-<H2>29. v2.1 (10/2014)</H2>
+<H2>30. v2.1 (10/2014)</H2>
 <UL>
 <LI>compatibility with NVDA 2014.3
 <LI>compatibility with Audacity v2.06
 </UL>
 
-<H2>30. v2.0 (05/2014)</H2>
+<H2>31. v2.0 (05/2014)</H2>
 <UL>
 <LI>establishment of a supervisory field position and selection to announce the changes.
 </UL>
 
-<H2>31. v1.0 (01/2014)</H2>
+<H2>32. v1.0 (01/2014)</H2>
 <P>
 Creation of the add-on
 </P>

@@ -5,19 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Notepad++ text's editor : accessibility enhancement 2.5-dev11</title>
+<title>Notepad++ text's editor : accessibility enhancement 2.5-dev16</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Notepad++ text's editor : accessibility enhancement - History</H1>
 <FONT SIZE="4">
-<I>Author: paulber19</I><BR>
+<I>Author: paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
 
 <P>
-URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git">GitHub repository: https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git">https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Download:
@@ -30,20 +27,18 @@ Download:
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v2.5 (July/24/2023)</H2>
+<H2>1. v2.5 (September/086/2023)</H2>
 <P>
 New:
 </P>
 <UL>
 <LI>possibility to announce the path of the name of the files while going up in the hierarchy of the files.
-<LI>improved accessibility in the "Documents" dialog box opened by "Alt+d" followed by "d".
+<LI>improved accessibility in the "Documents" dialog box opened by "Alt+d" followed by "d":
  <UL>
  <LI>the path can be announced in a reduced way.
-  <UL>
-  <LI>when opening the dialog box, the selected element is no longer announced several times.
-  <LI>possibility to select a file by the first letter of its name
-  <LI>possibility of not having the path, the type or the size of the file announced when selecting a file
-  </UL>
+ <LI>when opening the dialog box, the selected element is no longer announced several times.
+ <LI>possibility to select a file by the first letter of its name
+ <LI>possibility of not having the path, the type or the size of the file announced when selecting a file
  </UL>
 </UL>
 
@@ -51,11 +46,27 @@ New:
 Compatibility:
 </P>
 <UL>
-<LI>Dropped support for NVDA versions below 2021.3.
-<P></P>
+<LI>Dropped support for NVDA versions below 2022.1.
+<LI>compatibility with notepad++ 8.5.6.
+</UL>
+
+<P>
+Bug Fixes:
+</P>
+<UL>
+<LI>when a long line contains accented characters, moving to the first character which is after the maximum length is now correct.
+<LI>the signaling of a long line is now correct when moving the cursor by right or left arrow around the maximum limit.
+<LI>removed the double beep when moving to the first character which is after the maximum line length.
+</UL>
+
+<P>
 Various:
+</P>
+<UL>
 <LI>upgraded markdown2.py file to version 2.4.9.
 <LI>removal of code concerning Python 2.
+<LI>making the buildVars.py file compatible with the add-on store.
+<LI>modification of the documentation for compatibility with the add-on store.
 </UL>
 
 <H2>2. v2.4 (February/20/2023)</H2>

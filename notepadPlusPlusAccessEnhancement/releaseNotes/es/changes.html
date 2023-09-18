@@ -5,37 +5,78 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Editor de texto Notepad++: complementos de accesibilidad 2.4</title>
+<title>Editor de texto Notepad++: complementos de accesibilidad 2.5</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Editor de texto Notepad++: complementos de accesibilidad - Historial</H1>
 <FONT SIZE="4">
-<I>Autor: paulber19</I><BR>
+<I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
 
 <P>
-URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git">Repositorio en GitHub: https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git">https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.4.nvda-addon">Versión estable actual: 2.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.5.nvda-addon">Versión estable actual: 2.5</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v2.4 (20/02/2023)</H2>
+<H2>1. v2.5 (08/09/2023)</H2>
+<P>
+Nuevas características:
+</P>
+<UL>
+<LI>posibilidad de anunciar la ruta del nombre de los archivos subiendo en la jerarquía de las carpetas.
+<LI>mejora de la accesibilidad en el diálogo "Documentos" abierto con "Alt+d" seguido de "d".
+ <UL>
+ <LI>la ruta se puede anunciar de manera reducida.
+  <UL>
+  <LI>cuando se abre el diálogo, el elemento seleccionado ya no se anuncia varias veces.
+  <LI>posibilidad de seleccionar un archivo por la primera letra de su nombre
+  <LI>posibilidad de no ser anunciada la ruta, el tipo o tamaño del archivo al seleccionar un archivo
+  </UL>
+ </UL>
+</UL>
+
+<P>
+Compatibilidad:
+</P>
+<UL>
+<LI>Se abandonó el soporte de las versiones de NVDA inferiores a la 2022.1.
+<LI>compatibilidad con notepad++ 8.5.6.
+</UL>
+
+<P>
+Corección de fallos:
+</P>
+<UL>
+<LI>cuando una línea larga contiene caracteres acentuados, pasar al primer carácter después de la longitud máxima ahora es correcto.
+<LI>el anunciado de una línea larga ahora es correcta al mover el cursor con una flecha derecha o izquierda alrededor del límite máximo.
+<LI>eliminación del doble pitido al pasar al primer carácter que está después de la longitud máxima de línea.
+</UL>
+
+<P>
+Diversos:
+</P>
+<UL>
+<LI>actualización del archivo markdown2.py a la versión 2.4.9.
+<LI>eliminado código relativo a Python 2.
+<LI>puesta en compatibilidad del archivo buildVars.py con la Tienda de Complementos (Add-on Store).
+<LI>modificación de la documentación para la compatibilidad con la Tienda de Complementos (Add-on Store).
+</UL>
+
+<H2>2. v2.4 (20/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 <P></P>
-Nuevas características
+Nuevas características:
 <LI>anunciar errores de ortografía encontrados mediante el suplemento para el complemento DSpellCheck de Notepad++ (experimental).
 </UL>
 
-<H2>2. v2.3 (27/09/2022)</H2>
+<H2>3. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
 <LI>corrección de movimientos incorrectos de método a método o de clase a clase.
@@ -43,7 +84,7 @@ Nuevas características
 <LI>Compatibilidad con notepad++ 8.3 64 bits.
 </UL>
 
-<H2>3. v2.2 (04/02/2022)</H2>
+<H2>4. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
 </UL>
@@ -56,7 +97,7 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>4. v2.1 (04/11/2021)</H2>
+<H2>5. v2.1 (04/11/2021)</H2>
 <P>
 Primera versión estable
 </P>

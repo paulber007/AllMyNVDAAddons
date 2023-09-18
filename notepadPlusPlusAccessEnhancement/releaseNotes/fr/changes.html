@@ -5,29 +5,68 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Éditeur de texte Notepad++: compléments d'accessibilité 2.4</title>
+<title>Éditeur de texte Notepad++: compléments d'accessibilité 2.5</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Éditeur de texte Notepad++: compléments d'accessibilité - Historique</H1>
 <FONT SIZE="4">
-<I>Auteur: paulber19</I><BR>
+<I>Auteur: paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
 
 <P>
-URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git">Dépôt GitHub: https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git">https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Téléchargement:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.4.nvda-addon">Version stable actuelle: 2.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.5.nvda-addon">Version stable actuelle: 2.5</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">versions de développement</A>
 </UL>
 
-<H2>1. v2.4 (20/02/2023)</H2>
+<H2>1. v2.5 (08/09/2023)</H2>
+<P>
+Nouveautés:
+</P>
+<UL>
+<LI>possibilité de faire annoncer le chemin du nom des fichiers en remontant dans la hiérarchie des dossiers.
+<LI>amélioration de l'accessibilité dans la boite de dialogue "Documents" ouvert par "Alt+d" suivi de "d":
+ <UL>
+ <LI>le chemin peut être annoncé de manière réduite.
+ <LI>à l'ouverture de la boite de dialogue, l'élément sélectionné n'est plus annoncé plusieurs fois.
+ <LI>possibilité de sélectionner un fichier par la première lettre de son nom
+ <LI>possibilité de ne pas faire annoncer le chemin, le type ou la taille du fichier lors de la sélection d'un fichier
+ </UL>
+</UL>
+
+<P>
+Compatibilité:
+</P>
+<UL>
+<LI>Abandon du support des versions de NVDA inférieures à la 2022.1.
+<LI>compatibilité avec notepad++ 8.5.6.
+</UL>
+
+<P>
+Correction de bogues:
+</P>
+<UL>
+<LI>quand une longue ligne contient des caractères accentués, le déplacement vers le premier caractère qui est après la longueur maximale  est maintenant correct.
+<LI>la signalisation d'une ligne longue est maintenant correcte lors de déplacement du curseur par flèche droite ou gauche autour de la limite maximale.
+<LI>suppression du double bip sonore  lors d'du déplacement au premier caractère qui est après la longueur de ligne maximale.
+</UL>
+
+<P>
+Divers:
+</P>
+<UL>
+<LI>mise à niveau du fichier markdown2.py à la version 2.4.9.
+<LI>suppression du code concernant Python 2.
+<LI>mise en compatibilité du fichier buildVars.py avec l'add-on store.
+<LI>modification de la documentation pour compatibilité avec l'add-on store.
+</UL>
+
+<H2>2. v2.4 (20/02/2023)</H2>
 <P>
 Compatibilité avec NVDA 2023.1
 </P>
@@ -38,7 +77,7 @@ Nouveautés:
 <LI>signalement des fautes d'orthographe trouvées par le complément DSpellCheck (expérimental).
 </UL>
 
-<H2>2. v2.3 (27/09/2022)</H2>
+<H2>3. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>correction de l'impossibilité d'afficher l'historique de l'extension à l'aide du bouton "Voir l'historique".
 <LI>correction de mauvais déplacements de méthodes en méthodes ou de class en class.
@@ -46,7 +85,7 @@ Nouveautés:
 <LI>compatibilité avec notepad++ 8.3 64 bits.
 </UL>
 
-<H2>3. v2.2 (04/02/2022)</H2>
+<H2>4. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2022.1.
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -60,7 +99,7 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée quand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>4. v2.1 (13/12/2021)</H2>
+<H2>5. v2.1 (13/12/2021)</H2>
 <P>
 Première version stable officielle.
 </P>

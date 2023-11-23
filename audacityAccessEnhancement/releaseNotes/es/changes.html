@@ -5,35 +5,67 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Editor de Audio multi-pista Audacity: complementos de accesibilidad 2.9</title>
+<title>Editor de Audio multi-pista Audacity: complementos de accesibilidad 3.0</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Editor de audio multi-pista Audacity: complementos de accesibilidad - Historial</H1>
 <FONT SIZE="4">
-<I>Autor: paulber19</I><BR>
+<I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
 
 <P>
-URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/audacityAccessEnhancementNVDAAddon.git">Repositorio en GitHub: https://github.com/paulber19/audacityAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/audacityAccessEnhancementNVDAAddon.git">https://github.com/paulber19/audacityAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.9.nvda-addon">Versión actual: 2.9</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.8.nvda-addon">Versión anterior: 2.8</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-3.0.nvda-addon">Versión actual: 3.0</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-2.9.nvda-addon">Versión anterior: 2.9</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/audacityAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v2.9 (03/03/2023)</H2>
+<H2>1. v3.0 (23/11/2023)</H2>
+<P>
+Nuevas características:
+</P>
+<UL>
+<LI>nominación de los paneles de las barras de herramientas en "Panel inferior" y "Panel superior".
+<LI>nominación del panel que contiene la vista de pista en "Panel principal".
+</UL>
+
+<P>
+Cambios:
+</P>
+<UL>
+<LI>Los scripts para anunciar el inicio, el final, la duración y el centro de la selección son reemplazados por:
+ <UL>
+ <LI>un script para anunciar la selección,
+ <LI>un script para anunciar el primer tiempo de la selección,
+ <LI>un script para anunciar el segundo tiempo de la selección.
+ </UL>
+<LI>en la documentación al francés, la terminología "zone de sélection numérique" se reemplaza por "boite de sélection numérique" de acuerdo con la guía de Audacity. (N. del T.): En la documentación al español esta terminología ha sido traducida por "cuadro de selección numérico".
+<LI>en la documentación, el término "grupo" para las barras de herramientas" se reemplaza por "panel".
+<LI>la funcionalidad "Verbalización de los cuadros de selección numérico 
+del tiempo de Audacity" no está disponible en las versiones 3.3.x de 
+Audacity.
+</UL>
+
+<P>
+Compatibilidad:
+</P>
+<UL>
+<LI>Esta versión del complemento se probó con Audacity 3.4, 3.4.2, 3.3.0 y 3.3.3. También debe ser compatible con las versiones 3.3.1 y 3.3.2, pero no se ha realizado ninguna prueba.
+<LI>La compatibilidad con versiones anteriores a la 3.3.0 ya no está garantizada.
+<LI>las versiones de NVDA inferiores a la 2022.1 ya no son soportadas.
+</UL>
+
+<H2>2. v2.9 (03/08/2023)</H2>
 <UL>
 <LI>la posición del audio ya no se anuncia después de reiniciar la reproducción. Esto sucedió con las versiones de Audacity 3.2.2 y superiores. En estas versiones, el estado de los botones "reproducir" y "pausar" ya no está disponible con MSAA), a diferencia de las versiones anteriores.
 </UL>
 
-<H2>2. v2.8 (14/02/2023)</H2>
+<H2>3. v2.8 (14/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 <LI>compatibilidad con audacity 3.2.3
@@ -47,7 +79,7 @@ Cambios:
 <LI>actualización de la Guía  de Audacity para la versión 3.2.3 (<A HREF="https://vip.chowo.co.uk/wp-content/uploads/jaws/Audacity-3.2.3-Guide.html">ver la guía escrito por David Bell</A>).
 </UL>
 
-<H2>3. v2.7 (26/05/2022)</H2>
+<H2>4. v2.7 (26/05/2022)</H2>
 <P>
 Corrección de fallos:
 </P>
@@ -64,7 +96,7 @@ Cambios:
 <LI>actualización de la Guía  de Audacity para las versiones 3.1.0 a 3.1.3  (<A HREF="https://vip.chowo.co.uk/wp-content/uploads/jaws/Audacity-3.1.0-Guide.html">ver la guía escrito por David Bell</A>).
 </UL>
 
-<H2>4. v2.6 (04/02/2022)</H2>
+<H2>5. v2.6 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2022.1
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
@@ -78,41 +110,41 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>5. v2.5 (01/12/2021)</H2>
+<H2>6. v2.5 (01/12/2021)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2021.3
 <LI>eliminado el mensaje de advertencia que indica que el complemento no se ha probado con la versión de Audacity utilizada.
 </UL>
 
-<H2>6. v2.4.1 (25/06/2021)</H2>
+<H2>7. v2.4.1 (25/06/2021)</H2>
 <P>
 Se añade traducción al turco
 </P>
-<H2>7. v2.4 (18/06/2021)</H2>
+<H2>8. v2.4 (18/06/2021)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2021.1. Las versiones de NVDA anteriores a la 2019.3 ya no son soportadas.
 <LI>eliminado código relativo a Python 2.7.
 <LI>compatibilidad con audacity 3.0.2
 </UL>
 
-<H2>8. v2.3 (08/04/2020)</H2>
+<H2>9. v2.3 (08/04/2020)</H2>
 <P>
 Compatibilidad con audacity 3.0
 </P>
-<H2>9. v2.2 (18/12/2020)</H2>
+<H2>10. v2.2 (18/12/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.4
 <LI>añadido el botón "Ver historial" que se encuentra en la categoría "Actualización" en las "Opciones" del complemento.
 </UL>
 
-<H2>10. v2.1 (27/10/2020)</H2>
+<H2>11. v2.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.3
 <LI>limpieza del código (correcciones de errores detectados por Flake8)
 <LI>añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
 </UL>
 
-<H2>11. v2.0 (01/08/2020)</H2>
+<H2>12. v2.0 (01/08/2020)</H2>
 <P>
 Compatibilidad con audacity 2.4.2 y 2.4.1
 </P>
@@ -123,7 +155,7 @@ Compatibilidad con audacity 2.4.2 y 2.4.1
 <LI>modificación del código para encontrar objetos con su   controlID
 </UL>
 
-<H2>12. v1.4.5 (19/05/2020)</H2>
+<H2>13. v1.4.5 (19/05/2020)</H2>
 <P>
 Corrección de fallos:
 </P>
@@ -131,11 +163,11 @@ Corrección de fallos:
 <LI>un mal soporte de la versión 2.3.2.
 </UL>
 
-<H2>13. v1.4.4 (11/05/2020)</H2>
+<H2>14. v1.4.4 (11/05/2020)</H2>
 <P>
 Se añade traducción al turco
 </P>
-<H2>14. v1.4.3 (08/05/2020)</H2>
+<H2>15. v1.4.3 (08/05/2020)</H2>
 <P>
 Corrección de fallos:
 </P>
@@ -144,21 +176,21 @@ Corrección de fallos:
 <LI>error cuando el foco llega en un temporizador en el diálogo "cambiar la velocidad.".
 </UL>
 
-<H2>15. v1.4.2 (09/04/2020)</H2>
+<H2>16. v1.4.2 (09/04/2020)</H2>
 <P>
 Se añade traducción al árabe.
 </P>
-<H2>16. v1.4.1 (03/04/2020)</H2>
+<H2>17. v1.4.1 (03/04/2020)</H2>
 <P>
 Se corrigió el historial de cambios del complemento.
 </P>
-<H2>17. v1.4 (03/04/2020)</H2>
+<H2>18. v1.4 (03/04/2020)</H2>
 <UL>
 <LI>puesta en compatibilidad con NVDA 2020.1,
 <LI>puesta en conformidad con NVDA para la prueba de compatibilidad  de los complementos con NVDA.
 </UL>
 
-<H2>18. v1.3 (20/10/2019)</H2>
+<H2>19. v1.3 (20/10/2019)</H2>
 <UL>
 <LI>Compatibilidad con las versiones alpha de NVDA 2019.3.
 <LI>Búsqueda automática de actualización.
@@ -166,29 +198,29 @@ Se corrigió el historial de cambios del complemento.
 <LI>Traducción del complemento en español por Rémy Ruiz, cambios por Gunther Melendez.
 </UL>
 
-<H2>19. v1.2 (01/06/2019)</H2>
+<H2>20. v1.2 (01/06/2019)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2019.2 ((actualización del manifest.ini)
 </UL>
 
-<H2>20. v1.1 (16/03/2019)</H2>
+<H2>21. v1.1 (16/03/2019)</H2>
 <UL>
 <LI>Modificación del manifest.ini para la compatibilidad con NVDA 2019.1.0
 <LI>Reemplazo del termino "module complémentaire " por "extension impuesto por los traductores de NVDA en francés).
 <LI>Preparación para la compatibilidad con Python 3.
 </UL>
 
-<H2>21. v1.0.2 (28/12/2018)</H2>
+<H2>22. v1.0.2 (28/12/2018)</H2>
 <UL>
 <LI>Corregido el anuncio erróneo de la selección.
 </UL>
 
-<H2>22. v1.0.1 (22/12/2018)</H2>
+<H2>23. v1.0.1 (22/12/2018)</H2>
 <UL>
 <LI>Pequeña corrección en la documentación.
 </UL>
 
-<H2>23. v1.0 (20/12/2018)</H2>
+<H2>24. v1.0 (20/12/2018)</H2>
 <UL>
 <LI>Se reinicia el número de versión en 1.0 debido al cambio del nombre  del complemento,
 <LI>Compatibilidad con Audacity 2.3,
@@ -197,25 +229,25 @@ Se corrigió el historial de cambios del complemento.
 <LI>Reelaboración importante del código.
 </UL>
 
-<H2>24. v3.2 (19/06/2018)</H2>
+<H2>25. v3.2 (19/06/2018)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2018.2,
 <LI>Gestión de   las opciones  del complemento durante  la instalación o desinstalación del complemento (implementación del archivo install.py),
 <LI>Limpieza y reorganización del código.
 </UL>
 
-<H2>25. v3.1 (07/01/2018)</H2>
+<H2>26. v3.1 (07/01/2018)</H2>
 <UL>
 <LI>Implementación del complemento bajo la forma addon template y bajo  el repositorio de GitHub.
 </UL>
 
-<H2>26. v3.0.1 (04/01/2018)</H2>
+<H2>27. v3.0.1 (04/01/2018)</H2>
 <UL>
 <LI>Corrección de la no visualización  del menú "Opciones de configuración del complemento".
 <LI>Añadida la Directiva para la compatibilidad con Python 3.
 </UL>
 
-<H2>27. v3.0 (11/2017)</H2>
+<H2>28. v3.0 (11/2017)</H2>
 <UL>
 <LI>Compatibilidad con Audacity 2.2.0,
 <LI>Puesta en marcha de un interceptor de las teclas del teclado en reemplazo de un temporizador de monitoreo,
@@ -242,30 +274,30 @@ Se corrigió el historial de cambios del complemento.
 <LI>Actualizado el manual del usuario.
 </UL>
 
-<H2>28. v2.3 (08/2017)</H2>
+<H2>29. v2.3 (08/2017)</H2>
 <UL>
 <LI>Script "alt+control+f4" para habilitar o deshabilitar el anuncio de cambios en la selección,
 <LI>Compatibilidad con Audacity v2.1.3,
 <LI>Reanudación del código.
 </UL>
 
-<H2>29. v2.2 (06/2015)</H2>
+<H2>30. v2.2 (06/2015)</H2>
 <UL>
 <LI>Reelaboración completa del código
 </UL>
 
-<H2>30. v2.1 (10/2014)</H2>
+<H2>31. v2.1 (10/2014)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2014.3
 <LI>Compatibilidad con Audacity v2.06
 </UL>
 
-<H2>31. v2.0 (05/2014)</H2>
+<H2>32. v2.0 (05/2014)</H2>
 <UL>
 <LI>Puesta en marcha de un monitoreo de los campos posición y selección para anunciar los cambios.
 </UL>
 
-<H2>32. v1.0 (01/2014)</H2>
+<H2>33. v1.0 (01/2014)</H2>
 <UL>
 <LI>Creación del complemento.
 </UL>

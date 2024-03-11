@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 13.3-dev44</title>
+<title>NVDA global commands extension 13.3-dev52</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -42,6 +42,7 @@ What's new:
 <LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
 <LI>the volume level is announced when an application is selected in the "Audio Source Manager" dialog.
 <LI>the "Improvement of echo per word" functionality is removed due to reported slowdowns and problems with editing notes in Braille with Musescore.
+<LI>the installation of the "soundSplitter" add-on is reported because it risks causing the add-on to malfunction.
 </UL>
 
 <P>
@@ -69,6 +70,7 @@ Development:
 <LI>renaming of the "psutil" library to "psutilEx" to avoid import conflicts of the same library between extensions.
 <LI>renaming of the "win32" library to "win32Ex" to avoid import conflicts of the same library between extensions.
 <LI>update of the pycaw library to version v20240210
+<LI>updated markdown2 to version 2.4.13.
 <LI>resumption of the code to highlight in separate modules the parts of NVDA code which have been modified to achieve the functionalities and indications in the user manual of these modifications.
 </UL>
 

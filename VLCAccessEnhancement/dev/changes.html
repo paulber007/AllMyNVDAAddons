@@ -5,19 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>VLC multimedia player: Accessibility enhancements 2.11-dev1</title>
+<title>VLC multimedia player: Accessibility enhancements 2.11-dev17</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>VLC multimedia player: Accessibility enhancements - History</H1>
 <FONT SIZE="4">
-<I>Author: paulber19 with the very active participation of Daniel Poiraud.</I><BR>
+<I>Author: paulber19 (paulber19@laposte.net) with the very active participation of Daniel Poiraud.</I><BR>
 </FONT></CENTER>
 
 <P>
-URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git">GitHub repository: https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git">https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Download:
@@ -32,12 +29,28 @@ Download:
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/VLCAccessEnhancement/dev">Development Version</A>
 </UL>
 
-<H2>1. Version 2.11 (March/06/2023)</H2>
+<H2>1. Version 2.11 (March/27/2024)</H2>
+<P>
+Compatibility:
+</P>
+<UL>
+<LI>Compatibility with NVDA 2024.1
+<LI>NVDA versions prior to 2022.1 are no longer supported.
+</UL>
+
+<P>
+What's new:
+</P>
+<UL>
+<LI>according to the addon store since NVDA 2023.2, it is now possible to update the extension with an incompatible version.
+<LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
+</UL>
+
 <P>
 Bug fixes:
 </P>
 <UL>
-<LI>the extension now initializes correctly when playing a video file from Windows Explorer.
+<LI>improved initialization of the extension when playback of a video file is started from Windows Explorer and the cursor remains on the Explorer. But doesn't work in all cases.
 </UL>
 
 <H2>2. Version 2.10 (February/18/2023)</H2>

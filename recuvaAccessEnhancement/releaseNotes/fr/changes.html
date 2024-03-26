@@ -5,42 +5,56 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Logiciel de rrécupération de fichiers Recuva: complément d'accessibilité 1.7</title>
+<title>Logiciel de rrécupération de fichiers Recuva: complément d'accessibilité 1.8</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Logiciel de récupération de fichiers Recuva: complément d'accessibilité - Historique</H1>
 <FONT SIZE="4">
-<I>Auteur : paulber19</I><BR>
+<I>Auteur : paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
 
 <P>
-URL : <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git">Dépot GitHub : https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git">https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Téléchargement :
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.7.nvda-addon">Version stable actuelle : 1.7</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.6.nvda-addon">Version stable précédente : 1.6</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.8.nvda-addon">Version stable actuelle : 1.8</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.7.nvda-addon">Version stable précédente : 1.7</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev">versions de développement</A>
-<P></P>
 </UL>
 
-<OL>
-<LI>v1.7 (14/02/2023) +
-Compatibilité avec NVDA 2023.1
-<P></P>
-<LI>v1.6 (31/05/2022) +
-</OL>
+<H2>1. v1.8 (25/03/2024)</H2>
+<P>
+Compatibilité avec NVDA 2024.1
+</P>
+<P>
+Nouveautés :
+</P>
+<UL>
+<LI>prise en compte du mode "Parole à la demande" introduit dans nvda 2024.1: tous les scripts annonçant une information vocaliseront cette information. Dans ce mode, tous Les autres scripts resteront muets.
+<LI>compatibilité de l'extension avec la version 64 bits de Recuva.
+</UL>
 
+<P>
+Développement :
+</P>
+<UL>
+<LI>utilisation du décorateur scriptHandler.script.
+<LI>suppression du code spécifique aux versions antérieures à NVDA 2022.1.
+</UL>
+
+<H2>2. v1.7 (14/02/2023)</H2>
+<P>
+Compatibilité avec NVDA 2023.1
+</P>
+<H2>3. v1.6 (31/05/2022)</H2>
 <UL>
 <LI>correction de l'impossibilité d'afficher l'historique  de l'extension à l'aide du bouton "Voir l'historique".
 </UL>
 
-<H2>1. v1.5 (27/01/2022)</H2>
+<H2>4. v1.5 (27/01/2022)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2022.1,
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -54,38 +68,38 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée qquand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>2. v1.4 (04/11/2021)</H2>
+<H2>5. v1.4 (04/11/2021)</H2>
 <P>
 compatibilité avec NVDA 2021.3. Les versions de NVDA antérieures à la version  2020.4 ne sont pas supportées.
 </P>
-<H2>3. v1.3 (22/06/2021)</H2>
+<H2>6. v1.3 (22/06/2021)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2021.1. Les versions de NVDA antérieures à la version  2019.3 ne sont pas supportées.
 <LI>suppression du code spécifique à Python 2.7.
 </UL>
 
-<H2>4. v1.2.1 (04/02/2021)</H2>
+<H2>7. v1.2.1 (04/02/2021)</H2>
 <P>
 Ajout traduction arabe
 </P>
-<H2>5. v1.2 (29/12/2020)</H2>
+<H2>8. v1.2 (29/12/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.4
 <LI>ajout du bouton "Voir l'historique" dans la catégorie "Mise à jour " des paramètres de l'extension.
 </UL>
 
-<H2>6. v1.1.1 (29/10/2020)</H2>
+<H2>9. v1.1.1 (29/10/2020)</H2>
 <P>
 Correction de la documentation
 </P>
-<H2>7. v1.1 (27/10/2020)</H2>
+<H2>10. v1.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.3,
 <LI>nettoyage du code (corrections des erreurs détectées par Flake8)
 <LI>ajout du bouton "Quoi de neuf" dans le dialogue proposant l'installation d'une nouvelle mise à jour.
 </UL>
 
-<H2>8. v1.0 (28/07/2020)</H2>
+<H2>11. v1.0 (28/07/2020)</H2>
 <P>
 Création de l'extension.
 </P>

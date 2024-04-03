@@ -5,34 +5,55 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>VLC multimedia player: Accessibility enhancements 2.10</title>
+<title>VLC multimedia player: Accessibility enhancements 2.11</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>VLC multimedia player: Accessibility enhancements - History</H1>
 <FONT SIZE="4">
-<I>Author: paulber19 with the very active participation of Daniel Poiraud.</I><BR>
+<I>Author: paulber19 (paulber19@laposte.net) with the very active participation of Daniel Poiraud.</I><BR>
 </FONT></CENTER>
 
 <P>
-URL: <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git">GitHub repository: https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git">https://github.com/paulber19/VLCAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Download:
 </P>
 <UL>
-<LI>stable version: 2.10
+<LI>stable version: 2.11
  <UL>
- <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/VLCAccessEnhancement/VLCAccessEnhancement-2.10.nvda-addon">download server 1</A>
- <LI><A HREF="http://angouleme.avh.asso.fr/fichesinfo/fiches_nvda/data/VLCAccessEnhancement-2.10.nvda-addon">download server 2</A>
+ <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/VLCAccessEnhancement/VLCAccessEnhancement-2.11.nvda-addon">download server 1</A>
+ <LI><A HREF="http://angouleme.avh.asso.fr/fichesinfo/fiches_nvda/data/VLCAccessEnhancement-2.11.nvda-addon">download server 2</A>
  </UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/VLCAccessEnhancement/VLCAccessEnhancement-2.9.1.nvda-addon">Previous Version: 2.9.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/VLCAccessEnhancement/VLCAccessEnhancement-2.10.nvda-addon">Previous Version: 2.10</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/VLCAccessEnhancement/dev">Development Version</A>
 </UL>
 
-<H2>1. Version 2.10 (February/18/2023)</H2>
+<H2>1. Version 2.11 (March/27/2024)</H2>
+<P>
+Compatibility:
+</P>
+<UL>
+<LI>Compatibility with NVDA 2024.1
+<LI>NVDA versions prior to 2022.1 are no longer supported.
+</UL>
+
+<P>
+What's new:
+</P>
+<UL>
+<LI>according to the addon store since NVDA 2023.2, it is now possible to update the extension with an incompatible version.
+<LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
+</UL>
+
+<P>
+Bug fixes:
+</P>
+<UL>
+<LI>improved initialization of the extension when playback of a video file is started from Windows Explorer and the cursor remains on the Explorer. But doesn't work in all cases.
+</UL>
+
+<H2>2. Version 2.10 (February/18/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
@@ -44,7 +65,7 @@ Bug fixes:
 <LI>correction of the impossibility of using VLC with a language not provided for in the extension.
 </UL>
 
-<H2>2. Version 2.9 (May/30/2022)</H2>
+<H2>3. Version 2.9 (May/30/2022)</H2>
 <UL>
 <LI>the list of recent files with their elapsed times is now correctly found.
 <LI>announcement of the volume during an increase or decrease request, when no media is in progress.
@@ -52,7 +73,7 @@ Bug fixes:
 <LI>fixed inability to view extension history with "View History" button.
 </UL>
 
-<H2>3. Version 2.8 (February/04/2022)</H2>
+<H2>4. Version 2.8 (February/04/2022)</H2>
 <UL>
 <LI>compatibility with NVDA 2022.1
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -66,22 +87,22 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>4. Version 2.7 (December/01/2021)</H2>
+<H2>5. Version 2.7 (December/01/2021)</H2>
 <P>
 compatibility with NVDA 2021.3
 </P>
-<H2>5. Version 2.6 (June/22/2021)</H2>
+<H2>6. Version 2.6 (June/22/2021)</H2>
 <UL>
 <LI>Compatibility with NVDA 2021.1 Versions of NVDA prior to 2019.3 are no longer supported.
 <LI>code removal for Python 2
 </UL>
 
-<H2>6. Version 2.5.2 (January/09/2021)</H2>
+<H2>7. Version 2.5.2 (January/09/2021)</H2>
 <UL>
 <LI>added Turkish translation
 </UL>
 
-<H2>7. Version 2.5.1 (january/09/2021)</H2>
+<H2>8. Version 2.5.1 (january/09/2021)</H2>
 <P>
 Added russian translation
 </P>
@@ -89,55 +110,55 @@ Added russian translation
 <LI>added Turkish translation
 </UL>
 
-<H2>8. Version 2.5 (12/19/2020)</H2>
+<H2>9. Version 2.5 (12/19/2020)</H2>
 <UL>
 <LI>Compatibility with NVDA 2020.4.
 <LI>added download links in the add-on's history.
 <LI>addition of the "View history" button in the "Update" category of the add-on's parameters.
 </UL>
 
-<H2>9. Version 2.4 (10/27/2020)</H2>
+<H2>10. Version 2.4 (10/27/2020)</H2>
 <UL>
 <LI>Compatibility with NVDA 2020.3.
 <LI>code recovery to avoid "garbage collector" errors.
 <LI>addition of the "What's new" button in the dialog which offers a new version to download.
 </UL>
 
-<H2>10. Version 2.3 (07/28/2020)</H2>
+<H2>11. Version 2.3 (07/28/2020)</H2>
 <P>
 Compatibility with NVDA 2020.2
 </P>
-<H2>11. Version 2.2.1 (06/15/2020)</H2>
+<H2>12. Version 2.2.1 (06/15/2020)</H2>
 <P>
 Fixed issue with NVDA stopping during fast forward by repeated small jumps.
 </P>
-<H2>12. Version 2.2 (05/18/2020)</H2>
+<H2>13. Version 2.2 (05/18/2020)</H2>
 <UL>
 <LI>correction of the regression to resume media playback.
 <LI>pausing the media during a forward jump in the last 3 seconds to avoid stopping the media by VLC.
 </UL>
 
-<H2>13. Version 2.1.1 (04/03/2020)</H2>
+<H2>14. Version 2.1.1 (04/03/2020)</H2>
 <P>
 updating of history of add-on's changes.
 </P>
-<H2>14. Version 2.1 (04/03/2020)</H2>
+<H2>15. Version 2.1 (04/03/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.1,
 <LI>compliance for NVDA extension compatibility test
 </UL>
 
-<H2>15. Version 2.0.2 (02/14/2020)</H2>
+<H2>16. Version 2.0.2 (02/14/2020)</H2>
 <P>
 Fixed extension download link.
 </P>
-<H2>16. Version 2.0.1 (02/09/2020)</H2>
+<H2>17. Version 2.0.1 (02/09/2020)</H2>
 <UL>
 <LI>correction of the non-presentation of the message asking the user to stop VLC.
 <LI>deletion of trace instructions.
 </UL>
 
-<H2>17. Version 2.0 (02/07/2020)</H2>
+<H2>18. Version 2.0 (02/07/2020)</H2>
 <UL>
 <LI>Compatibility with NVDA 2019.3
 <LI>added automatic update of the extension
@@ -157,17 +178,17 @@ Fixed extension download link.
 <LI>rearrangement of the menu of parameter setting of the extension.
 </UL>
 
-<H2>18. Version 1.3.1 (06/11/2019)</H2>
+<H2>19. Version 1.3.1 (06/11/2019)</H2>
 <UL>
 <LI>fixed the file buildVars.py
 <LI>added Spanish translation
 </UL>
 
-<H2>19. Version 1.3 (06/01/2019)</H2>
+<H2>20. Version 1.3 (06/01/2019)</H2>
 <P>
 Compatibility with NVDA 2019.2.0 (updating the manifest.ini).
 </P>
-<H2>20. Version 1.2 (03/06/2019)</H2>
+<H2>21. Version 1.2 (03/06/2019)</H2>
 <UL>
 <LI>replacement of buttons "yes" and "no" by the buttons "ok" and "cancel" in the boxes for confirmation to be able to use the key "Échapp".
 <LI>replacement of the term "add-on" by extension "(imposed by the translators of NVDA).
@@ -175,14 +196,14 @@ Compatibility with NVDA 2019.2.0 (updating the manifest.ini).
 <LI>preparation of the compatibility with python3.
 </UL>
 
-<H2>21. Version 1.1 (12/21/2018)</H2>
+<H2>22. Version 1.1 (12/21/2018)</H2>
 <UL>
 <LI>correction of non-recovery of the playback when the media list recent has only one media,
 <LI>corrections to the documentation,
 <LI>compatibility with alpha versions 2019.1 of NVDA.
 </UL>
 
-<H2>22. Version 1.0 (10/29/2018)</H2>
+<H2>23. Version 1.0 (10/29/2018)</H2>
 <P>
 To avoid confusion with other extensions, for VLC, the name of the extension is to be renamed "VLCAccessEnhancement" and in the extensions manager, it is called "VLC media Player: add-ins of accessibility".
 </P>
@@ -206,8 +227,8 @@ Internal change:
 <LI>renaming of the menu configuration of the extension.
 </UL>
 
-<H2>23. Previous history</H2>
-<H3>23.1. Version 3.0 (19/06/2018)</H3>
+<H2>24. Previous history</H2>
+<H3>24.1. Version 3.0 (19/06/2018)</H3>
 <P>
 This version is compatible with VLC 3.0, which is incompatible with the old versions.
 </P>
@@ -229,17 +250,17 @@ Changes:
 <LI>the volume level is now announced at each change.
 </UL>
 
-<H3>23.2. Version 2.3.1</H3>
+<H3>24.2. Version 2.3.1</H3>
 <P>
 correction of bugs (regression of "NVDA + Control + h")
 </P>
-<H3>23.3. Version 2.3</H3>
+<H3>24.3. Version 2.3</H3>
 <UL>
 <LI>added scripts for the revival of reading
 <LI>addition of the management of a configuration file for the extension
 </UL>
 
-<H3>23.4. Version 2.2</H3>
+<H3>24.4. Version 2.2</H3>
 <UL>
 <LI>configuration of the file vlcrc to change the keys of speed variations,
 <LI>announcement of the time read during breaks, reading,
@@ -249,7 +270,7 @@ correction of bugs (regression of "NVDA + Control + h")
 <LI>change the dialog of the extension of the "Go to time".
 </UL>
 
-<H3>23.5. Changes to version 2.0</H3>
+<H3>24.5. Changes to version 2.0</H3>
 <P>
 First multilingual version.
 </P>

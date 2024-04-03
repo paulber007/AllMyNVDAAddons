@@ -5,34 +5,47 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Éditeur de texte Microsoft Word: complément d'accessibilité 3.4</title>
+<title>Éditeur de texte Microsoft Word: complément d'accessibilité 3.5</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Éditeur de texte Microsoft Word: complément d'accessiblité - Historique</H1>
 <FONT SIZE="4">
-<I>Auteur : paulber19</I><BR>
+<I>Auteur : paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
 
 <P>
-URL : <A HREF="mailto:paulber19@laposte.net">paulber19@laposte.net</A>
-</P>
-<P>
-<A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">Dépot GitHub : https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git</A>
+URL: <A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git</A>
 </P>
 <P>
 Téléchargement :
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.4.nvda-addon">Version stable actuelle : 3.4</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.3.4.nvda-addon">Version stable précédente : 3.3.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Version stable actuelle : 3.5</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.4.nvda-addon">Version stable précédente : 3.4</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/wordAccessEnhancement/dev">versions de développement</A>
 </UL>
 
-<H2>1. v3.4 (15/02/2023)</H2>
+<H2>1. v3.5 (28/03/2024)</H2>
+<P>
+Nouveautés : 
+</P>
+<UL>
+<LI>Compatibilité avec NVDA 2024.1 et abandon du support des versions de NVDA antérieures à la 2023.1.
+<LI>prise en compte du mode "Parole à la demande" introduit dans nvda 2024.1: tous les scripts annonçant une information vocaliseront cette information. Dans ce mode, tous Les autres scripts resteront muets.
+</UL>
+
+<P>
+Développement :
+</P>
+<UL>
+<LI>suppression du code spécifique aux versions antérieures à NVDA 2023.1.
+</UL>
+
+<H2>2. v3.4 (15/02/2023)</H2>
 <P>
 Compatibilité avec NVDA 2023.1
 </P>
-<H2>2. v3.3 (24/05/2022)</H2>
+<H2>3. v3.3 (24/05/2022)</H2>
 <P>
 Fonctionnalités:
 </P>
@@ -61,7 +74,7 @@ Changements:
 <LI>suppression du message qui demandait, pour un bon fonctionnement de l'extension, de décocher l'option "Utiliser UI Automation pour accéder aux Contrôles des documents Microsoft Word  quand disponible".
 </UL>
 
-<H2>3. v3.2 (04/02/2022)</H2>
+<H2>4. v3.2 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2022.1.
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -75,11 +88,11 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée quand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>4. v3.1 (19/12/2021)</H2>
+<H2>5. v3.1 (19/12/2021)</H2>
 <P>
 Compatibilité avec NVDA 2021.3. Les versions de NVDA antérieures à 2020.4 ne sont plus supportées.
 </P>
-<H2>5. v3.0 (23/06/2021)</H2>
+<H2>6. v3.0 (23/06/2021)</H2>
 <P>
 Compatibilité avec NVDA 2021.1. Les versions de NVDA antérieures à 2019.3 ne sont plus supportées.
 </P>
@@ -113,7 +126,7 @@ Autres changements :
 <LI>suppression du code spécifique à Python 2.7.
 </UL>
 
-<H2>6. v2.3 (31/12/2020)</H2>
+<H2>7. v2.3 (31/12/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.4.
 <LI>ajout de la lecture automatique des notes de fin.
@@ -122,11 +135,11 @@ Autres changements :
 <LI>navigation en boucle optionelle  en mode navigation.
 </UL>
 
-<H2>7. v2.2.1 (09/12/2020)</H2>
+<H2>8. v2.2.1 (09/12/2020)</H2>
 <P>
 mise à  jour de la traduction turque.
 </P>
-<H2>8. v2.2 (06/12/2020)</H2>
+<H2>9. v2.2 (06/12/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.3.
 <LI>correction du conflit de la touche de navigation  rapide pour les signets (,"): "-" par défaut et "¡" pour clavier espagnol.
@@ -135,11 +148,11 @@ mise à  jour de la traduction turque.
 <LI>nettoyage du code avec validation Flake8.
 </UL>
 
-<H2>9. v2.1 (28/07/2020)</H2>
+<H2>10. v2.1 (28/07/2020)</H2>
 <P>
 Compatibilité avec NVDA 2020.2
 </P>
-<H2>10. v2.0 (16/04/2020)</H2>
+<H2>11. v2.0 (16/04/2020)</H2>
 <UL>
 <LI>mise en compatibilité avec NVDA 2020.1.
 <LI>ajout des scripts pour se déplacer à la première ou dernière cellule du tableau.
@@ -162,13 +175,13 @@ Changements:
 <LI>le geste de commande "windows+alt+;" est remplacé par "windows+alt+l".
 </UL>
 
-<H2>11. v1.0.1 (07/03/2020)</H2>
+<H2>12. v1.0.1 (07/03/2020)</H2>
 <UL>
 <LI>correction de la documentation.
 <LI>traduction de l'extension en Espagnol par Gunther Melendez, changements par Rémy Ruiz.
 </UL>
 
-<H2>12. v1.0 (07/02/2020)</H2>
+<H2>13. v1.0 (07/02/2020)</H2>
 <P>
 Cette extension change de nom  pour éviter toute confusion avec d'autres extensions. Sa version repart à 1.0.
 </P>
@@ -191,19 +204,19 @@ Cette extension change de nom  pour éviter toute confusion avec d'autres extens
 <LI>recherche de mise à jour automatique.
 </UL>
 
-<H2>13. v3.1 (10 Avril 2016)</H2>
+<H2>14. v3.1 (10 Avril 2016)</H2>
 <UL>
 <LI>ajout de l'annonce de la colonne pour la commande clavier "key_line_page"
 </UL>
 
-<H2>14. v3.0 (10 Mars 2016)</H2>
+<H2>15. v3.0 (10 Mars 2016)</H2>
 <UL>
 <LI>suppression des scripts de déplacement rapide (doublon avec le mode de navigation de NVDA),
 <LI>suppression des scripts pour annoncer au second appui le titre des lignes ou colonnes (utilisation maintenant de l'option incluse dans  NVDA),
 <LI>compatibilité avec NVDA 2016.1.
 </UL>
 
-<H2>15. v2.5 (22 Juin 2015) (non diffusée)</H2>
+<H2>16. v2.5 (22 Juin 2015) (non diffusée)</H2>
 <UL>
 <LI>changement de commande clavier: "nvda+control+f6" en "alt+effacement" et nvda + numpad effacement".
 <LI>indication de la position par rapport au bord gauche et supérieur (commande "alt + effacement", "alt + numpad effacement")
@@ -211,20 +224,20 @@ Cette extension change de nom  pour éviter toute confusion avec d'autres extens
 <LI>compatibilité avec le mode navigation de NVDA (changement des raccourcis de navigation)
 </UL>
 
-<H2>16. v2.4 (11 Juin 2015)</H2>
+<H2>17. v2.4 (11 Juin 2015)</H2>
 <UL>
 <LI>correction de blocage  apparu depuis NVDA 2015.1
 <LI>ajout du script pour sélectionner le mode de navigation rapide
 </UL>
 
-<H2>17. v2.3 (14 Décembre 2014)</H2>
+<H2>18. v2.3 (14 Décembre 2014)</H2>
 <UL>
 <LI>ajout commande pour déplacer le focus à la précédente ou prochaine phrase ("alt+ Flèche haut ou bas")
 <LI>correction de documentation et traduction
 <LI>correction manifest.ini
 </UL>
 
-<H2>18. v2.2 (1 15 Novembre 2014)</H2>
+<H2>19. v2.2 (1 15 Novembre 2014)</H2>
 <UL>
 <LI>ajout de la navigation rapide
 <LI>séparation en deux catégories des objets graphique (ceux de la couche texte, ceux de la couche dessin)
@@ -232,7 +245,7 @@ Cette extension change de nom  pour éviter toute confusion avec d'autres extens
 <LI>ajout du script "nvda+alt+e" pour lire la note de fin ou de bas de page  au curseur
 </UL>
 
-<H2>19. v2.1 (1 Octobre 2014)</H2>
+<H2>20. v2.1 (1 Octobre 2014)</H2>
 <UL>
 <LI>ajout du bouton "Rechercher et afficher",
 <LI>ajout des raccourcis pour les boutons des boites de dialogue,
@@ -241,14 +254,14 @@ Cette extension change de nom  pour éviter toute confusion avec d'autres extens
 <LI>correction du défaut de sélection sur appui sur bouton "Rechercher et copier dans presse-papier"
 </UL>
 
-<H2>20. v2.0 (24 Septembre 2014)</H2>
+<H2>21. v2.0 (24 Septembre 2014)</H2>
 <UL>
 <LI>compatibilité avec La version 2014.3
 <LI>ajout des scripts pour tableaux
 <LI>ajout du script d'activation ou désactivation du saut des paragraphes vides
 </UL>
 
-<H2>21. v1.0 (24 janvier 2014)</H2>
+<H2>22. v1.0 (24 janvier 2014)</H2>
 <UL>
 <LI>Création de l'extension (anciennement module complémentaire).
 </UL>

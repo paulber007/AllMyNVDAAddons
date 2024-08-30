@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>NVDA global commands extension 13.4-dev18</title>
+<title>NVDA global commands extension 13.4-dev23</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
@@ -34,7 +34,7 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. v13.4 (August/12/2024)</H2>
+<H2>1. v13.4 (August/30/2024)</H2>
 <P>
 Compatibility with NVDA 2024.2 and NVDA 2024.3.
 </P>
@@ -44,6 +44,7 @@ Changes:
 <UL>
 <LI>in navigation mode in HTML documents, the letter "j" replaces the letter "p" for moving from paragraph to paragraph, the latter now being used by NVDA 2024.2.
 <LI>taking into account the new parameters "Unicode Normalization" and "Report 'Normalized' when navigating by character" introduced in NVDA 2024.3.
+<LI>Configuration of the delay waiting for repetition of the same input gesture in the "Advanced" category is removed for versions of NVDA higher than NVDA 2024.4. This is now included in the NVDA "Keyboard" category.
 </UL>
 
 <P>
@@ -51,6 +52,11 @@ Bug fixes:
 </P>
 <UL>
 <LI>upgraded the script that extends the NVDA clipboard report script ("NVDA+c" input gesture) which was changed in NVDA 2024.1.
+<LI>"text analysis" functionality:
+ <UL>
+ <LI>no display of the configuration menu when the functionality is not installed.
+ <LI>clearing the feature configuration when it is uninstalled.
+ </UL>
 </UL>
 
 <P>
@@ -60,6 +66,7 @@ Development:
 <LI>use of the pycaw and psutil libraries now integrated into NVDA 2024.2.
 <LI>resuming the code to remove the configuration of features when uninstalling them.
 <LI>resuming the code to load the audioCore.py module if necessary.
+<LI>use of the "pre_speech" extension point introduced in NVDA 2024.2 to avoid patching the NVDA "speech.speak" method.
 </UL>
 
 <H2>2. v13.3 (March/20/2024)</H2>

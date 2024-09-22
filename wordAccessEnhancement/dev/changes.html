@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Microsoft Word text editor:   accessibility enhancement 3.6-dev23</title>
+<title>Microsoft Word text editor:   accessibility enhancement 3.6-dev40</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Microsoft Word text editor:   accessibility enhancement - History</H1>
@@ -28,16 +28,30 @@ Download:
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v3.6 (September/05/2024)</H2>
+<H2>1. v3.6 (September/21/2024)</H2>
 <P>
 compatibility with NVDA 2024.2, 2024.3 and 2024.4.
 What's new:
 </P>
 <UL>
+<LI>improvement regarding comments:
+ <UL>
+ <LI>added a "windows + alt +o" script to announce or display comments replies under the cursor.
+ <LI>added a "windows + alt +y" script to reply to the comment under the cursor.
+ <LI>possibility of indicating the name of the author when inserting a comment.
+ <LI>in the element insertion dialog, added the "Reply to comment" element to reply to the comment under the cursor.
+ <LI>in the dialogue listing the comments:
+  <UL>
+  <LI>added a button to read the replies to the comment.
+  <LI>added a button to reply to the comment.
+  <LI>added a button to modify the author's name.
+  </UL>
+ </UL>
 <LI>moving from sentence to sentence now works correctly when UIA is used.
 <LI>the scripts for moving from paragraph to paragraph with the possibility of skipping empty paragraphs are brought into compliance with those of NVDA.
 <LI>The script for reading the text of the element under the cursor (footnote or endnote) now allows, on the second press of the command gesture, to modify this text.
 <LI>automatic reading of footnotes or endnotes is now operational when the "Use UI Automation to access Microsoft Word Document Controls" option is either "When appropriate" or "Always".
+<LI>added a script (without input gesture) to set the option "Use UI Automation to access Microsoft Word Document Controls" without needing to access the "Advanced" category of NVDA settings.
 </UL>
 
 <P>
@@ -46,6 +60,7 @@ Bug fixes:
 <UL>
 <LI>correction in the documentation of the horizontal and vertical movement keys in "table command layer" mode activated.
 <LI>deleting an endnote or footnote no longer causes an error when automatic reading of notes is activated.
+<LI>the text associated with the comment is now correctly displayed when there is only one comment listed.
 </UL>
 
 <P>

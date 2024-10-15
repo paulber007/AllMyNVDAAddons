@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Éditeur de texte Microsoft Word: complément d'accessibilité 3.5</title>
+<title>Éditeur de texte Microsoft Word: complément d'accessibilité 3.6</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Éditeur de texte Microsoft Word: complément d'accessiblité - Historique</H1>
@@ -20,9 +20,53 @@ URL: <A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">h
 Téléchargement :
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Version stable actuelle : 3.5</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.4.nvda-addon">Version stable précédente : 3.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.6.nvda-addon">Version stable actuelle : 3.6</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Version stable précédente : 3.5</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/wordAccessEnhancement/dev">versions de développement</A>
+</UL>
+
+<OL>
+<LI>v3.6 (11/10/2024) +
+compatibilité avec NVDA 2024.2, 2024.3 et 2024.4.
+Nouveautés:
+</OL>
+
+<UL>
+<LI>amélioration concernant les commentaires:
+ <UL>
+ <LI>ajout d'un script "windows + alt +o" pour annoncer ou afficher les réponses au commentaire sous le curseur.
+ <LI>ajout d'un script "windows + alt +y" pour répondre au commentaire sous le curseur.
+ <LI>possibilité d'indiquer le nom de l'auteur lors de l'insertion d'un commentaire.
+ <LI>dans le dialogue d'insertion d'élément, ajout de l'élément "Réponse au commentaire" pour répondre au commentaire sous le curseur.
+ <LI>dans le dialogue recensant les commentaires :
+  <UL>
+  <LI>ajout d'un bouton pour lire les réponses au commentaire .
+  <LI>ajout d'un bouton pour répondre au commentaire.
+  <LI>ajout d'un bouton pour modifier le nom de l'auteur.
+ les déplacements de phrase en phrase fonctionnent maintenant correctement quand l'UIA est utilisée.
+  </UL>
+ </UL>
+<LI>les scripts de déplacement de paragraphe en paragraphe avec la possibilité de sauter les paragraphes vides sont mis en conformité  avec ceux de NVDA.
+<LI>Le script de lecture du texte de l'élément sous le curseur    (note de bas de page  ou note de fin) permet maintenant, au second appui du geste de commande, de modifier  ce text.
+<LI>la lecture automatique des notes de bas de page ou de fin est maintenant opérationnelle quand l'option "Utiliser UI Automation pour accéder aux Contrôles des documents Microsoft Word  " est soit sur "Lorsque c'est adapté" ou "Toujours".
+<LI>ajout d'un script (sans geste de commande) pour définir l'option "Utiliser UI Automation pour accéder aux Contrôles des documents Microsoft Word  " sans avoir besoin d'accéder à la catégorie "Avancé" des paramètres de NVDA.
+</UL>
+
+<P>
+Corrections de bogues:
+</P>
+<UL>
+<LI>correction dans la documentation  des touches de déplacement horizontal et vertical en mode "couche de commande pour tableau" activée.
+<LI>la suppression d'une note de fin ou de bas de page ne provoque plus d'erreur quand la lecture automatique des notes est activée.
+<LI>le texte associé au commentaire  est maintenant correctement affiché lorsqu'il n'y a qu'un seul commentaire recensé.
+</UL>
+
+<P>
+Changements:
+</P>
+<UL>
+<LI>les scripts concernant les déplacements de phrase en phrase  ou de paragraphe en paragraphe ne n'apparaissent plus dans la catégorie des gestes de commandes de l'extension car ils sont déclanchés par des commandes Word non modifiables.
+<LI>la touche "Échapp" ne permet plus de désactiver le mode "couche de commande pour tableau".
 </UL>
 
 <H2>1. v3.5 (28/03/2024)</H2>

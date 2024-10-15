@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Microsoft Word text editor:   accessibility enhancement 3.5</title>
+<title>Microsoft Word text editor:   accessibility enhancement 3.6</title>
 </head>
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Microsoft Word text editor:   accessibility enhancement - History</H1>
@@ -20,15 +20,58 @@ URL: <A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">h
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Current stable version: 3.5</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.4.nvda-addon">Previous stable Version: 3.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.6.nvda-addon">Current stable version: 3.6</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Previous stable Version: 3.5</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/wordAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v3.5 (March/28/2024)</H2>
+<H2>1. v3.6 (October/11/2024)</H2>
+<P>
+compatibility with NVDA 2024.2, 2024.3 and 2024.4.
+What's new:
+</P>
+<UL>
+<LI>improvement regarding comments:
+ <UL>
+ <LI>added a "windows + alt +o" script to announce or display comments replies under the cursor.
+ <LI>added a "windows + alt +y" script to reply to the comment under the cursor.
+ <LI>possibility of indicating the name of the author when inserting a comment.
+ <LI>in the element insertion dialog, added the "Reply to comment" element to reply to the comment under the cursor.
+ <LI>in the dialogue listing the comments:
+  <UL>
+  <LI>added a button to read the replies to the comment.
+  <LI>added a button to reply to the comment.
+  <LI>added a button to modify the author's name.
+  </UL>
+ </UL>
+<LI>moving from sentence to sentence now works correctly when UIA is used.
+<LI>the scripts for moving from paragraph to paragraph with the possibility of skipping empty paragraphs are brought into compliance with those of NVDA.
+<LI>The script for reading the text of the element under the cursor (footnote or endnote) now allows, on the second press of the command gesture, to modify this text.
+<LI>automatic reading of footnotes or endnotes is now operational when the "Use UI Automation to access Microsoft Word Document Controls" option is either "When appropriate" or "Always".
+<LI>added a script (without input gesture) to set the option "Use UI Automation to access Microsoft Word Document Controls" without needing to access the "Advanced" category of NVDA settings.
+</UL>
+
+<P>
+Bug fixes:
+</P>
+<UL>
+<LI>correction in the documentation of the horizontal and vertical movement keys in "table command layer" mode activated.
+<LI>deleting an endnote or footnote no longer causes an error when automatic reading of notes is activated.
+<LI>the text associated with the comment is now correctly displayed when there is only one comment listed.
+</UL>
+
+<P>
+Changes:
+</P>
+<UL>
+<LI>scripts concerning movements from sentence to sentence or from paragraph to paragraph no longer appear in the add-on 's input gestures category because they are triggered by non-modifiable Word commands.
+<LI>the "Escape" key no longer allows you to deactivate the "table command layer" mode.
+</UL>
+
+<H2>2. v3.5 (March/28/2024)</H2>
 <P>
 What's new:
 </P>
@@ -44,11 +87,11 @@ Development :
 <LI>removal of code specific to versions prior to NVDA 2023.1.
 </UL>
 
-<H2>2. v3.4 (February/15/2023)</H2>
+<H2>3. v3.4 (February/15/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
-<H2>3. v3.3 (May/24/2022)</H2>
+<H2>4. v3.3 (May/24/2022)</H2>
 <P>
 Features:
 </P>
@@ -77,7 +120,7 @@ Changes:
 <LI>removal of the message which asked, for a good functioning of the extension, to uncheck the option "Use UI Automation to access the Controls of Microsoft Word documents when available".
 </UL>
 
-<H2>4. v3.2 (February/04/2022)</H2>
+<H2>5. v3.2 (February/04/2022)</H2>
 <UL>
 <LI>Compatibility with NVDA 2022.1.
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -90,11 +133,11 @@ Changes:
 <LI>during an automatic update of the extension, it no longer asks the user if he wants to keep the current configuration parameters of the extension.
 </UL>
 
-<H2>5. v3.1 (December/19/2021)</H2>
+<H2>6. v3.1 (December/19/2021)</H2>
 <P>
 Compatibility with NVDA 2021.3. Versions of NVDA prior to 2020.4 are no longer supported.
 </P>
-<H2>6. v3.0 (June/23/2021)</H2>
+<H2>7. v3.0 (June/23/2021)</H2>
 <P>
 Compatibility with NVDA 2021.1. Versions of NVDA prior to 2019.3 are no longer supported.
 </P>
@@ -128,7 +171,7 @@ Other changes:
 <LI>removed code specific to Python 2.7.
 </UL>
 
-<H2>7. v2.3 (31/12/2020)</H2>
+<H2>8. v2.3 (31/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.4
 <LI>added automatic reading of endnotes.
@@ -137,11 +180,11 @@ Other changes:
 <LI>optional loop navigation in navigation mode.
 </UL>
 
-<H2>8. v2.2.1 (09/12/2020)</H2>
+<H2>9. v2.2.1 (09/12/2020)</H2>
 <P>
 updated Turkish translation.
 </P>
-<H2>9. v2.2 (06/12/2020)</H2>
+<H2>10. v2.2 (06/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.3
 <LI>fixed the conflict of the quick navigation key for bookmarks (, "):" - "by default and" ¡"for Spanish keyboard.
@@ -150,11 +193,11 @@ updated Turkish translation.
 <LI>code cleaning (corrections of errors detected by Flake8)
 </UL>
 
-<H2>10. v2.1 (28/07/2020)</H2>
+<H2>11. v2.1 (28/07/2020)</H2>
 <P>
 Compatibility with NVDA 2020.2
 </P>
-<H2>11. v2.0 (16/04/2020)</H2>
+<H2>12. v2.0 (16/04/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.1.
 <LI>add scripts to move to the first or last cell in the table.
@@ -171,13 +214,13 @@ Compatibility with NVDA 2020.2
 <P>
 Changes for the user: the navigation mode command keys and some command gestures have been modified to be compatible with a Qwerty keyboard.
 </P>
-<H2>12. v1.0.1 (07/03/2020)</H2>
+<H2>13. v1.0.1 (07/03/2020)</H2>
 <UL>
 <LI>correction of the documentation.
 <LI>translation of the addon in Spanish by Gunther Melendez, changes by Rémy Ruiz.
 </UL>
 
-<H2>13. v1.0 (07/02/2020)</H2>
+<H2>14. v1.0 (07/02/2020)</H2>
 <P>
 This add-on changes name to avoid confusion with other add-ons. His version starts with 1.0.
 </P>
@@ -197,19 +240,19 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>preparation of the compatibility to python 3.
 </UL>
 
-<H2>14. v3.1 (April 10, 2016)</H2>
+<H2>15. v3.1 (April 10, 2016)</H2>
 <UL>
 <LI>adding the announcement of the column for the keyboard command "key_line_page"
 </UL>
 
-<H2>15. v3.0 (10 March 2016)</H2>
+<H2>16. v3.0 (10 March 2016)</H2>
 <UL>
 <LI>removal scripts of a fast-moving (duplicate with the mode of navigation of NVDA),
 <LI>removal scripts to announce in the second support the title of the rows or columns (use now the option included in NVDA),
 <LI>compatibility with NVDA 2016.1.
 </UL>
 
-<H2>16. v2.5 (22 June 2015) (not released)</H2>
+<H2>17. v2.5 (22 June 2015) (not released)</H2>
 <UL>
 <LI>change the keyboard command: "nvda+control+f6" "alt+backspace" and nvda + numpad delete".
 <LI>indication of the position relative to the left and upper edge (command "alt + backspace"", "alt + numpad delete")
@@ -217,20 +260,20 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>compatibility mode with the navigation of NVDA (change navigation shortcuts)
 </UL>
 
-<H2>17. v2.4 (11 June 2015)</H2>
+<H2>18. v2.4 (11 June 2015)</H2>
 <UL>
 <LI>correction block appeared since NVDA 2015.1
 <LI>add the script to select the mode quick navigation
 </UL>
 
-<H2>18. v2.3 (14 December 2014)</H2>
+<H2>19. v2.3 (14 December 2014)</H2>
 <UL>
 <LI>add command to move the focus to the previous or next sentence ("alt+ up or down Arrow")
 <LI>correction of documentation and translation
 <LI>fixed manifest.ini
 </UL>
 
-<H2>19. v2.2 (1, November 15, 2014)</H2>
+<H2>20. v2.2 (1, November 15, 2014)</H2>
 <UL>
 <LI>added quick navigation
 <LI>separation into two categories of objects graph (those in the text layer, the drawing layer)
@@ -238,7 +281,7 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>add the script "nvda+alt+e" to read the note at the end or bottom of the page to the cursor
 </UL>
 
-<H2>20. v2.1 (1 October 2014)</H2>
+<H2>21. v2.1 (1 October 2014)</H2>
 <UL>
 <LI>added button "Find and view",
 <LI>adding shortcuts to the buttons of the dialog boxes,
@@ -247,14 +290,14 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>fixed default selection on pressing button "Search and copy to clipboard"
 </UL>
 
-<H2>21. v2.0 (24 September 2014)</H2>
+<H2>22. v2.0 (24 September 2014)</H2>
 <UL>
 <LI>compatibility with version 2014.3
 <LI>added scripts for tables
 <LI>added script for enabling or disabling the skip empty paragraphs
 </UL>
 
-<H2>22. v1.0 (24 January 2014)</H2>
+<H2>23. v1.0 (24 January 2014)</H2>
 <UL>
 <LI>Creation of the add-on
 </UL>

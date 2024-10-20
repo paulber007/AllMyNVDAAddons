@@ -9,32 +9,32 @@ lastAddonVersions = {
 		},
 	"audacityAccessEnhancement": {
 		"localURL": "audacityAccessEnhancement",
-		"release" : {"version": "3.2", "minimumNVDAVersion" : "2022.1", "lastTestedNVDAVersion": "2024.4"},
+		"release" : {"version": "3.2.1", "minimumNVDAVersion" : "2022.1", "lastTestedNVDAVersion": "2024.4"},
 		"dev" : {"version": None, "minimumNVDAVersion" : "2022.1", "lastTestedNVDAVersion": "2024.4"},
 		},
 	"notepadPlusPlusAccessEnhancement": {
 		"localURL" : "notepadPlusPlusAccessEnhancement",
-		"release" :{"version": "2.7", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
+		"release" :{"version": "2.7.1", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
 		"dev":{"version": None, "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4"},
 		},
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
-		"release":{"version": "13.4", "minimumNVDAVersion" : "2022.1", "lastTestedNVDAVersion": "2024.4"},
+		"release":{"version": "13.4.1", "minimumNVDAVersion" : "2022.1", "lastTestedNVDAVersion": "2024.4"},
 		"dev" :{"version": None, "minimumNVDAVersion" : "2022.1", "lastTestedNVDAVersion": "2024.4"},
 		},
 	"radioSureAccessEnhancement": {
 		"localURL" : "radioSureAccessEnhancement",
-		"release" :{"version": "2.9", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
+		"release" :{"version": "2.9.1", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
 		"dev":{"version": None, "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4"},
 		},
 	"recuvaAccessEnhancement": {
 		"localURL" : "recuvaAccessEnhancement",
-		"release" :{"version": "1.9", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
+		"release" :{"version": "1.9.1", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
 		"dev":{"version": None, "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4"},
 		},
 	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",
-		"release" :{"version": "2.12", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
+		"release" :{"version": "2.12.1", "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4",},
 		"dev":{"version": None, "minimumNVDAVersion": "2023.1", "lastTestedNVDAVersion": "2024.4"},
 		},
 	"wordAccessEnhancement": {

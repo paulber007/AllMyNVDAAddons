@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>NVDA global commands extension 14.0-dev8</title>
+<title>NVDA global commands extension 14.0-dev12</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href=..\style_t2t.css>
 
@@ -33,7 +33,7 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. v14.0 (January/23/2025)</H2>
+<H2>1. v14.0 (February/12/2025)</H2>
 <P>
 Compatibility with NVDA 2025.1
 </P>
@@ -78,14 +78,11 @@ Development :
 </P>
 <UL>
 <LI>when switching voice profiles, only the new voice parameters are reloaded (no call to setSynth).
-<LI>the python markdown compiler with all its extensions replaces the markdown2 compiler for viewing markdown documents.
+<LI>The Python Markdown compiler (included in the extension) with all its extensions replaces the Markdown2 compiler to compile the Markdown documents.
 <LI>when installing the add-on, the current configuration is no longer saved in the add-on folder but is now saved in the user configuration folder. This allows you to still keep the current configuration if an installation goes wrong.
-</UL>
-
-<P>
+<LI>The files "UtilitiPy37" and "UtilitiPy311" are deleted.
+<P></P>
 Compliance with the NVDA API:
-</P>
-<UL>
 <LI>use of the "ExecAndPump" method of the "systemUtils" module.
 <LI>taking into account the movement of the "outpuDevice" parameter from the "speech" section to the "audio" section of the NVDA configuration.
 <LI>taking into account the memorization of the audio output device by its ID instead of its name.

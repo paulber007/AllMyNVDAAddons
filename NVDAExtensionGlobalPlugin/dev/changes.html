@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>NVDA global commands extension 14.0-dev16</title>
+<title>NVDA global commands extension 14.0-dev20</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href=..\style_t2t.css>
 
@@ -33,69 +33,75 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. v14.0 (March/19/2025)</H2>
+<H2>1. V14.0 (April/09/2025)</H2>
 <P>
-Compatibility with NVDA 2025.1
+Compatibility with NVDA 2025.1.
 </P>
 <P>
 NVDA versions prior to 2023.1 are no longer supported.
 </P>
 <P>
-What's new:
+News:
 </P>
 <UL>
-<LI>added a script to display clipboard text in an information window. It has no input  gesture assigned and is launched with the "shift+x" command from the interpreter.
-<LI>regarding the reporting of spelling errors:
+<LI>Addition of a script to display the clipboard's text text in an information window. It is without assigned input gesture and launches with the "shift + X" command of the interpreter.
+<LI>Regarding the reporting of spelling errors:
  <UL>
- <LI>the reporting of spelling errors can now be different depending on the situation "while reading" or "while typing".
- <LI>for each situation, the add-on allows the choice between:
+ <LI>The report of spelling errors can now be different depending on the situation "in reading" or "While typing".
+ <LI>For each situation, the add-on allows the choice between:
   <UL>
-  <LI>emit a double beep,
-  <LI>play the default sound of NVDA.
+  <LI>Emit a double beep,
+  <LI>Playing NVDA's default sound.
   <LI>to announce "Spelling error",
-  <LI>announce the misspelled word under a dedicated configuration profile.
+  <LI>to announce the spelling error under a dedicated configuration profile.
   </UL>
- <LI>a new configuration profile "Announce spelling errors" is added. It is with the voice settings of this profile that the misspelled word will be announced.
+ <LI>A new configuration profile "Spelling errors Announcement" is added. It is with the speech parameters of this profile that the word poorly spelled will be announced.
  </UL>
-<LI>added the possibility of detecting spelling errors by the text analyzer.
+<LI>Addition of the possibility of detecting spelling errors by the text analyzer.
 <LI>Addition of an option not to say "empty" when moving by line (configurable by profile).
-<LI>automatic deletion of temporary .delete files that NVDA cannot delete and which causes an error in the NVDA log at each startup.
+<LI>Automatic deletion of temporary files with the ".delete" extension that NVDA cannot delete and which causes an error in the NVDA journal with each start -up.
+<LI>Until this version of the add-on, it automatically put NVDA back on the two channels when it started. It is now possible to deactivate this operation by configuration.
 </UL>
 
 <P>
 Change :
 </P>
 <UL>
-<LI>The NVDA log management dialogue is changed to present in a drop-down list, the choice, current or previous, of the log to open or the one whose path must be copied in the clipboard.
+<LI>The "NVDA logs management" dialogue is changed to present in a drop-down list, the choice, current or previous, of the log to open or the one whose path must be copied in the clipboard.
+<LI>When it is stopped, the add-on leaves NVDA channels.
 </UL>
 
 <P>
-Bug fixes:
+Bogs corrections:
 </P>
 <UL>
-<LI>fixed the error that occurred during the interpreter "alt+f6" command when the cursor was placed at the end of the document.
-<LI>the last parameter used in the synthesizer parameters loop is now correctly saved after using the shell.
-<LI>ad-on scripts that are not running are no longer presented in the "User input gestures" dialog.
-<LI>the special afterglow for gmail works correctly again.
-<LI>the update search is no longer done when the "Automatically search for updates" option is unchecked just after starting NVDA.
-<LI>The "Text Analysis" category no longer appears several times in the dialogue to parameter the current profile.
+<LI>Correction of the error that occurred during the "Alt+F6" order of the interpreter when the cursor was placed at the end of the document.
+<LI>The last parameter used in the synthesizer settings loop is now correctly saved after using the control interpreter.
+<LI>The scripts of add-ons which are not in operation are no longer presented in the "User input gestures" dialogue.
+<LI>Special persistence for Gmail rekindles properly.
+<LI>The update search is no longer done when the "automatically search updates" option is unclogged just after starting NVDA.
+<LI>The "text analysis" category no longer appears several times in the current profile setting dialogue.
 </UL>
 
 <P>
 Development :
 </P>
 <UL>
-<LI>when switching voice profiles, only the new voice parameters are reloaded (no call to setSynth).
-<LI>The Python Markdown compiler (included in the extension) with all its extensions replaces the Markdown2 compiler to compile the Markdown documents.
-<LI>when installing the add-on, the current configuration is no longer saved in the add-on folder but is now saved in the user configuration folder. This allows you to still keep the current configuration if an installation goes wrong.
-<LI>The files "UtilitiPy37" and "UtilitiPy311" are deleted.
-<P></P>
+<LI>during a vocal profile switch,Only the new vocal parameters are recharged (no call to setsynth).
+<LI>The Python Markdown compiler (embedded in the add-on) with all its extensions replaces the Markdown2 compiler to compile the Markdown documents. It is used for NVDA versions prior to 2025.1.  For the following, the compiler on board in NVDA is used.
+<LI>When installing the add-on, the current configuration is no longer saved in the add-on folder but is now saved in the user configuration folder. This allows if an installation goes wrong to keep the current configuration anyway.
+<LI>The "UtilitiPy37" and "UtilitiPy311" folders are deleted.
+</UL>
+
+<P>
 Compliance with the NVDA API:
-<LI>use of the "ExecAndPump" method of the "systemUtils" module.
-<LI>taking into account the movement of the "outpuDevice" parameter from the "speech" section to the "audio" section of the NVDA configuration.
-<LI>taking into account the memorization of the audio output device by its ID instead of its name.
-<LI>taking into account the change in type of the "speakTypedCharacters" and "speakTypedWords" configuration keys.
-<LI>Taking into account the deletion of the function "_getOutputDevices" from the "nvwave" module.
+</P>
+<UL>
+<LI>Use of the "ExecandPump" method of the "Systemutils" module.
+<LI>Taking into account the displacement of the "OUTPUDEVICE" parameter of the "Speech" section in the "Audio" section of the NVDA configuration.
+<LI>Taking into account the memorization of the audio output device by its ID instead of its name.
+<LI>Taking into account the change of type of configuration keys "Speaktypedcharacters" and "Speaktypedwords".
+<LI>Taking into account the deletion of the "_GetouputDevices" function of the "NVWAVE" module.
 </UL>
 
 <H2>2. v13.4 (October/11/2024)</H2>

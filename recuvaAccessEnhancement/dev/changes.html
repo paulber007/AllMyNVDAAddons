@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Recuva file recovery: accessibility enhancement 1.10-dev6</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>Recuva file recovery: accessibility enhancement - History</H1>
+<FONT SIZE="4">
+<I>Author: paulber19 (paulber19@laposte.net)</I><BR>
+</FONT></CENTER>
+
+<P>
+URL: <A HREF="https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git">https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git</A>
+</P>
+<P>
+Download:
+</P>
+<UL>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.10.nvda-addon">Current stable version: 1.10</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.9.1.nvda-addon">Previous stable Version: 1.9.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev">Development's versions</A>
+</UL>
+
+<P>
+Traductor (s): automatic translation from french language
+</P>
+<H2>1. v1.10 (May/21/2025)</H2>
+<P>
+Compatibility with NVDA 2025.1
+</P>
+<P>
+NVDA versions prior to 2024.1 are no longer supported.
+</P>
+<P>
+Bug fixes:
+</P>
+<UL>
+<LI>the update search is no longer done when the "Automatically search for updates" option is unchecked just after starting NVDA.
+</UL>
+
+<P>
+Development :
+</P>
+<UL>
+<LI>when installing the add-on, the current configuration is no longer saved in the add-on folder but is now saved in the user configuration folder. This allows you to still keep the current configuration if an installation goes wrong.
+</UL>
+
+<P>
+Compliance with the NVDA API:
+</P>
+<UL>
+<LI>Use of the "ExecandPump" method of the "Systemutils" module.
+<LI>Take into account the obsolescence of Gui.messagebox and Gui.message.messagebox, replaced by messagedialog:
+ <UL>
+ <LI>Messagedialog is now used for all NVDA versions greater than 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v1.9 (October/18/2024)</H2>
+<P>
+Compatibility with NVDA 2024.2, NVDA 2024.3 and NVDA24.4.
+</P>
+<P>
+NVDA versions prior to version 2023.1 are no longer supported.
+</P>
+<H2>3. v1.8 (March/25/2024)</H2>
+<P>
+Compatibility with NVDA 2024.1
+</P>
+<P>
+What's new:
+</P>
+<UL>
+<LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
+<LI>compatibility of the extension with the 64-bit version of Recuva.
+</UL>
+
+<P>
+Development :
+</P>
+<UL>
+<LI>use of the scriptHandler.script decorator.
+<LI>removal of code specific to versions prior to NVDA 2022.1.
+</UL>
+
+<H2>4. v1.7 (February/14/2023)</H2>
+<P>
+Compatibility with NVDA 2023.1
+</P>
+<H2>5. v1.6 (May/31/2022)</H2>
+<UL>
+<LI>fixed inability to view add-on history using the "View History" button.
+</UL>
+
+<H2>6. v1.5 (01/27/2022)</H2>
+<UL>
+<LI>compatibility with NVDA 2022.1
+<LI>reset the configuration in the event of errors in the configuration file.
+</UL>
+
+<P>
+Changes:
+</P>
+<UL>
+<LI>during an automatic update of the add-on, it no longer asks the user if he wants to keep the current configuration parameters of the add-on.
+<LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
+</UL>
+
+<H2>7. v1.4 (11/04/2021)</H2>
+<P>
+Compatibility with NVDA 2021.3. Versions of NVDA prior to version 2020.4 are not supported.
+</P>
+<H2>8. v1.3 (06/22/2021)</H2>
+<UL>
+<LI>compatibility with NVDA 2021.1. Versions of NVDA prior to version 2019.3 are not supported.
+<LI>removed code specific to Python 2.7.
+</UL>
+
+<H2>9. v1.2.1 (04/02/2021)</H2>
+<P>
+Adding arabic translation
+</P>
+<H2>10. v1.2 (29/12/2020)</H2>
+<UL>
+<LI>compatibility with NVDA 2020.4
+<LI>addition of the "View history" button in the "Update" category of the add-on's parameters.
+</UL>
+
+<H2>11. v1.1.1 (29/10/2020)</H2>
+<P>
+Correction of documentation
+</P>
+<H2>12. v1.1 (27/10/2020)</H2>
+<UL>
+<LI>compatibility with NVDA 2020.3
+<LI>code cleaning (corrections of errors detected by Flake8)
+<LI>addition of the "What's new" button in the dialog proposing the installation of a new update.
+</UL>
+
+<H2>13. v1.0 (28/07/2020)</H2>
+<P>
+Creation of the add-on.
+</P>
+
+</body>
+</html>

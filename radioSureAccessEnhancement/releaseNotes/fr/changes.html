@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Lecteur de radios internet  RadioSure: complément d'accessibilité 2.9.1</title>
-</head>
-<BODY BGCOLOR="white" TEXT="black">
+<meta charset="utf-8">
+<title>Lecteur de radios internet  RadioSure: complément d'accessibilité 2.10</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Lecteur de radios internet  RadioSure: complément d'accessibilité - Historique</H1>
 <FONT SIZE="4">
 <I>Auteur : paulber19 (paulber19@laposte.net)</I><BR>
@@ -20,19 +19,51 @@ URL: <A HREF="https://github.com/paulber19/radioSureAccessEnhancementNVDAAddon.g
 Téléchargement :
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.9.1.nvda-addon">Version stable actuelle : 2.9.1</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.8.nvda-addon">Version stable précédente : 2.8</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.10.nvda-addon">Version stable actuelle : 2.10</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.9.1.nvda-addon">Version stable précédente : 2.9.1</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/radioSureAccessEnhancement/dev">versions de développement</A>
 </UL>
 
-<H2>1. v2.9 (18/10/2024)</H2>
+<H2>1. v2.10 (05/06/2025)</H2>
+<P>
+Compatibilité avec NVDA 2025.1
+</P>
+<P>
+Les versions de NVDA antérieures à la version 2024.1 ne sont plus prises en charge.
+</P>
+<P>
+Correction de bogues :
+</P>
+<UL>
+<LI>la recherche de mise à jour ne se fait plus lorsque l'option "Rechercher automatiquement les mises à jour " est décochée juste après le démarrage de NVDA.
+</UL>
+
+<P>
+Développement :
+</P>
+<UL>
+<LI>lors de l'installation de l'extension, la configuration courante n'est plus sauvegardée dans le dossier de l'extension mais est maintenant sauvegardée dans le dossier de la configuration utilisateur. Cela permet si une installation se passe mal de conserver quand même la configuration courante.
+</UL>
+
+<P>
+Mise en conformité avec l'API de NVDA :
+</P>
+<UL>
+<LI>utilisation de la méthode "ExecAndPump" du module "systemUtils ".
+<LI>prise en compte de l'obsolescence de gui.messageBox et gui.message.messageBox, remplacés par MessageDialog:
+ <UL>
+ <LI>MessageDialog est maintenant utilisé pour toutes les versions de NVDA supérieures à 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v2.9 (18/10/2024)</H2>
 <P>
 Compatibilité avec NVDA 2024.2, NVDA 2024.3 et NVDA 2024.4.
 </P>
 <P>
 Les versions de NVDA antérieures à la version 2023.1 ne sont plus prises en charge.
 </P>
-<H2>2. v2.8 (23/03/2024)</H2>
+<H2>3. v2.8 (23/03/2024)</H2>
 <P>
 Compatibilité avec NVDA 2024.1
 </P>
@@ -59,17 +90,17 @@ Développement :
 <LI>suppression du code spécifique aux versions antérieures à NVDA 2022.1.
 </UL>
 
-<H2>3. v2.7 (14/02/2023)</H2>
+<H2>4. v2.7 (14/02/2023)</H2>
 <P>
 Compatibilité avec NVDA 2023.1
 </P>
-<H2>4. v2.6 (31/05/2022)</H2>
+<H2>5. v2.6 (31/05/2022)</H2>
 <UL>
 <LI>certains messages vocaux n'étaient pas affichés sur l'afficheur braille.
-<LI>correction de l'impossibilité d'afficher l'historique  de l'extension à l'aide du bouton "Voir l'historique".
+<LI>correction de l'impossibilité d'afficher l'historique de l'extension à l'aide du bouton "Voir l'historique".
 </UL>
 
-<H2>5. v2.5 (04/02/2022)</H2>
+<H2>6. v2.5 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2022.1,
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -83,11 +114,11 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée qquand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>6. v2.4 (01/11/2021)</H2>
+<H2>7. v2.4 (01/11/2021)</H2>
 <P>
 Compatibilité avec NVDA 2021.3
 </P>
-<H2>7. v2.3.2 (09/07/2021)</H2>
+<H2>8. v2.3.2 (09/07/2021)</H2>
 <P>
 Correction de bogues:
 </P>
@@ -95,23 +126,23 @@ Correction de bogues:
 <LI>certains gestes de commandes comme "control+p", "control+m", ne marchaient pas.
 </UL>
 
-<H2>8. v2.3.1 (25/06/2021)</H2>
+<H2>9. v2.3.1 (25/06/2021)</H2>
 <P>
 Ajout de la traduction turque.
 </P>
-<H2>9. v2.3 (22/06/2021)</H2>
+<H2>10. v2.3 (22/06/2021)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2021.1. Les versions de NVDA antérieures à la 2019.3 ne sont pas supportées.
 <LI>suppression du code spécifique à Python 2.7.
 </UL>
 
-<H2>10. v2.2 (19/12/2020)</H2>
+<H2>11. v2.2 (19/12/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.4.
 <LI>ajout du bouton "Voir l'historique" dans la catégorie "Mise à jour " des paramètres de l'extension.
 </UL>
 
-<H2>11. v2.1 (27/10/2020)</H2>
+<H2>12. v2.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.3.
 <LI>changement des gestes "control+flèche gauche et droite" par "alt+flèche gauche et droite".
@@ -120,22 +151,22 @@ Ajout de la traduction turque.
 <LI>ajout du bouton "Quoi de neuf" dans le dialogue proposant l'installation d'une nouvelle mise à jour.
 </UL>
 
-<H2>12. v2.0 (07/06/2020)</H2>
+<H2>13. v2.0 (07/06/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.2
 <LI>ajout de scripts pour activer le menu contextuel de chaque colonne de l'en-tête de la liste des stations.
 <LI>désactivation configurable du suivi de la barre de progression.
 </UL>
 
-<H2>13. v1.1.2 (28/04/2020)</H2>
+<H2>14. v1.1.2 (28/04/2020)</H2>
 <P>
 Ajout de la traduction TR
 </P>
-<H2>14. v1.1.1 (06/04/2020)</H2>
+<H2>15. v1.1.1 (06/04/2020)</H2>
 <P>
 Ajout de la traduction AR
 </P>
-<H2>15. v1.1 (03/04/2020)</H2>
+<H2>16. v1.1 (03/04/2020)</H2>
 <P>
 -mise en compatibilité avec NVDA 2020.1,
 </P>
@@ -143,25 +174,25 @@ Ajout de la traduction AR
 <LI>mise en conformité pour le test de compatibilité d'une extension avec NVDA.
 </UL>
 
-<H2>16. v1.0 (19/02/2020)</H2>
+<H2>17. v1.0 (19/02/2020)</H2>
 <P>
 L'extension change de nom et repart à la version 1.0.
 </P>
 <P>
 Mise en compatibilité avec NVDA 2019.3 et avec les versions supérieures à la 2019.1.
 </P>
-<H2>17. v1.4. (19 Juin 2014)</H2>
+<H2>18. v1.4. (19 Juin 2014)</H2>
 <UL>
 <LI>traduction de la documentation pour l'extension RadioSure en espagnol par Rémy Ruiz
 </UL>
 
-<H2>18. v1.3 (17 Juin 2014)</H2>
+<H2>19. v1.3 (17 Juin 2014)</H2>
 <UL>
 <LI>ajout des commandes clavier pour déplacer le focus à la zone de recherche et la liste des stations
 <LI>modification du script clickExpandButton pour mettre le focus sur la liste des stations
 </UL>
 
-<H2>19. v1.2 (5 Juin 2014)</H2>
+<H2>20. v1.2 (5 Juin 2014)</H2>
 <P>
 Reprise intégrale de l'extension écrite par un inconnu
 </P>

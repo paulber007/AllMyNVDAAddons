@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Editor de texto Microsoft Word: complemento de accesibilidad 3.6</title>
-</head>
-<BODY BGCOLOR="white" TEXT="black">
+<meta charset="utf-8">
+<title>Editor de texto Microsoft Word: complemento de accesibilidad 3.7</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Editor de texto Microsoft Word: complemento de accesibilidad - Historial</H1>
 <FONT SIZE="4">
 <I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
@@ -20,12 +19,71 @@ URL: <A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">h
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.6.nvda-addon">Versión actual: 3.6</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Versión anterior: 3.5</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.7.nvda-addon">Versión actual: 3.7</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.6.nvda-addon">Versión anterior: 3.6</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/wordAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v3.6 (11/10/2024)</H2>
+<H2>1. v3.7 (06/06/2025)</H2>
+<P>
+Compatibilidad con NVDA 2025.1.
+</P>
+<P>
+Las versiones de NVDA anteriores a 2024.1 ya no son soportadas.
+</P>
+<P>
+Nuevas características:
+</P>
+<UL>
+<LI>se ha añadido con respecto a la revisión de texto:
+ <UL>
+ <LI>scripts para moverse de error de ortografía en error de ortografía sin pasar en modo exploración.
+ <LI>scripts para moverse de error gramatical en error gramatical sin pasar en modo exploración.
+ <LI>script para mostrar sugerencias para errores de ortografía bajo el cursor.
+ </UL>
+<LI>verbalización del resultado de la acción de los atajos "control+mayúscula+o" y "control+mayúscula+p" (respectivamente para pasar en Esquema y para pasar en Diseño de impresión) de Word.
+<LI>añadido, para todas las versiones de NVDA soportadas por el complemento, de la verbalización del resultado de la acción de los atajos de Word soportada por la última versión de NVDA.
+<LI>añadido en la descripción del documento el tipo de vista.
+<LI>se añadió un script para cambiar entre la voz para la lectura automática y la voz para Word.
+</UL>
+
+<P>
+Cambios:
+</P>
+<UL>
+<LI>para resolver el conflicto de órdenes "windows+control+flecha derecha e izquierda" Con los de Windows (cambiar de escritorio virtual), las órdenes para moverse en una tabla ya no están bloqueadas fuera de la tabla. El mensaje "No en una tabla" ya no se anuncia y las órdenes se envían a Windows.
+<LI>La opción con respecto del uso de diccionarios de símbolos ya no es parte de las opciones guardadas para la voz para la lectura automática.
+<LI>para garantizar la compatibilidad con NVDA 2025.1, las opciones de voz para la lectura automática se eliminan durante el primer inicio del complemento de esta versión. Es necesario guardarlas nuevamente.
+</UL>
+
+<P>
+Correcciones de fallos:
+</P>
+<UL>
+<LI>la búsqueda de actualización ya no se realiza cuando la opción "Buscar automáticamente actualizaciones" esta sin marcar justo después de iniciar NVDA.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>al instalar el complemento, la configuración actual ya no se guarda en la carpeta del complemento pero ahora se guarda en la carpeta de configuración del usuario. Esto permite si una instalación sale mal de conservar de todos modos la configuración actual.
+</UL>
+
+<P>
+Puesta en conformidad con la API de NVDA:
+</P>
+<UL>
+<LI>Uso del método "ExecAndPump" del módulo "systemUtils".
+<LI>se toma en cuenta el desplazamiento del parámetro "outpuDevice" de la sección "speech" a la sección "audio" de la configuración de NVDA.
+<LI>se toma en cuenta la memorización del dispositivo de salida de audio por su identificador en lugar de su nombre.
+<LI>se toma en cuenta la obsolescencia de gui.messageBox y gui.message.messageBox, reemplazado por MessageDialog:
+ <UL>
+ <LI>MessageDialog ahora se usa para todas las versiones de NVDA superiores a 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v3.6 (11/10/2024)</H2>
 <P>
 compatibilidad con NVDA 2024.2, 2024.3 y 2024.4.
 Nuevas características:
@@ -68,7 +126,7 @@ Cambios:
 <LI>la tecla "Escape" ya no te permite desactivar el modo "capa de órdenes para tablas".
 </UL>
 
-<H2>2. v3.5 (28/03/2024)</H2>
+<H2>3. v3.5 (28/03/2024)</H2>
 <P>
 Nuevas características:
 </P>
@@ -84,11 +142,11 @@ Desarrolladores:
 <LI>se eliminó el código específico de las versiones anteriores a NVDA 2023.1.
 </UL>
 
-<H2>3. v3.4 (15/02/2023)</H2>
+<H2>4. v3.4 (15/02/2023)</H2>
 <P>
 Compatibilidad con NVDA 2023.1.
 </P>
-<H2>4. v3.3 (24/05/2022)</H2>
+<H2>5. v3.3 (24/05/2022)</H2>
 <P>
 Nuevas características:
 </P>
@@ -117,7 +175,7 @@ Cambios:
 <LI>eliminación del mensaje pidiendo, para un buen funcionamiento adecuado  del complemento, de desmarcar la opción "Utilizar UI Automation para acceder a controles de documento de Microsoft Word cuando esté disponible".
 </UL>
 
-<H2>5. v3.2 (04/02/2022)</H2>
+<H2>6. v3.2 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2022.1.
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
@@ -131,11 +189,11 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>6. v3.1 (19/12/2021)</H2>
+<H2>7. v3.1 (19/12/2021)</H2>
 <P>
 Compatibilidad con NVDA 2021.3. Las versiones de NVDA anteriores a la 2020.4 ya no son soportadas.
 </P>
-<H2>7. v3.0 (23/06/2021)</H2>
+<H2>8. v3.0 (23/06/2021)</H2>
 <P>
 Compatibilidad con NVDA 2021.1. Las versiones de NVDA anteriores a la 2019.3 ya no son soportadas.
 </P>
@@ -169,7 +227,7 @@ Otros cambios:
 <LI>eliminado código relativo a Python 2.7.
 </UL>
 
-<H2>8. v2.3 (31/12/2020)</H2>
+<H2>9. v2.3 (31/12/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.4.
 <LI>se añadió la lectura automática  de las notas finales.
@@ -178,11 +236,11 @@ Otros cambios:
 <LI>navegar en bucle opcional en modo Exploración.
 </UL>
 
-<H2>9. v2.2.1 (09/12/2020)</H2>
+<H2>10. v2.2.1 (09/12/2020)</H2>
 <P>
 actualización de la traducción al turco.
 </P>
-<H2>10. v2.2 (06/12/2020)</H2>
+<H2>11. v2.2 (06/12/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.3.
 <LI>corrección del conflicto de la tecla de navegación rápida para los marcadores (,"): "-" por defecto y "¡" para teclado español.
@@ -191,12 +249,12 @@ actualización de la traducción al turco.
 <LI>limpieza del código con validación Flake8.
 </UL>
 
-<H2>11. v2.1 (28/07/2020)</H2>
+<H2>12. v2.1 (28/07/2020)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2020.2
 </UL>
 
-<H2>12. v2.0 (16/04/2020)</H2>
+<H2>13. v2.0 (16/04/2020)</H2>
 <UL>
 <LI>puesta en compatibilidad con NVDA 2020.1.
 <LI>se añade los scripts para pasar a la primera o la última celda de la tabla.
@@ -210,13 +268,13 @@ actualización de la traducción al turco.
 <LI>teclas de navegación rápida configurable según el idioma de NVDA.
 </UL>
 
-<H2>13. v1.0.1 (07/03/2020)</H2>
+<H2>14. v1.0.1 (07/03/2020)</H2>
 <UL>
 <LI>corrección de documentación.
 <LI>traducción del complemento en español por Gunther Melendez, cambios por Rémy Ruiz.
 </UL>
 
-<H2>14. v1.0 (07/02/2020)</H2>
+<H2>15. v1.0 (07/02/2020)</H2>
 <P>
 Este complemento cambia de nombre para evitar confusiones con otros complementos. Su versión comienza nuevamente en 1.0.
 </P>
@@ -239,19 +297,19 @@ Este complemento cambia de nombre para evitar confusiones con otros complementos
 <LI>buscar actualización automática.
 </UL>
 
-<H2>15. v3.1 (10 de Avril del 2016)</H2>
+<H2>16. v3.1 (10 de Avril del 2016)</H2>
 <UL>
 <LI>se añade el anuncio de columna para las órdenes de teclado "key_line_page"
 </UL>
 
-<H2>16. v3.0 (10 de Marzo del 2016)</H2>
+<H2>17. v3.0 (10 de Marzo del 2016)</H2>
 <UL>
 <LI>eliminación de scripts de movimiento rápido (duplicado con modo de navegación NVDA),
 <LI>eliminación de los scripts para anunciar el título de las filas o columnas en la segunda pulsación (ahora usando la opción incluida en NVDA),
 <LI>compatibilidad con NVDA 2016.1.
 </UL>
 
-<H2>17. v2.5 (22 de Junio del 2015) ((no publicado))</H2>
+<H2>18. v2.5 (22 de Junio del 2015) ((no publicado))</H2>
 <UL>
 <LI>cambio de las órdenes de teclado: "nvda+control+f6" a "alt+suprimir" y nvda +suprimir teclado numérico".
 <LI>indicación de la posición relativa al borde izquierdo y superior (órdenes "alt + suprimir", "alt + suprimir teclado numérico")
@@ -259,20 +317,20 @@ Este complemento cambia de nombre para evitar confusiones con otros complementos
 <LI>compatibilidad con el modo exploración de NVDA (cambio de accesos directos de navegación)
 </UL>
 
-<H2>18. v2.4 (11 de Junio del 2015)</H2>
+<H2>19. v2.4 (11 de Junio del 2015)</H2>
 <UL>
 <LI>la corrección de bloqueo apareció desde NVDA 2015.1
 <LI>se añade script para seleccionar el modo de navegación rápida
 </UL>
 
-<H2>19. v2.3 (14 de Diciembre del 2014)</H2>
+<H2>20. v2.3 (14 de Diciembre del 2014)</H2>
 <UL>
 <LI>se añade órdenes para mover el foco a la frase anterior o siguiente ("alt + flecha arriba o flecha abajo")
 <LI>corrección de documentación y traducción
 <LI>corrección manifest.ini
 </UL>
 
-<H2>20. v2.2 (15 de Noviembre del 2014)</H2>
+<H2>21. v2.2 (15 de Noviembre del 2014)</H2>
 <UL>
 <LI>se añade la navegación rápida
 <LI>separación en dos categorías de objetos gráficos (los de la capa de texto, los de la capa de dibujo)
@@ -280,7 +338,7 @@ Este complemento cambia de nombre para evitar confusiones con otros complementos
 <LI>se añade script "nvda + alt + e" para leer la nota final o nota al pie del cursor
 </UL>
 
-<H2>21. v2.1 (1 de Octubre del 2014)</H2>
+<H2>22. v2.1 (1 de Octubre del 2014)</H2>
 <UL>
 <LI>se añade el botón "Buscar y mostrar",
 <LI>se añade atajos para botones de cuadro de diálogo,
@@ -289,14 +347,14 @@ Este complemento cambia de nombre para evitar confusiones con otros complementos
 <LI>corrección del defecto de selección presionando el botón "Buscar y copiar al portapapeles"
 </UL>
 
-<H2>22. v2.0 (24 de Setiembre del 2014)</H2>
+<H2>23. v2.0 (24 de Setiembre del 2014)</H2>
 <UL>
 <LI>compatibilidad con la versión 2014.3
 <LI>se añade scripts para tablas
 <LI>se añade script para activar o desactivar el salto de los párrafos vacíos
 </UL>
 
-<H2>23. v1.0 (24 de Enero del 2014)</H2>
+<H2>24. v1.0 (24 de Enero del 2014)</H2>
 <UL>
 <LI>Creación del complemento.
 </UL>

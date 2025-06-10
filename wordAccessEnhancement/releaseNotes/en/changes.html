@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Microsoft Word text editor:   accessibility enhancement 3.6</title>
-</head>
-<BODY BGCOLOR="white" TEXT="black">
+<meta charset="utf-8">
+<title>Microsoft Word text editor:   accessibility enhancement 3.7</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Microsoft Word text editor:   accessibility enhancement - History</H1>
 <FONT SIZE="4">
 <I>Author: paulber19 (paulber19@laposte.net)</I><BR>
@@ -20,15 +19,74 @@ URL: <A HREF="https://github.com/paulber19/wordAccessEnhancementNVDAAddon.git">h
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.6.nvda-addon">Current stable version: 3.6</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.5.nvda-addon">Previous stable Version: 3.5</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.7.nvda-addon">Current stable version: 3.7</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/wordAccessEnhancement/wordAccessEnhancement-3.6.nvda-addon">Previous stable Version: 3.6</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/wordAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v3.6 (October/11/2024)</H2>
+<H2>1. v3.7 (June/06/2025)</H2>
+<P>
+Compatibility with NVDA 2025.1.
+</P>
+<P>
+NVDA versions prior to 2024.1 are no longer supported.
+</P>
+<P>
+What's new:
+</P>
+<UL>
+<LI>addition concerning text verification:
+ <UL>
+ <LI>scripts to move from spelling error to spelling error without switching to navigation mode.
+ <LI>scripts to move from grammatical error to grammatical error without switching to navigation mode.
+ <LI>script to display suggestions for spelling mistake under cursor.
+ </UL>
+<LI>vocalization of the result of the action of the "control+majuscule+o" and "control+majuscule+p" shortcuts (respectively switching to plan mode and switching to page mode) of Word.
+<LI>addition, for all versions of NVDA supported by the add-on, of the vocalization of the result of the action of Word shortcuts supported by the latest version of NVDA.
+<LI>addition in the document description of the view type.
+<LI>added a script to switch between voice for autoplay and voice for Word.
+</UL>
+
+<P>
+changes:
+</P>
+<UL>
+<LI>to resolve the conflict of "windows+control+right and left arrow" commands with those of Windows (virtual desktop change), movement commands in a table are no longer blocked outside the table.  The "Not in a table" message is no longer announced and the commands are then sent to Windows. 
+<LI>The setting regarding the use of symbol dictionaries is no longer part of the settings saved for the autoplay voice.
+<LI>To ensure compatibility with NVDA 2025.1, the vocal settings for automatic reading are erased during the first start of the add-on on this version. It is necessary to record them again.
+</UL>
+
+<P>
+Bug fixes:
+</P>
+<UL>
+<LI>the update search is no longer done when the "Automatically search for updates" option is unchecked just after starting NVDA.
+</UL>
+
+<P>
+Development :
+</P>
+<UL>
+<LI>when installing the add-on, the current configuration is no longer saved in the extension folder but is now saved in the user configuration folder. This allows you to still keep the current configuration if an installation goes wrong.
+</UL>
+
+<P>
+Compliance with the NVDA API:
+</P>
+<UL>
+<LI>use of the "ExecAndPump" method of the "systemUtils" module.
+<LI>taking into account the movement of the "outpuDevice" parameter from the "speech" section to the "audio" section of the NVDA configuration.
+<LI>taking into account the memorization of the audio output device by its ID instead of its name.
+Take into account the obsolescence of Gui.messagebox and Gui.message.messagebox, replaced by messagedialog:
+ <UL>
+ <LI>Messagedialog is now used for all NVDA versions greater than 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v3.6 (October/11/2024)</H2>
 <P>
 compatibility with NVDA 2024.2, 2024.3 and 2024.4.
 What's new:
@@ -71,7 +129,7 @@ Changes:
 <LI>the "Escape" key no longer allows you to deactivate the "table command layer" mode.
 </UL>
 
-<H2>2. v3.5 (March/28/2024)</H2>
+<H2>3. v3.5 (March/28/2024)</H2>
 <P>
 What's new:
 </P>
@@ -87,11 +145,11 @@ Development :
 <LI>removal of code specific to versions prior to NVDA 2023.1.
 </UL>
 
-<H2>3. v3.4 (February/15/2023)</H2>
+<H2>4. v3.4 (February/15/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
-<H2>4. v3.3 (May/24/2022)</H2>
+<H2>5. v3.3 (May/24/2022)</H2>
 <P>
 Features:
 </P>
@@ -120,7 +178,7 @@ Changes:
 <LI>removal of the message which asked, for a good functioning of the extension, to uncheck the option "Use UI Automation to access the Controls of Microsoft Word documents when available".
 </UL>
 
-<H2>5. v3.2 (February/04/2022)</H2>
+<H2>6. v3.2 (February/04/2022)</H2>
 <UL>
 <LI>Compatibility with NVDA 2022.1.
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -133,11 +191,11 @@ Changes:
 <LI>during an automatic update of the extension, it no longer asks the user if he wants to keep the current configuration parameters of the extension.
 </UL>
 
-<H2>6. v3.1 (December/19/2021)</H2>
+<H2>7. v3.1 (December/19/2021)</H2>
 <P>
 Compatibility with NVDA 2021.3. Versions of NVDA prior to 2020.4 are no longer supported.
 </P>
-<H2>7. v3.0 (June/23/2021)</H2>
+<H2>8. v3.0 (June/23/2021)</H2>
 <P>
 Compatibility with NVDA 2021.1. Versions of NVDA prior to 2019.3 are no longer supported.
 </P>
@@ -171,7 +229,7 @@ Other changes:
 <LI>removed code specific to Python 2.7.
 </UL>
 
-<H2>8. v2.3 (31/12/2020)</H2>
+<H2>9. v2.3 (31/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.4
 <LI>added automatic reading of endnotes.
@@ -180,11 +238,11 @@ Other changes:
 <LI>optional loop navigation in navigation mode.
 </UL>
 
-<H2>9. v2.2.1 (09/12/2020)</H2>
+<H2>10. v2.2.1 (09/12/2020)</H2>
 <P>
 updated Turkish translation.
 </P>
-<H2>10. v2.2 (06/12/2020)</H2>
+<H2>11. v2.2 (06/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.3
 <LI>fixed the conflict of the quick navigation key for bookmarks (, "):" - "by default and" ¡"for Spanish keyboard.
@@ -193,11 +251,11 @@ updated Turkish translation.
 <LI>code cleaning (corrections of errors detected by Flake8)
 </UL>
 
-<H2>11. v2.1 (28/07/2020)</H2>
+<H2>12. v2.1 (28/07/2020)</H2>
 <P>
 Compatibility with NVDA 2020.2
 </P>
-<H2>12. v2.0 (16/04/2020)</H2>
+<H2>13. v2.0 (16/04/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.1.
 <LI>add scripts to move to the first or last cell in the table.
@@ -214,13 +272,13 @@ Compatibility with NVDA 2020.2
 <P>
 Changes for the user: the navigation mode command keys and some command gestures have been modified to be compatible with a Qwerty keyboard.
 </P>
-<H2>13. v1.0.1 (07/03/2020)</H2>
+<H2>14. v1.0.1 (07/03/2020)</H2>
 <UL>
 <LI>correction of the documentation.
 <LI>translation of the addon in Spanish by Gunther Melendez, changes by Rémy Ruiz.
 </UL>
 
-<H2>14. v1.0 (07/02/2020)</H2>
+<H2>15. v1.0 (07/02/2020)</H2>
 <P>
 This add-on changes name to avoid confusion with other add-ons. His version starts with 1.0.
 </P>
@@ -240,19 +298,19 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>preparation of the compatibility to python 3.
 </UL>
 
-<H2>15. v3.1 (April 10, 2016)</H2>
+<H2>16. v3.1 (April 10, 2016)</H2>
 <UL>
 <LI>adding the announcement of the column for the keyboard command "key_line_page"
 </UL>
 
-<H2>16. v3.0 (10 March 2016)</H2>
+<H2>17. v3.0 (10 March 2016)</H2>
 <UL>
 <LI>removal scripts of a fast-moving (duplicate with the mode of navigation of NVDA),
 <LI>removal scripts to announce in the second support the title of the rows or columns (use now the option included in NVDA),
 <LI>compatibility with NVDA 2016.1.
 </UL>
 
-<H2>17. v2.5 (22 June 2015) (not released)</H2>
+<H2>18. v2.5 (22 June 2015) (not released)</H2>
 <UL>
 <LI>change the keyboard command: "nvda+control+f6" "alt+backspace" and nvda + numpad delete".
 <LI>indication of the position relative to the left and upper edge (command "alt + backspace"", "alt + numpad delete")
@@ -260,20 +318,20 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>compatibility mode with the navigation of NVDA (change navigation shortcuts)
 </UL>
 
-<H2>18. v2.4 (11 June 2015)</H2>
+<H2>19. v2.4 (11 June 2015)</H2>
 <UL>
 <LI>correction block appeared since NVDA 2015.1
 <LI>add the script to select the mode quick navigation
 </UL>
 
-<H2>19. v2.3 (14 December 2014)</H2>
+<H2>20. v2.3 (14 December 2014)</H2>
 <UL>
 <LI>add command to move the focus to the previous or next sentence ("alt+ up or down Arrow")
 <LI>correction of documentation and translation
 <LI>fixed manifest.ini
 </UL>
 
-<H2>20. v2.2 (1, November 15, 2014)</H2>
+<H2>21. v2.2 (1, November 15, 2014)</H2>
 <UL>
 <LI>added quick navigation
 <LI>separation into two categories of objects graph (those in the text layer, the drawing layer)
@@ -281,7 +339,7 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>add the script "nvda+alt+e" to read the note at the end or bottom of the page to the cursor
 </UL>
 
-<H2>21. v2.1 (1 October 2014)</H2>
+<H2>22. v2.1 (1 October 2014)</H2>
 <UL>
 <LI>added button "Find and view",
 <LI>adding shortcuts to the buttons of the dialog boxes,
@@ -290,14 +348,14 @@ This add-on changes name to avoid confusion with other add-ons. His version star
 <LI>fixed default selection on pressing button "Search and copy to clipboard"
 </UL>
 
-<H2>22. v2.0 (24 September 2014)</H2>
+<H2>23. v2.0 (24 September 2014)</H2>
 <UL>
 <LI>compatibility with version 2014.3
 <LI>added scripts for tables
 <LI>added script for enabling or disabling the skip empty paragraphs
 </UL>
 
-<H2>23. v1.0 (24 January 2014)</H2>
+<H2>24. v1.0 (24 January 2014)</H2>
 <UL>
 <LI>Creation of the add-on
 </UL>

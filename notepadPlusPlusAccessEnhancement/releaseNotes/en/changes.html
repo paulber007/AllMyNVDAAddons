@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Notepad++ text's editor : accessibility enhancement 2.7.1</title>
-</head>
-<BODY BGCOLOR="white" TEXT="black">
+<meta charset="utf-8">
+<title>Notepad++ text's editor : accessibility enhancement 2.8</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Notepad++ text's editor : accessibility enhancement - History</H1>
 <FONT SIZE="4">
 <I>Author: paulber19 (paulber19@laposte.net)</I><BR>
@@ -20,22 +19,86 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.1.nvda-addon">Current stable version: 2.7.1</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.6.nvda-addon">Previous stable Version: 2.6</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.nvda-addon">Current stable version: 2.8</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.2.nvda-addon">Previous stable Version: 2.7.2</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v2.7 (October/18/2024)</H2>
+<H2>1. v2.8 (June/05/2025)</H2>
+<P>
+Compatibility with NVDA 2025.1.
+</P>
+<P>
+NVDA versions earlier than 2024.1 are no longer supported.
+</P>
+<P>
+What's new:
+</P>
+<UL>
+<LI>Addition of the "Windows+Control+F9" script to open the folder of the current file as a workpace.
+<LI>in the "Document preview" dialog, it is possible to choose with which display the document should be viewed:
+ <UL>
+ <LI>the default viewer of html documents (in principle a browser)
+ <LI>an NVDA window in navigation mode,
+ <LI>the default viewer for txt documents to see the source of the generated document.
+ </UL>
+</UL>
+
+<P>
+Bug fixes:
+</P>
+<UL>
+<LI>the update search is no longer done when the "Automatically search for updates" option is unchecked just after starting NVDA.
+<LI>The line number is properly announced for files using only "\ r" as the end of the line.
+</UL>
+
+<P>
+Development :
+</P>
+<UL>
+<LI>process the current document with the markdown compiler and all its extensions instead of the markdown2 compiler.
+<LI>use of the "ExecAndPump" method of the "systemUtils" module.
+<LI>use of "NVDAState.shouldWriteToDisk" to save or not save the configuration to disk.
+<LI>the temporary file for viewing "markdown" or "txt2tags" documents is now placed in the same folder where the document is located. If this document is a new, unsaved document, then it is placed in the user configuration folder. If the default header is used for viewing, the style files are placed in the same location as the temporary file.
+</UL>
+
+<P>
+Compliance with the NVDA API:
+</P>
+<UL>
+<LI>Use of the "ExecandPump" method of the "Systemutils" module.
+<LI>Take into account the obsolescence of Gui.messagebox and Gui.message.messagebox, replaced by messagedialog:
+ <UL>
+ <LI>Messagedialog is now used for all NVDA versions greater than 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v2.7 (November/28/2024)</H2>
 <P>
 Compatibilité with NVDA 2024.2, NVDA 2024.3 and NVDA 2024.4.
 </P>
 <P>
 NVDA versions prior to version 2023.1 are no longer supported.
+What's new:
 </P>
-<H2>2. v2.6 (April/02/2024)</H2>
+<UL>
+<LI>in the "Document preview" dialog, it is possible to see the generated HTML source.
+</UL>
+
+<P>
+Development :
+</P>
+<UL>
+<LI>process the current document with the markdown compiler and all its extensions instead of the markdown2 compiler.
+<LI>use of the "ExecAndPump" method of the "systemUtils" module.
+<LI>use of "NVDAState.shouldWriteToDisk" to save or not save the configuration to disk.
+<LI>the temporary file for viewing "markdown" or "txt2tags" documents is now placed in the same folder where the document is located. If this document is a new, unsaved document, then it is placed in the user configuration folder. If the default header is used for viewing, the style files are placed in the same location as the temporary file.
+</UL>
+
+<H2>3. v2.6 (April/02/2024)</H2>
 <P>
 What's new:
 </P>
@@ -44,7 +107,7 @@ What's new:
 <LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
 </UL>
 
-<H2>3. v2.5 (September/086/2023)</H2>
+<H2>4. v2.5 (September/086/2023)</H2>
 <P>
 New:
 </P>
@@ -86,7 +149,7 @@ Various:
 <LI>modification of the documentation for compatibility with the add-on store.
 </UL>
 
-<H2>4. v2.4 (February/20/2023)</H2>
+<H2>5. v2.4 (February/20/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
@@ -97,7 +160,7 @@ New:
 <LI>reporting of spelling errors found by the DSpellCheck Notepad++ plugin (experimental).
 </UL>
 
-<H2>5. v2.3 (September/27/2022)</H2>
+<H2>6. v2.3 (September/27/2022)</H2>
 <UL>
 <LI>fixed inability to view add-on history using the "View History" button.
 <LI>correction of incorrect movements from method to method or from class to class.
@@ -105,7 +168,7 @@ New:
 <LI>compatibility with notepad++ 8.3 64 bits.
 </UL>
 
-<H2>6. v2.2 (02/04/2022)</H2>
+<H2>7. v2.2 (02/04/2022)</H2>
 <UL>
 <LI>Compatibility with NVDA 2022.1.
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -119,7 +182,7 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>7. v2.1 (13/12/2021)</H2>
+<H2>8. v2.1 (13/12/2021)</H2>
 <P>
 First official stable release
 </P>

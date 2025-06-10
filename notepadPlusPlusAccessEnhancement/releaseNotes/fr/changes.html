@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Éditeur de texte Notepad++: compléments d'accessibilité 2.7.1</title>
-</head>
-<BODY BGCOLOR="white" TEXT="black">
+<meta charset="utf-8">
+<title>Éditeur de texte Notepad++: compléments d'accessibilité 2.8</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Éditeur de texte Notepad++: compléments d'accessibilité - Historique</H1>
 <FONT SIZE="4">
 <I>Auteur: paulber19 (paulber19@laposte.net)</I><BR>
@@ -20,19 +19,68 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Téléchargement:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.1.nvda-addon">Version stable actuelle: 2.7.1</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.6.nvda-addon">Version stable précédente : 2.6</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.nvda-addon">Version stable actuelle: 2.8</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.2.nvda-addon">Version stable précédente : 2.7.2</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">versions de développement</A>
 </UL>
 
-<H2>1. v2.7 (18/10/2024)</H2>
+<H2>1. v2.8 (05/06/2025)</H2>
+<P>
+Compatibilité avec NVDA 2025.1.
+</P>
+<P>
+Les versions de NVDA antérieures à la version 2024.1 ne sont plus prises en charge.
+</P>
+<P>
+Nouveautés:
+</P>
+<UL>
+<LI>ajout du script "windows+control+f9" pour ouvrir le dossier du fichier courant en tant qu'espace de travail.
+<LI>dans le dialogue "Prévisualisation du document", il est possible de choisir avec quel afficheur le document doit être visualiser:
+ <UL>
+ <LI>l'afficheur par défaut des documents html (en principe un navigateur)
+ <LI>une fenêtre NVDA en mode navigation,
+ <LI>l'afficheur par défaut des documents txt pour voir le source du document généré.
+ </UL>
+</UL>
+
+<P>
+Correction de bogues :
+</P>
+<UL>
+<LI>la recherche de mise à jour ne se fait plus lorsque l'option "Rechercher automatiquement les mises à jour " est décochée juste après le démarrage de NVDA.
+<LI>le numéro de ligne est correctement annoncée pour les fichiers utilisant seulement "\r" comme fin de ligne.
+</UL>
+
+<P>
+Développement :
+</P>
+<UL>
+<LI>traiter le document courant avec le compilateur markdown et toutes ses extensions en lieu et place du compilateur markdown2.
+<LI>utilisation de "NVDAState.shouldWriteToDisk" pour enregistrer ou ne pas enregistrer la configuration sur le disque.
+<LI>le fichier temporaire pour visualiser les documents "markdown" ou "txt2tags" est maintenant placé dans le même dossier où se trouve le document. Si ce document est un nouveau document non enregistré , il est alors placé dans le dossier de la configuration utilisateur. Si l'en-tête par défaut est utilisé pour la visualisation, les fichiers de styles sont placés au même endroit que le fichier temporaire.
+<LI>lors de l'installation de l'extension, la configuration courante n'est plus sauvegardée dans le dossier de l'extension mais est maintenant sauvegardée dans le dossier de la configuration utilisateur. Cela permet si une installation se passe mal de conserver quand même la configuration courante.
+</UL>
+
+<P>
+Mise en conformité avec l'API de NVDA :
+</P>
+<UL>
+<LI>utilisation de la méthode "ExecAndPump" du module "systemUtils ".
+<LI>prise en compte de l'obsolescence de gui.messageBox et gui.message.messageBox, remplacés par MessageDialog:
+ <UL>
+ <LI>MessageDialog est maintenant utilisé pour toutes les versions de NVDA supérieures à 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v2.7 (18/10/2024)</H2>
 <P>
 Compatibilité avec NVDA 2024.2, NVDA 2024.3 et NVDA 2024.4.
 </P>
 <P>
 Les versions de NVDA antérieures à la version 2023.1 ne sont plus prises en charge.
 </P>
-<H2>2. v2.6 (02/04/2024)</H2>
+<H2>3. v2.6 (02/04/2024)</H2>
 <P>
 Nouveautés : 
 </P>
@@ -41,7 +89,7 @@ Nouveautés :
 <LI>prise en compte du mode "Parole à la demande" introduit dans nvda 2024.1: tous les scripts annonçant une information vocaliseront cette information. Dans ce mode, tous Les autres scripts resteront muets.
 </UL>
 
-<H2>3. v2.5 (08/09/2023)</H2>
+<H2>4. v2.5 (08/09/2023)</H2>
 <P>
 Nouveautés:
 </P>
@@ -68,9 +116,9 @@ Compatibilité:
 Correction de bogues:
 </P>
 <UL>
-<LI>quand une longue ligne contient des caractères accentués, le déplacement vers le premier caractère qui est après la longueur maximale  est maintenant correct.
+<LI>quand une longue ligne contient des caractères accentués, le déplacement vers le premier caractère qui est après la longueur maximale est maintenant correct.
 <LI>la signalisation d'une ligne longue est maintenant correcte lors de déplacement du curseur par flèche droite ou gauche autour de la limite maximale.
-<LI>suppression du double bip sonore  lors d'du déplacement au premier caractère qui est après la longueur de ligne maximale.
+<LI>suppression du double bip sonore lors d'du déplacement au premier caractère qui est après la longueur de ligne maximale.
 </UL>
 
 <P>
@@ -83,7 +131,7 @@ Divers:
 <LI>modification de la documentation pour compatibilité avec l'add-on store.
 </UL>
 
-<H2>4. v2.4 (20/02/2023)</H2>
+<H2>5. v2.4 (20/02/2023)</H2>
 <P>
 Compatibilité avec NVDA 2023.1
 </P>
@@ -94,15 +142,15 @@ Nouveautés:
 <LI>signalement des fautes d'orthographe trouvées par le complément DSpellCheck (expérimental).
 </UL>
 
-<H2>5. v2.3 (27/09/2022)</H2>
+<H2>6. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>correction de l'impossibilité d'afficher l'historique de l'extension à l'aide du bouton "Voir l'historique".
 <LI>correction de mauvais déplacements de méthodes en méthodes ou de class en class.
-<LI>une ligne identifiant une méthode ou class est maintenant  seulement identifier par "def " ou "class " respectivement.
+<LI>une ligne identifiant une méthode ou class est maintenant seulement identifier par "def " ou "class " respectivement.
 <LI>compatibilité avec notepad++ 8.3 64 bits.
 </UL>
 
-<H2>6. v2.2 (04/02/2022)</H2>
+<H2>7. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2022.1.
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -116,7 +164,7 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée quand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>7. v2.1 (13/12/2021)</H2>
+<H2>8. v2.1 (13/12/2021)</H2>
 <P>
 Première version stable officielle.
 </P>

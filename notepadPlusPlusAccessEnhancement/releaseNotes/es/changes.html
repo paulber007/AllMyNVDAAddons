@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" type="text/css" href="../style_t2t.css" media="screen"/>
-<title>Editor de texto Notepad++: complementos de accesibilidad 2.7.1</title>
-</head>
-<BODY BGCOLOR="white" TEXT="black">
+<meta charset="utf-8">
+<title>Editor de texto Notepad++: complementos de accesibilidad 2.8</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Editor de texto Notepad++: complementos de accesibilidad - Historial</H1>
 <FONT SIZE="4">
 <I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
@@ -20,19 +19,68 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.1.nvda-addon">Versión estable actual: 2.7.1</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.6.nvda-addon">Versión anterior: 2.6</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.nvda-addon">Versión estable actual: 2.8</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.2.nvda-addon">Versión anterior: 2.7.2</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v2.7 (18/10/2024)</H2>
+<H2>1. v2.8 (05/06/2025)</H2>
+<P>
+Compatibilidad con NVDA 2025.1.
+</P>
+<P>
+Las versiones de NVDA anteriores a 2024.1 ya no son soportadas.
+</P>
+<P>
+Nuevas características:
+</P>
+<UL>
+<LI>se ha añadido el script "windows+control+f9" para abrir la carpeta de archivo actual como espacio de trabajo.
+<LI>en el diálogo "Vista previa de documento", es posible elegir con cuál visor el documento debe mostrarse:
+ <UL>
+ <LI>el Visor predeterminado de documentos html (en principio un navegador),
+ <LI>una Ventana en modo Exploración de NVDA,
+ </UL>
+<LI>el Visor predeterminado de documentos txt para ver la fuente del documento generado (en principio el Bloc de notas).
+</UL>
+
+<P>
+Corrección de fallos:
+</P>
+<UL>
+<LI>la búsqueda de actualización ya no se realiza cuando la opción "Buscar automáticamente actualizaciones" esta sin marcar justo después de iniciar NVDA.
+<LI>el número de línea se anuncia correctamente para archivos que usan solo "\r" como final de línea.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>procesar el documento actual con el compilador markdown y todas sus extensiones en lugar del compilador markdown2.
+<LI>uso de "NVDAState.shouldWriteToDisk" para guardar o no la configuración en el disco.
+<LI>el archivo temporal para mostrar los documentos "markdown" o "txt2tags" ahora se coloca en la misma carpeta donde está el documento. Si este documento es un nuevo documento no registrado, entonces se coloca en la carpeta de configuración del usuario. Si el encabezado predeterminado se usa para la visualización, los archivos de estilos se colocan en el mismo lugar que el archivo temporal.
+<LI>al instalar el complemento, la configuración actual ya no se guarda en la carpeta del complemento pero ahora se guarda en la carpeta de configuración del usuario. Esto permite si una instalación sale mal de conservar de todos modos la configuración actual.
+</UL>
+
+<P>
+Puesta en conformidad con la API de NVDA:
+</P>
+<UL>
+<LI>Uso del método "ExecAndPump" del módulo "systemUtils".
+<LI>se toma en cuenta la obsolescencia de gui.messageBox y gui.message.messageBox, reemplazado por MessageDialog:
+ <UL>
+ <LI>MessageDialog ahora se usa para todas las versiones de NVDA superiores a 2025.1.
+ </UL>
+</UL>
+
+<H2>2. v2.7 (18/10/2024)</H2>
 <P>
 compatibilidad con NVDA 2024.2, 2024.3 y 2024.4.
 </P>
 <P>
-las versiones de NVDA anteriores a la 2023.1 ya no son soportadas. 
+las versiones de NVDA anteriores a la 2023.1 ya no son soportadas.
 </P>
-<H2>2. v2.6 (02/04/2024)</H2>
+<H2>3. v2.6 (02/04/2024)</H2>
 <P>
 Nuevas características:
 </P>
@@ -41,7 +89,7 @@ Nuevas características:
 <LI>se toma en cuenta un nuevo modo de "voz a petición" introducido en nvda 2024.1:   todos los scripts que anuncien información verbalizarán esta información. En este modo, todos los demás scripts permanecerán en silencio.
 </UL>
 
-<H2>3. v2.5 (08/09/2023)</H2>
+<H2>4. v2.5 (08/09/2023)</H2>
 <P>
 Nuevas características:
 </P>
@@ -85,7 +133,7 @@ Diversos:
 <LI>modificación de la documentación para la compatibilidad con la Tienda de Complementos (Add-on Store).
 </UL>
 
-<H2>4. v2.4 (20/02/2023)</H2>
+<H2>5. v2.4 (20/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 </UL>
@@ -97,7 +145,7 @@ Nuevas características:
 <LI>anunciar errores de ortografía encontrados mediante el suplemento para el complemento DSpellCheck de Notepad++ (experimental).
 </UL>
 
-<H2>5. v2.3 (27/09/2022)</H2>
+<H2>6. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
 <LI>corrección de movimientos incorrectos de método a método o de clase a clase.
@@ -105,7 +153,7 @@ Nuevas características:
 <LI>Compatibilidad con notepad++ 8.3 64 bits.
 </UL>
 
-<H2>6. v2.2 (04/02/2022)</H2>
+<H2>7. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
 </UL>
@@ -118,7 +166,7 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>7. v2.1 (04/11/2021)</H2>
+<H2>8. v2.1 (04/11/2021)</H2>
 <P>
 Primera versión estable
 </P>

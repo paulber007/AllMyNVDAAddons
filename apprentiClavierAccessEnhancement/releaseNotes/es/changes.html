@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>ApprentiClavier: complementos de accesibilidad 1.13.2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href=..\style_t2t.css>
+
+</head><BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>ApprentiClavier: complementos de accesibilidad - Historial</H1>
+<FONT SIZE="4">
+<I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
+</FONT></CENTER>
+
+<P>
+URL: <A HREF="https://github.com/paulber19/apprentiClavierAccessEnhancementNVDAAddon.git">https://github.com/paulber19/apprentiClavierAccessEnhancementNVDAAddon.git</A>
+</P>
+<P>
+Descarga:
+</P>
+<UL>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.13.1.nvda-addon">Versión estable actual: 1.13.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.12.nvda-addon">Version estable anterior: 1.12</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/apprentiClavierAccessEnhancement/dev">Versiones de desarrollo</A>
+</UL>
+
+<P>
+Traducido por Rémy Ruiz, cambios por Carlos Esteban martínez Macías.
+</P>
+<H2>1. 1.13 (05/06/2025)</H2>
+<P>
+Compatibilidad con NVDA 2025.1
+</P>
+<P>
+Las versiones de NVDA anteriores a 2024.1 ya no son soportadas.
+</P>
+<P>
+Corección de fallos:
+</P>
+<UL>
+<LI>la búsqueda de actualización ya no se realiza cuando la opción "Buscar automáticamente actualizaciones" esta sin marcar justo después de iniciar NVDA.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>al instalar el complemento, la configuración actual ya no se guarda en la carpeta del complemento pero ahora se guarda en la carpeta de configuración del usuario. Esto permite si una instalación sale mal de conservar de todos modos la configuración actual.
+</UL>
+
+<P>
+Puesta en conformidad con la API de NVDA:
+</P>
+<UL>
+<LI>Uso del método "ExecAndPump" del módulo "systemUtils".
+<LI>se toma en cuenta la obsolescencia de gui.messageBox y gui.message.messageBox, reemplazado por MessageDialog:
+ -  -  MessageDialog ahora se usa para todas las versiones de NVDA superiores a 2025.1.
+</UL>
+
+<H2>2. 1.12 (19/10/2024)</H2>
+<P>
+Compatibilidad con NVDA 2024.2, NVDA 2024.3 y NVDA 2024.4.
+</P>
+<P>
+Las versiones de NVDA anteriores a 2023.1 ya no son soportadas.
+</P>
+<H2>3. 1.11 (23/03/2024)</H2>
+<UL>
+<LI>Compatibilidad con NVDA 2024.1
+<LI>Abandono del apoyo de las versiones de NVDA anteriores a la 2022.1.
+</UL>
+
+<H2>4. 1.10 (10/04/2023)</H2>
+<P>
+Corrección del bloqueo de NVDA 2023.1 al iniciarse ApprentiClavier: Problema de compatibilidad causado por la modificación de la configuración de las teclas de NVDA.
+</P>
+<H2>5. 1.9 (14/02/2023)</H2>
+<P>
+Compatibilidad con NVDA 2023.1
+</P>
+<H2>6. 1.8 (17/05/2022)</H2>
+<UL>
+<LI>corrección de la imposibilidad de ver el historial del complemento.
+</UL>
+
+<H2>7. 1.7 (26/01/2022)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2022.1.
+<LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
+</UL>
+
+<P>
+Cambios:
+</P>
+<UL>
+<LI>durante la actualización automática del complemento, ya no se le solicita al usuario si desea conservar las opciones de configuración actual del complemento.
+<LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
+</UL>
+
+<H2>8. 1.6 (03/11/2021)</H2>
+<P>
+Compatibilidad con NVDA 2021.3. Las versiones de NVDA anteriores a la 2020.4 ya no son soportadas.
+</P>
+<H2>9. 1.5 (16/06/2021)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2021.1. Las versiones de NVDA anteriores a la 2019.3 ya no son soportadas.
+<LI>eliminado código relativo a Python 2.7.
+</UL>
+
+<H2>10. 1.4.2 (04/02/2021)</H2>
+<P>
+Se añadió traducción árabe.
+</P>
+<H2>11. 1.4.1 (28/12/2020)</H2>
+<P>
+Corrección del parámetro "lastTestedNVDAVersion" del archivo buildVars.py.
+</P>
+<H2>12. 1.4 (22/12/2020)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2020.4
+<LI>añadido el botón "Ver historial" que se encuentra en la categoría "Actualización" en las "Opciones" del complemento.
+<LI>añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
+<LI>corrección de errores  planteados por la herramienta de validación Flake8.
+</UL>
+
+<H2>13. v1.3 (28/07/2020)</H2>
+<P>
+Compatibilidad con NVDA 2020.2
+</P>
+<H2>14. v1.2.1 (03/04/2020)</H2>
+<P>
+Corrección del historial de cambios  del complemento.
+</P>
+<H2>15. v1.2 (03/04/2020)</H2>
+<UL>
+<LI>puesta en compatibilidad con NVDA 2020.1,
+<LI>puesta en conformidad de prueba de compatibilidad del complemento con NVDA.
+</UL>
+
+<H2>16. v1.1.1 (14/02/2020)</H2>
+<P>
+Corrección del archivo addon_build.t2tconf.
+</P>
+<H2>17. v1.1 (29/12/2019)</H2>
+<UL>
+<LI>Compatibilidad con NVDA 2019.3
+<LI>formateado de la documentación
+</UL>
+
+<H2>18. v1.0 (17/10/2019)</H2>
+<UL>
+<LI>Cambio del nombre del complemento y se regresa a la versión 1.0
+<LI>compatibilidad con NVDA 2019.2 y versiones alfa de NVDA 2019.3.
+<LI>puesta en marcha de la actualización automática del complemento.
+</UL>
+
+<H2>19. v2.2.1 (21 de julio de 2016)</H2>
+<UL>
+<LI>corrección de la "y" no pronunciada
+</UL>
+
+<H2>20. v2.2 (29 de octubre de 2014)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2014.4
+</UL>
+
+<H2>21. v2.1 (29 de octubre de 2014)</H2>
+<UL>
+<LI>compatibilidad con NVDA 2014.3
+</UL>
+
+<H2>22. v2.0 (10 de junio de 2013)</H2>
+<UL>
+<LI>Rediseño completo del código fuente
+</UL>
+
+<H2>23. v1.0 (2 de enero de 2012)</H2>
+<P>
+Creación del complemento
+</P>
+
+</body>
+</html>

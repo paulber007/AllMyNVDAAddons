@@ -1,0 +1,1001 @@
+ADDON_SUMMARY - History
+Author: ADDON_AUTHOR_NAME
+
+
+%!includeconf: ../addon_global.t2tconf
+%!includeconf: addon_informations.t2tconf
+URL: [ADDON_REPOSITORY ADDON_REPOSITORY]
+
+
+Download:
+- [Current version: ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
+- [Previous Version: ADDON_PREV_VERSION ADDON_DOWNLOAD_PREVIOUS]
+- [Development's versions ADDON_DEV_URL]
+
+
+Sorry, but this document is an automatic translation from French language.
+
+Only the versions of the type major.minor (for example v3.1) are listed in this history.
+
+Versions of type major.minor.x (for example v3.1.2) are translation updates.
+
+
++ V14.1 (July/09/2025) +
+Changes:
+The following scripts no longer depend on the functionality "Announcement of the function associated with editing commands" (They are systematically installed):
+ - Addition of the selected text in the clipboard
+ - Announcement of the text in the clipboard
+ - emptying of the clipboard
+ - Display of the text contained in the clipboard in an information window
+- To avoid incompatibility with the  "Speaktypingwords" add-on, the functionality concerning the reporting of spelling errors whenn typing is restricted (see the user manual).
+
+
+Bug correction reminders:
+- The selector associated with voice profiles using the Windows default audio output device are no longer mistaken (corrected in version 14.0.2).
+- The "Playing sound for spelling mistakes during strike" option is configurable even if the "spelling lack" option of the category "formatting of documents" of NVDA is not checked.
+- NVDA does not become silent when the Worldvoice synthesizer is loaded (corrected in version 14.0.3). Bogue caused by the synthesizer who does not comply with the API of NVDA. When this synthesizer is loaded, speech cannot be recorded in vocal history.
+- When the Worldvoice synthesizer is loaded, it is not possible to prepare an add-on using the development tools. The "Getopt" module is no longer imported. Impossible to correct.
+- Special persistence for Gmail no longer causes an error under Excell when normal remanence is installed (corrected in version 14.0.4).
+- Permanent support on the "space" key in an editing area no longer causes the announcement of a series of the word "space". The correction must also solve the latency problem with the shot.
+
+
++ V14.0 (June/05/2025) +
+Compatibility with NVDA 2025.1.
+
+NVDA versions prior to 2024.1 are no longer supported.
+
+News:
+- Addition of a script to display the clipboard's text text in an information window. It is without assigned input gesture and launches with the "shift + X" command of the interpreter.
+- Regarding the reporting of spelling errors:
+ - The report of spelling errors can now be different depending on the situation "in reading" or "While typing".
+ - For each situation, the add-on allows the choice between:
+  - Emit a double beep,
+  - Playing NVDA's default sound.
+  - to announce "Spelling error",
+  - to announce the spelling error under a dedicated configuration profile.
+ - A new configuration profile "Spelling errors Announcement" is added. It is with the speech parameters of this profile that the word poorly spelled will be announced.
+- Addition of the possibility of detecting spelling errors by the text analyzer.
+- Addition of an option not to say "empty" when moving by line (configurable by profile).
+- Automatic deletion of temporary files with the ".delete" extension that NVDA cannot delete and which causes an error in the NVDA journal with each start -up.
+- Until this version of the add-on, it automatically put NVDA back on the two channels when it started. It is now possible to deactivate this operation by configuration.
+
+
+Change :
+- The "NVDA logs management" dialogue is changed to present in a drop-down list, the choice, current or previous, of the log to open or the one whose path must be copied in the clipboard.
+- When it is stopped, the add-on leaves NVDA channels.
+
+
+Bogs corrections:
+- Correction of the error that occurred during the "Alt+F6" order of the interpreter when the cursor was placed at the end of the document.
+- The last parameter used in the synthesizer settings loop is now correctly saved after using the control interpreter.
+- The scripts of add-ons which are not in operation are no longer presented in the "User input gestures" dialogue.
+- Special persistence for Gmail rekindles properly.
+- The update search is no longer done when the "automatically search updates" option is unclogged just after starting NVDA.
+- The "text analysis" category no longer appears several times in the current profile setting dialogue.
+- The  "Maximum number of characters to read" combobox of the  "Complements to NVDA" category no longer appears when the "Announcement of the function associated with publishing commands" functionality is not installed.
+
+
+Development :
+- during a vocal profile switch,Only the new vocal parameters are recharged (no call to setsynth).
+- The Python Markdown compiler (embedded in the add-on) with all its extensions replaces the Markdown2 compiler to compile the Markdown documents. It is used for NVDA versions prior to 2025.1.  For the following, the compiler on board in NVDA is used.
+- When installing the add-on, the current configuration is no longer saved in the add-on folder but is now saved in the user configuration folder. This allows if an installation goes wrong to keep the current configuration anyway.
+- The "UtilitiPy37" and "UtilitiPy311" folders are deleted.
+
+
+Compliance with the NVDA API:
+- Use of the "ExecandPump" method of the "Systemutils" module.
+- Taking into account the displacement of the "OUTPUDEVICE" parameter of the "Speech" section in the "Audio" section of the NVDA configuration.
+- Taking into account the memorization of the audio output device by its ID instead of its name.
+- Taking into account the change of type of configuration keys "Speaktypedcharacters" and "Speaktypedwords".
+- Taking into account the deletion of the "_GetouputDevices" function of the "NVWAVE" module.
+Take into account the obsolescence of Gui.messagebox and Gui.message.messagebox, replaced by messagedialog:
+ - Messagedialog is now used for all NVDA versions greater than 2025.1.
+ - The option "Do not take into account the option" Announce the description of the object "when displaying the" Confirmation "style dialog box is operational in the dialogues using the Showmodal method of the Class MistiSdialog.
+
+
++ v13.4 (October/11/2024) +
+Compatibility with NVDA 2024.2 and NVDA 2024.3.
+
+Changes:
+- in navigation mode in HTML documents, the letter "j" replaces the letter "p" for moving from paragraph to paragraph, the latter now being used by NVDA 2024.2.
+- taking into account the new parameters "Unicode Normalization" and "Report 'Normalized' when navigating by character" introduced in NVDA 2024.3.
+- Configuration of the delay waiting for repetition of the same input gesture in the "Advanced" category is removed for versions of NVDA higher than NVDA 2024.4. This is now included in the NVDA "Keyboard" category.
+
+
+Bug fixes:
+- upgraded the script that extends the NVDA clipboard report script ("NVDA+c" input gesture) which was changed in NVDA 2024.1.
+- "text analysis" functionality:
+ - no display of the configuration menu when the functionality is not installed.
+ - clearing the feature configuration when it is uninstalled.
+
+
+Development:
+- use of the pycaw and psutil libraries now integrated into NVDA 2024.2.
+- resuming the code to remove the configuration of features when uninstalling them.
+- resuming the code to load the audioCore.py module if necessary.
+- use of the "pre_speech" extension point introduced in NVDA 2024.2 to avoid patching the NVDA "speech.speak" method.
+
+
++ v13.3 (March/20/2024) +
+What's new:
+- taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
+- the volume level is announced when an application is selected in the "Audio Source Manager" dialog.
+- the "Improvement of echo per word" functionality is removed due to reported slowdowns and problems with editing notes in Braille with Musescore.
+- the installation of the "soundSplitter" add-on is reported because it risks causing the add-on to malfunction.
+
+
+Summary of changes made in versions 13.2.x:
+- the extension now correctly completes its initialization when extensions are reloaded.
+- fixed bug causing per word echo slowdown.
+- updated translations: AR, UK,
+
+
+Bug Fixes:
+- the scripts which allow you to restore the volume to the previous level now work correctly (no more lag).
+- in the "Shell's scripts" dialog, it is now possible to execute scripts which are associated with a command containing a number.
+
+
+Development:
+- removed code supporting versions prior to version 2022.1
+- renaming of the "psutil" library to "psutilEx" to avoid import conflicts of the same library between extensions.
+- renaming of the "win32" library to "win32Ex" to avoid import conflicts of the same library between extensions.
+- update of the pycaw library to version v20240210 (Used for NVDA versions lower than 2024.2).
+- use of the pycaw library integrated into NVDA from version 2024.2.
+- updated markdown2 to version 2.4.13.
+- resumption of the code to highlight in separate modules the parts of NVDA code which have been modified to achieve the functionalities and indications in the user manual of these modifications.
+
+
++ v13.2 (November/23/2023) +
+News:
+- in accordance with NVDA add-on store from NVDA 2023.2:
+ - possibility to update the add-on with an incompatible version.
+ - in the "Quick add-ons activation" dialog, it is now possible to activate incompatible extensions.
+
+
+Bug Fixes:
+- reminder of the correction made in 13.1.3, concerning problem #9: The parameters of all synthesizers are reset after using the profile selectors.
+
+
+Development:
+- updated markdown2 to version 2.4.11.
+- updated the "psutil" package to version 5.9.6.
+- updated pydubEx folder to pydub version 0.25.1.
+- upgrade win32 folder to pywin32 version 306 for Python 3.11.
+
+
++ v13.1 (September/04/2023) +
+Improvements:
+- announcement of the name of the application during a volume change if this application is different from that of the previous volume change.
+- in the audio sources manager:
+ - the selection of an audio output device triggers the transmission of a tone to the selected device (can be deactivated by configuration).
+ - audio output device volume change commands available in the audio source selection list, are now also available in the audio output device selection list.
+
+
+Bug fixes:
+- fixed the error when commanding to mute or restore the sound (command "s" of the shell) for an application which does not emit any sound.
+- when per-word echo enhancement is enabled, double word announcement after typing a word breaker no longer occurs.
+- when per-word echo enhancement is enabled, the word announcement in the notepad edit box no longer includes the word separator.
+
+
++ v13.0 (August/15/2023) +
+New:
+- by configuration, it is possible to automatically save the current voice parameters of the current selector before switching to another selector.
+- improved per-word keyboard echo to correctly announce corrected or split words.
+- improvement of the "Sound control" functionality to take into account all the active audio output devices and not only the Windows default one.
+- improved "Text Analyzer" functionality to go to the next or previous irregularity detected by the text analyzer.
+- possibility to adjust the volume of tonalités emitted by NVDA when Wasapi is not used.
+- possibility to modify the gain of the sounds of NVDA and the add-on.
+- report on NVDA startup of caps lock enabled state.
+- signaling when NVDA starts up that the clipSpeak add-on is working which conflicts with the Announce feature of the function associated with the editing commands.
+
+
+Compatibility:
+- the display of the list of icons in the notification area is now operational under versions of Windows 11 greater than or equal to version 22h2 build 22621.1344.
+- taking into account the possible use of wasapi by NVDA.
+- NVDA versions below 2022.1 are no longer supported.
+
+
+Various:
+- the add-on is disabled during the installation of an NVDA update.
+
+
+Changes:
+- "NVDA Audio Manager and Active Applications" dialog has been renamed to "Audio Source Manager".
+- this dialog now presents the list of active audio output devices and allows to manage the audio sources of a particular device.
+- the two scripts to go to the next or previous line containing an irregularity detected by the text analyzer are removed and replaced by two scripts to go to the next or previous irregularity.
+
+
+Developments:
+- the code for the "Sound Control" functionality has been completely restructured. Thanks to the author of the "volumeAdjustment" (Oleksandr Gryshchenko) add-on whose structure of his code served as a reference.
+- upgraded markdown2.py file to version 2.4.9.
+- updated pycaw library to version v20230407.
+
+
++ v12.0 (February/22/2023) +
+Compatibility with NVDA 2023.1 and dropping support for NVDA versions earlier than 2021.1.
+
+New:
+- enhancements for Windows Explorer:
+ - A script to announce the access path of the folder or the file which is under the cursor of the Windows explorer, or copy this path in the clipboard.
+ - A script to announce, going up the folder tree, the name of the folders making up the path of the folder containing the element under the cursor.
+- Possibility to block the "Insert" and "Caps lock" keys.
+- Possibility to limit the repetition of keys
+
+
+Bug fixes:
+- Reminder: version 11.4.2 fixed the problem of regression of the automatic update of the extension. Versions prior to this version must be updated manually.
+- The "Manage user configuration" sub-menu will no longer appear several times after reloading the add-on.
+
+
+Changes:
+- The scripts concerning the voice history no longer directly copy the recording to the clipboard. This copy is now done by double-pressing the command gesture of the script to announce the current record.
+- The "readme.md" file is deleted for languages ​​other than English (en) and should no longer be translated.
+
+
+Updating the code :
+- Removed the code regarding the announcement of the focused word after word deletion introduced in NVDA 2020.3.
+- Removal of the code concerning the correction made in the BoxSizerHelper class of guiHelper.py from NVDA 2021.1
+- Removed code supporting versions prior to NVDA 2021.1. The modules concerned are:
+ - browseModeEx: __init__.py, documentBaseEx.py, NVDAObjectsUIA.py, virtualBuffers.py
+ - commandKeysSelectiveAnnouncementAndRemanence: __init__.py
+ - complexSymbols: newSymbolsHandler.py
+ - scripts: scriptHandlerEx.py
+ - settings: userConfigManager.py
+ - switchVoiceProfile: __init__.py
+ - speechHistory: __init__.py
+ - systemTrayIconsList: __init__.py
+ - utils: __init__.py, contextHelpEx.py, keyboard.py
+ -theGlobalPlugin.py
+
+
++ v11.4 (January/09/2023) +
+New:
+- new script to empty the clipboard (already present in the previous version, but not announced).
+- as an option, it is possible to have the non-alphanumeric characters typed spoken when the keyboard echo by character is deactivated.
+
+
+Bug fixes:
+- fixed issue with sapi5 synthesizer to put NVDA sound on right or left channel.
+- fixed issue when "nvda+j" is typed while voice switch mode is enabled. This mode is now disabled on this keystroke.
+- pressing "f1" in the "NVDA audio manager and active applications" dialog now opens the user manual on the correct chapter.
+- correction of incorrect display of boolean type information (yes or no) in the "Voice profile information" dialog box.
+- fixed incorrect display of application context information for an application that contains control characters in their product name (like Agenda, ApprentiClavier).
+- gestures added in the "Miscellaneous" category of the "Input gestures" dialog are now correctly displayed in the "Miscellaneous" category of the "User input gestures" dialog.
+- under W11, the icons of the notification area are now correctly presented in the list of the dialog displayed by "nvda+f11" or "nvda+J" followed by f11. It was missing the icons like "system network status", system volume status", "system clock" and "show desktop".
+- work around NVDA bug with PowerPoint (Office 365, 2019 and 2016) when putting focus on an obscured text shape, resulting in recursion overflow (infinite loop)
+
+
+Others:
+- added code written by Joseph Lee in his "Office desk"add-on" for the W11 search box and notifications.
+- improvement of the announcement of the editing commands "control+c", "control+v", "control+x" and "control+z" when these commands are not released.
+- removal of the display of windows as "Microsoft Text Input Application" from the list of current applications in the "List of windows" dialog.
+
+
+Compatibility with NVDA 2022.3 and 2022.4:
+- taking into account the new option "Delayed description of characters during cursor movement" in the "Speech" category.
+- the new scripts of NVDA version 2022.4 concerning tables are moved to the "Table" category added by the add-on in the "Input gestures" dialog.
+
+
++ v11.3 (September/10/2022) +
+New:
+- added scripts to move the cursor to the next/previous line of text containing an irregularity detected by the text analyzer.
+
+
+Changes:
+- addition of the vertical Tabulation symbol and its pronunciation in the "symbols-en.dic" file of the "newSymbols" folder.
+- removed some symbols whose pronunciation is already defined by NVDA.
+- base undefined symbols in NVDA are now injected on every voice change. Installing the extension no longer creates a symbol file.
+- removed scripts to move cursor to first/last cell of row/column in a table. These scripts are now provided by NVDA. However, they are kept for versions lower than 2022.2.
+- the new scripts of NVDA version 2022.2 concerning tables are moved to the "Table" category added by the add-on in the "Input gestures" dialog.
+
+
+Bug fixes:
+- fixed error when launching the "User Configuration Manager" dialog with a configuration other than "userConfig" or "NVDA".
+- when opening the emojis panel in Windows 11, the direction arrows can be used again when the cursor is in the editing area.
+- work around NVDA bug causing a series of errors in the log when typing in the "Filter by:" field of the "command gestures" dialog.
+- fixed the malfunction of the text parser in a UIA document.
+
+
+Compatibility:
+- resumption of the code of the documentBaseEx.py module to adapt to the modifications made in the "documentBase.py" module of NVDA version 2022..
+
+
++ v11.2 (May/23/2022) +
+Improvements and new features:
+- script to empty the clipboard.
+- resumption of the base script of NVDA announcing the text in the clipboard ("NVDA+c") for
+ - indicate if the clipboard is empty,
+ - increase the number of reported characters (configurable).
+ - indicate that the clipboard is not empty when there is no text in the clipboard.
+- in the "NVDA audio manager and active applications" dialog, the list of applications is now automatically refreshed each time it receives the cursor.
+- put NVDA sound back to center if add-on is disabled or uninstalled.
+- resumption of the operation of the extension in secure mode.
+- numeric lock management:
+ - reporte lock activation on NVDA Starting.
+ - Configurable activation or deactivation of Numeric Lock when activating a configuration profile.
+
+Bug fixes:
+- text parser did not report text font changes to hidden or unhidden.
+- taking into account the modification made in the context of pr #11767 (https://github.com/nvaccess/nvda/pull/11767).
+- correction of the "keyboard.ini" file for the French language.
+
+
+Changes:
+- the "copied" message is announced only if the clipboard changes after the "control+c" command.
+- the empty state of the clipboard is announced when using the command to paste the contents of the clipboard.
+- Due to a conflict with the input gesture "nvda+control+f8":
+ - the command gestures installed for the text analyzer use the "f6" key instead of the "f8" key,
+ - the interpreter commands concerning the text parser now use the "f6" key instead of the "f8" key,
+ - the interpreter command for Show audio manager of NVDA and active applications is now "f8" instead of "f6".
+
+
++ v11.1 (February/05/2022) +
+Features:
+- added command to center audio of focused application,
+
+
+bugfixes:
+- correction concerning the error that appears in the log when the "command gestures" dialog is displayed
+over the "NVDA Audio Manager and Active Applications" dialog.
+- added a comment to designate the part of code imprinted in the extension Tony's enhancements by Tony Malik)
+- fix to avoid speech blocking by "Audio Separation" feature.
+
+
++ v11.0 (january/26/2022) +
+new features:
+- orientation of NVDA audio output.
+- added scripts to increase or decrease the volume of NVDA.
+- possible increase of the main volume if necessary when increasing the volume of NVDA or applications (option to be configured).
+- quick add-ons activation / desactivation.
+- when opening the "Input gesture" dialog, the category associated with the active add-on for the application under focus is automatically selected.
+- possibility of reporting spelling errors by a double beep or by a voice announcement instead of the sound emitted by NVDA.
+- the last setting used in the synthesizer settings ring is saved to find it selected after restarting NVDA.
+
+
+Changes:
+- the option "Announce the volume of applications in percentage" is removed. The volume is announced in level as in the Windows volume mixer.
+- during an automatic update of the add-on, it no longer asks the user if he wants to keep the current configuration parameters of the add-on.
+- during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
+
+
+Compatibility with NVDA 22.1:
+- taking into account of the new UIAHandler package.
+
+
++ v10.3 (December/12/2021) +
+Bug fixes:
+- resolution of the problem encountered with the new extension "NAO" when presenting the result of optical recognition and the previous and next page keys.
+
+
++ v10.2 (December/10/2021) +
+Bug fixes:
+- resolution of the problem encountered with the new "NAO" extension when presenting the optical recognition result: unexpected closing of the window.
+- scripts can be started again in the "Shell scripts" dialog.
+
+
++ v10.1 (November/28/2021) +
+Bugfix:
+- the configuration folders added using the "User Configuration Manager" dialog are kept when installing the add-on. The "NVDAExtensionGlobalPlugin-userConfigs.ini" file is no longer deleted.
+- the state of the "Symbol and punctuation level when moving by word" option is now preserved when it is used in an alpha version.
+- NVDA volume recovery threshold is now correctly recorded.
+
+
+Preparation for compatibility with NVDA 2022.1:
+-replacement of "curLang" by "getLanguage ()"
+
+
++ v10.0 (November/21/2021) +
+New features:
+- addition of the "Text analyzer" functionality.
+- added functionality "manage user configurations and restart NVDA with a precise configuration".
+- temporary use of an audio output device without impacting NVDA configuration.
+- announcement of the cursor position in the edit boxes.
+- resumption of the "Computer shutdown" functionality for:
+ - allow canceling the request to put the computer on standby, shutdown or restart before the timeout expires.
+ - ask for confirmation during a request to put the computer on standby, shutdown or restart using a input gesture.
+- addition in the "NVDA Logs Management" dialog, of a button to copy the path of the previous log to the clipboard,
+- contextual help using the "f1" key in the extension's dialog boxes.
+- new script to add the selected text to the clipboard ("x" command).
+- possibility of executing scripts in the "Input gestures" dialog (for versions of NVDA greater than 2020.3).
+
+
+Changes:
+- the "Parameters" submenu of the extension has been split into two submenus:
+ - "Global settings" submenu ("f1" interpreter command),
+ - "current configuration profile settings" submenu (interpreter command "control + f1").
+- copying the date to the clipboard is now done using the "d" command of the interpreter instead of "c".
+- henceforth, only versions of the type major.minor will be noted in this history. Versions of type major.mineure.x will be translation updates.
+
+
+Compatibility:
+- Compatibility with nvda 2021.2:
+ - The characterProcessing.SYMLVL_ * constants have changed.
+ - controlTypes has been split into several submodules.
+- discontinuation of versions of NVDA prior to 2019.3 and removal of the code implemented for these versions.
+
+
+Others:
+- installation of the symbols-xx.dic file when stopping NVDA if a change of language takes place.
+
+
+
++ v9.9 (09/21/2021) +
+correction of the malfunction of the "Selective announcement of control keys" functionality.
+
++ v9.8.1 (07/08/2021) +
+Bug fix:
+- in avigation mode and NVDA 2021.1, moving by paragraph no longer generates an error.
+
+
++ v9.8 (05/18/2021) +
+- compatibility with nvda 2021.1. Versions of NVDA prior to 2019.3 are no longer supported.
+- spelling and grammar correction of English character strings.
+- Braille display of voice announcements made for editing commands such as "copy", "paste", ...
+
+
++ v9.7 (03/25/2021) +
+- resumption of all the functions to also send the text of the audio announcements to the braille display.
+
+
++ v9.6 (03/10/2021) +
+News:
+- in the "List of active windows" dialog (opened by "nvda + j" followed by "f10":
+ - in the list of windows, possibility to select a window by typing the beginning of its name.
+ - the active second level windows are now displayed.
+- in the dialog "List of visible elements composing the object in foreground" opened by "NVDA + b":
+ - addition of the state of the buttons and check boxes in the list of elements found.
+ - possibility to select an element by typing the beginning of its label.
+- Concerning the "volume control" functionality:
+ - scripts to set the volume of the application under focus to a certain percentage of the main volume.
+ - scripts to set the main volume to a fixed level.
+ - scripts to restore the main volume or that of the application under focus to the previous level.
+ - announce the change of the volume level of the application under focus in absolute value or in percentage of the main volume.
+- improvement of the "Command keys selective announcement" functionnality:
+ - taking into account of the "windows" modification key,
+ - addition of the "Check all" and "Uncheck all" buttons to select or deselect all of the modifier key combinations,
+ - addition of the possibility of excluding any key with or without combination of modifier keys,
+ - possibility to exclude a key without a combination of modifier keys,
+ - use of the "F2" key to search for the next or previous checked item in the lists (abandonment of the "F1" key used by NVDA since version 2020.4).
+- addition of scripts to announce or display the current speech settings.
+- translation of the user manual into English.
+
+
+Bug fixes:
+- fixed the problem of bad announcement when opening a file with the notepad followed by "control + n" and some down arrows.
+
+
+Changes:
+- in the dialog "List of visible elements composing the foreground object" (opened by "NVDA + b") and when the focus is in the list of elements, the selection of the type of elements is now done by "control + the first letter of the type and no longer only with its first letter.
+- in the lists of the "Selective announcement of command keys" dialog, the "f1" key has no further action.
+- the automatic windows enlargement is now done 100 ms after the foreground event, instead of 2 seconds (linked to the problem of the bad announcement).
+
+
+For compatibility with NVDA 2021.1
+- addition of the "utilitiesPy38 folder for libraries specific to python 3.8.
+- update of the psutil package compatible with python 3.8.
+- update of the files of the "win32" folder of the "pywin32" library compatible with python 3.8
+- replacement of GetDateFormat and GetTimeFormat removed by GetDateFormatEx and GetTimeFormatEx in the "dateTime" script.
+- taking into account of the new "autoSettingsUtils" package from NVDA.
+
+
+
++ v9.5.3 (20/01/2021) +
+Correction of the translation problem of the message "Copied to clipboard" (replaced by "copy").
+
++ v9.5.2 (16/01/2021) +
+Fixed incorrect registration of complex copied or pasted symbols.
+
+
++ v9.5 (28/12/2020) +
+- compatibility with NVDA 2020.4
+- inclusion of the "Emulated system keyboard keys" category in the "User input gestures" dialog.
+- addition of the type of elements selected in the title of the dialog opened by "NVDA + f7".
+- addition of the script to emulate the "Applications" key.
+- new script to display the list of running add-ons.
+- addition of the "Destroy all" button in the "List of active windows" dialog box to destroy all the launched applications.
+
+
+Bug fixes:
+- the "Browse in loop" option will no longer toggle each time the add-on configuration is modified.
+
+
++ v9.4 (29/11/2020) +
+- correction of the problem concerning:
+ - the inability to assign a braille command gesture in "input gesture" dialog,
+ - the impossibility of having the help of the braille input gestures when input help is activated.
+- added download links in the add-on's history.
+- addition of the "View history" button in the "Update" category of the add-on's parameters.
+- fixed NVDA crash when copying and pasting to Thunderbird's editor window.
+
+
++ v9.3 (27/10/2020) +
+- compatibility with NVDA 2020.3
+- Fixed use of same script repeat delay.
+- Increase of the upper limit of the persistence time.
+- Increase of the upper limit of the repetition time delay of the same input gesture.
+- Correction to be able to use the "shift" and "control" keys with the direction keys in standard use of the numeric keypad.
+- removal, for versions of NVDA higher than 2020.3, of the announcement of the focused word after removal by "control + supp" (now supported by NVDA).
+- partial operation of the extension in secure mode.
+- Removed specific code for wxPython 3.
+- big cleaning of the code (correction of the errors raised by the Flake8 analyzer).
+- correction of errors in the documentation.
+- addition of the "What's new" button in the dialog proposing the installation of a new update.
+
+
++ v9.2.2 (08/15/2020) +
+Correction of the error occurring when launching the "Display the dialog to manage the input gestures configured by the user" script. (with version 2020.3 alpha)
+
++ v9.2.1 (08/10/2020) +
+Added Spanish translation
+- fixed the error in the log with the "reportFormatting"script and upgraded this script.
+- fixed error caused by code cleanup in alpha versions of NVDA.
+
+
++ v9.2 (07/28/2020) +
+Compatibility with NVDA 2020.2
+
++ v9.1.3 (05/28/2020) +
+Added Vietnamese translation.
+
++ v9.1.2 (05/21/2020) +
+Correction of documentation
+
++ v9.1.1 (05/21/2020) +
+Added Turkish translation.
+
++ v9.1 (05/01/2020) +
+- compatibility with NVDA 2020.1
+- resumption of scripts to announce the name and the full path of the selected folder of the dialog boxes of the style "Open", "Save as".
+- resumption of scripts to announce the recordings of the history of the vocal announcements for a direct copy in the clipboard.
+
+
++ v9.0.8 (04/10/2020) +
+Correction of the error produced when pressing the "copy path" button in the "NVDA Log Management" dialog.
+
++ v9.0.7 (04/09/2020) +
+Added Arabic translation.
+
++ v9.0.6 (04/08/2020) +
+Added Portuguese translation.
+
++ v9.0.5 (04/02/2020) +
+- Preparation for compatibility with NVDA 2020.2.
+- compliance for the compatibility test of an extension with NVDA.
+
+
++ v9.0.4 (03/23/2020) +
+Preparing for compatibility with NVDA 2020.1.
+
++ v9.0.3 (03/05/2020) +
+Fixed error with "nvda + f7" script on Microsoft Edge.
+
++ v9.0.2 (02/22/2020) +
+- Bug fixes: script error to copy log path to clipboard.
+- better handling of an import error of the myAddons.latest file.
+
+
++ v9.0.1 (02/06/2020) +
+- Fixed bug with "nvda + pause" script.
+- correction of the release date of version 9.0.
+
+
+
++ v9.0 (02/06/2020) +
+Compatibility with NVDA 2019.3
+
+New features:- possibility to completely reset the configuration of the extension.
+- automatic search and installation of updates.
+- possible use of the numeric lock key to switch to standard numeric keypad.
+- addition of the "multiply", "divide" and "plus" keys in standard use of the numeric keypad.
+- reorganization of the categories of the extension parameters.
+- warning for incompatibility with other extensions.
+
++ v8.1 (05/05/2019) +
+Compatibility with NVDA 2019.2
+Features:
+- possibility of limiting the afterglow to the single "NVDA" key.
+- complements for the "Sound control" functionality:
+ - increase, decrease, maximize or minimize the volume of the application under focus,
+ - increase, decrease, maximize or minimize the main volume,
+ - grouping of its input gestures under the "sound control" category,
+- possibility of using the keys of the numeric keypad as direction key (normal Windows operation).
+
+
+Bugfix:
+- no saving of certain parameters during manual saving and when the option "do not save the configuration" was checked.
+- "Development tools" functionality: correction of the incorrect taking into account of sub-languages ​​for the creation of the documentation of an extension.
+
+
++ v8.0 (02/13/2019) +
+Features:
+- in the "List of visible elements making up the foreground object" dialog, you can change the type of object without leaving the list of objects.
+- addition of the possibility of activating key persistence when NVDA starts up.
+- addition of specific persistence for the gmail.com site.
+- reorganization of the "parameters" submenu.
+- addition of the "date and time - complement" functionality which includes the copy of the date and time in the clipboard (with "nvda + f12"), the announcement of the time with the seconds and the announcement of the date and time without punctuation.
+- new script "copy date and time" in the command interpreter.
+- resumption of the "Voice profile switching" functionality for the choice of selectors under a configuration profile. The previous configuration of this feature is not compatible and will therefore be deleted the first time this feature is used.
+- possibility to display voice history recordings in ascending or descending order.
+- when uninstalling a feature, complete deletion of its configuration,
+- complete use of the documentation for the use of the term "extension" instead of "additional module" (imposed by NVDA translators),
+- elimination of the timeout between key presses for all NVDA base scripts modified by the extension.
+
+
+Bug fixes:
+- no display of all the control gestures added or deleted by the user ("User control gestures" dialog).
+
+
+Development:
+- preparation for compatibility with python 3.
+- New tools for the development of extensions based on a buildVars.py file:
+ - update of the extension version in the buildVars.py file,
+ - update of the manifest.ini file,
+ - creation of the localization manifest.ini file,
+ - creation of HTML documentation files,
+ - creation of the .pot file,
+ - creation of the buildVars.py file,
+ - preparation of the extension,- exploration of the extension file.
+
+
+
++ v7.4.3 (01/07/2019) +
+- fixed spanish keyboard.ini file which caused NVDA to crash in spanish language.
+- Arabic language translation of the module interface
+
+
++ v7.4.2 (12/22/2018) +
+- Corrected documentation
+- correction of incorrect placement of buttons in the "Last composed symbols" dialog.
++ v7.4.1 (12/21/2018) +
+Fixed issue where commands from a Braille keyboard were announced in English.
+
++ v7.4 (12/16/2018) +
+1- New features:
+- addition, for "Firefox" and Google Chrome "browsers, of the" clickable "type for the navigation mode and the" List of elements "dialog,
+- addition, for "Firefox" Internet Explorer, Microsoft Edge and Google Chrome "browsers, of the" paragraph "type for the navigation mode and the" List of elements "dialog,
+- addition of the script to make a single and double left click at the current position of the navigator object.
+- addition of the script to make a simple and double right click at the current position of the navigator object.
+
+
+2- various:
+- possibility of launching the selected script in the dialog presenting the scripts of the interpreter,
+- possibility, for translators, to configure editing commands such as "control + c, control + a" for each language and for certain applications requiring it,
+- use of CentreOnScreen "instead of" Center ".
+
+
++ v7.3 (09/25/2018) +
+Completion of compatibility with NVDA 2018.3 and wxPython 4.
+- new features:
+ - memorization of the last symbols composed and dialogue to display and recompose them,
+ - new Development Tools dialog which allows the possibility of converting documentation files for additional modules,
+ - addition of the "main region" element type for navigation mode (firefox browser, Internet Explorer, Google Chrome and Microsoft Edge),
+ - addition of the advanced option to configure the wait time delay for repetition of the same command gesture,
+ - deactivation under option of the parameter "Announce the description of the object" during the display of the confirmation style dialog boxes (displayed by gui.messageBox) so that NVDA announces the message contained in these boxes,
+ - addition of the option to loop through the document in search of a previous or next element,
+ - addition of a repetitive beep during the search for elements in the "List of elements" dialog (NVDA + f7),
+ - placement of the "Hibernate" button in the first place in the "computer shutdown" dialog,
+ - module settings menu modified to resemble NVDA settings menu,
+
+
+- bugfix:
+ - correction of the wording of the choice lists of the module configuration dialog boxes.
+ - correction of the non-stop of the beep when searching for the elements of the window in the foreground on interrupt by escape,
+ - footer problem when converting a t2t document incorrectly (modification of the txt2tags.py file and removal of the footer).
+
+
+
+- miscellaneous:
+ - reworking of the source code with the placement of all the external modules used in the same folder ("utilities"). This folder does not require any translation,- placement of wav files in the sounds folder.
+
+
++ v7.2 (June 20, 2018) +
+- compatibility with the development versions of NVDA preparing to switch to wxPython 4 (NVDA 2018.3),
+- correction of an error when destroying the last window in the window list.
+- addition of an option to deactivate the numbering of voice history recordings,
+- addition of an option to title or not the dialog boxes with the name of the module,
+- deactivation of the "Announce the description of the object" parameter during the display of the module's dialog boxes, of the gui.messageBox style, to hear the message contained in these boxes.
+
+
++ v7.1.2 (June 6, 2018) +
+Correction of the module configuration not being taken into account for the "Sticky keys" functionality.
+
++ v7.1.1 (June 5, 2018) +
+Fixed the issue where the optical recognition result could not be read.
+
++ v7.1 (June 1, 2018) +
+Compatibility with NVDA 2018.2
+
+
++ v7.0 (March 8, 2018) +
+This version of the add-on is not compatible with versions prior to NVDA version 2018.1
+
+++ New features ++
+- support for the Google Chrome browser by the '"Extension of virtual buffer functionalities" feature,
+- implementation of the command interpreter allowing to launch the scripts using a simple key,
+- installation by configuring the functionalities with or without control gestures,
+- new "Key stickiness" feature allowing you to compose command gestures using the NVDA, Control, Alt, Shift or Windows keys, with a single finger,
+- announcement or display of the name and version number of the additional module activated for the application placed under focus,
+- shutdown, restart or hibernation of the computer,
+- management of control gestures configured by the user.
+- Computer sound control (Windows 10) for:
+ - mute or restore the sound of the audio stream of the application under focus,
+ - establish, by script and at the launch of the module, the sound of the main audio stream and that of NVDA.
+
+
+++ Changes ++
+- most features are now installed by default without a command gesture. However, it is possible to install these gestures by changing the installation state of the feature or to manually assign these gestures,
+- the "nvda + f12" command gesture can announce the time on the Windows clock with seconds (configurable option),
+- the "NVDA + f12" command gesture can copy the date and time to the clipboard (triple press),
+- the command gesture "NVDA + alt + k" ("Announce the cells of the current column") is replaced by "NVDA + alt + l" (conflict with other complementary module),
+- the command gesture "NVDA + upper case + 4" ("Help for the composition of complex symbols") is replaced by "NVDA + upper case + f4" (conflict with other complementary module),- the documentation has been revised: the "History" chapter has been moved to the "General" chapter and the module history is placed in a separate file (change.html).
+
+
+++ Bug fixes ++
+- correction of bad descriptions of command gestures of scripts replacing basic scripts,
+- on corruption of the configuration file, reinitialization of the configuration to default values.
+
+
++ v6.5 (August 28, 2017) +
+- compatibility with NVDA 2017.3,
+- command "w" changed to "y",
+- correction of a bug in the "selective control of command keys" functionality,
+- correction of the documentation of some scripts.
+
+
++ v6.4 (July 9, 2017) +
+- added shortcuts to change voice profile in laptop,
+- correction of the loss of modified key names during an update,
+- correction of the error when moving in an html page.
+
+
++ v6.3 (June 2, 2017) +
+- fast voice profile switching.
+
+
++ v6.2.1 (April 7, 2017) +
+Correction of the problem encountered in Excel with "control + c" or "control + v"
+
+
++ v6.2 (March 13, 2017) +
+Compatibility with nvda 2017.1
+Features:
+- possibility of warning before the end of the timer,
+- addition of movement commands in a table for Microsoft Edge,
+- restart NVDA with the log enabled in debug mode,
+- signaling by a sound of the entry of an error in the log.
+
+
+Bug fix:
+- double announcement of the element under focus (Selective announcement dialog of the command keys),
+- no action of the "Manage your symbols" button in the "help for the composition of complex symbols" dialog,
+- impossibility of creating a new category of the "management of user symbols" dialog,
+- translations are not taken into account immediately during an update (double restart of NVDA required),
+- "control + c" in Windows explorer jumps to the first file starting with "c",
+- bad announcement of the number of selected items (Windows Explorer W10).
+
+
++ v6.1 (January 10, 2017) +
+- configuration of the level of symbols and punctuation for word movements.
+- new change of the keyboard command for the timer,
+- correction of the non-copy of the document address in the clipboard ("NVDA + a")
+
+
++ v6.0.3 (January 5, 2017) (not distributed) +
+- new change of the shortcut for the timer,
+- correction of documentation
+
+
++ v6.0.1 (December 26, 2016) +
+Bug fix on ad punctuation on the move word by word
+
++ v6.0 (23 December 2016) +
+- possibility to copy the path of the current log to the clipboard,
+- ability to display the history of voice announcements and increase the number of recordings to 200,
+- partial addition of the "Virtual buffer extension" functionality for the Microsoft Edge browser,
+- script to restart NVDA,- script to display the visible elements composing the object in the foreground,
+- change of keyboard command to start the timer,
+- announcement of punctuation when moving by word,
+- redesign of all dialogs to use guiHelper services,
+- compatibility with NVDA 2016.4.
+
+
++ v5.0.2 (September 30, 2016) +
+- fixed the problem of W10 blocking when maximizing windows,
+- indication in the documentation, of how to select with the mouse, the elements in the lists of the "selective announcement of keyboard commands" dialog.
+
+
++ v5.0.1 (September 13, 2016) +
+Bugfix:
+- problem of overlapping lists in the "Selective announcement of command keys" dialog,
+- Inoperative "Keyboard key renaming" menu,
+- command "nvda + Shift + 4" inoperative.
+
+
++ v5.0 (23 August 2016) +
+- functionality of renaming keyboard keys
+- user complex symbol management functionality
+- function of selective announcement of control keys,
+- timer functionality,
+- addition of scripts for displacement tables to the first / last cell of the row / column,
+- automatic window maximization option,
+- addition of a submenu to explore its configuration folder or NVDA program,
+- addition of the "Greek Alphabet" category,
+- List of complex symbols in order of the "symbolCategories.dic" file,
+- resumption of the manual.
+
+
++ v4.3 (June 6, 2016) +
+- correction of incorrect translation of the "copy to clipboard" and "no selection" announcements,
+- presentation in a dialog box of the text formatting (keyboard command nvda + f).
+
+
++ v4.2 (April 18, 2016) +
+- scripts to listen to previous voice announcements
+- scripts to announce the cells of the columns / rows of a table,
+- script to announce the address of the document (Firefox and Internet Explorer),
+- modification of the NVDA script "nvda + f12" to announce the time without depending on the level of punctuation.
+
+
++ v4.1.3 (March 14, 2016) +
+- use of NVDA translations for the "NVDA + f7" dialog box,
+- announces commands without selection control for all applications.
+- resumption of the description of certain scripts,
+- deletion of the changes. * files and inclusion of the history in the user manual.
+
+
++ v4.1.2 (March 6, 2016) +
+- bug fix: regression of the "control + delete" script
+
+
++ v4.1.1 (5 March 2016) +
+- bug fix: no announcement of the selection in Libre office Writer
+
+
++ v4.1 (February 25, 2016) +
+- compliance with NVDA 2016.1
+- complement in the name of the elements in the dialog box NVDA + f7.
+- taking into account the selection for the announcement of editing commands
+- deletion of description in windows ribbons
+- enlargement of the height of the complex symbols window.
+
+
++ v4.0.2 (December 16, 2015) (not broadcast) +
+- change of the displacement letter from anchor to anchor (conflict with annotation)
+- correction of documentation of keyboard commands (deletion of the end point)
+- correction of the stop of the loop on the links in the tree structure (NVDA + f7 dialog)
+
+
++ v4.0.1 (November 27, 2015) +
+- Bug correction: failure to select the element in the tree structure (NVDA + f7 dialog),
+- correction of the focus not being positioned in the list of element types.
+
+
++ v4.0 (23 November 2015) +
+- Added Activation / deactivation of the installation of module functionalities,
+- display of the label of the edit fields in the element tree (NVDA + f7 dialog),
+- announcement of the number of elements found in the element type choice list (NVDA + f7 dialog),
+- Added script to display current or old NVDA log.
+- removal of the function announcement for "control + y" (problem with MS Word).
+- Modification to Take into account the new possibilities of NVDA 2015.3, in particular:
+- removal of the script "nvda + h"
+- removal of the script to toggle the announcement of the line number
+
+
++ v3.6.1 (March 11, 2015) +
+- correction of display of the window opened by "nvda + f7 (modification Daniel Poiraud)
+
+
++ v3.6 (February 28, 2015) +
+- new script "nvda + alt + l" to activate or deactivate the announcement of the line number,
+- announcement of the word following the word deleted by the command "control + Del",
+- resizing of the "list of active windows" and "list of icons in the notification area" windows.
+
+
++ v3.5 (February 20, 2015) +
+- integration of the fakeClipboardAnnouncement module
+- integration of the DitDossierOuvrirSave module (Daniel Poiraud)
+- compatibility with nvda 2015.1
+- translation into Spanish by Rémy Ruiz
+
+
++ v3.4 (November 28, 2014) +
+- modification of the keyboard command "nvda + control + v" already used in "nvda + upper case + f1"
+- code cleaning
+
+
++ v3.3 (October 9, 2014) +
+- Added script to announce the name and version of the application under the cursor,
+- compliance with NVDA 2014.3 version:
+- access to the module help by the module manager,
+- NVDA + h now displays the NVDA command gestures dialog.
+
+
++ v3.2 (22 June 2014) +
+- In the list of elements (nvda + f7) inability to choose a link by its first letter.
+
+
++ v3.1 (May 27, 2014) +
+- replacement of radio buttons by a list in the "list of elements" dialog box ("nvda + f7")
+- "nvda + h" instead of "nvda + 1" in the documentation
+- deletion of the duplicate keyboard command "nvda + control + f1" in the command gestures.
+
+
++ v3.0 (November 29, 2013) +
+- Use of script categories provided by NVDA 2013.3
+- compatibility with version 2014.1 of NVDA,- added script to announce the current configuration profile
+- removal of the script to display the list of windows (nvda + upper case + f11)
+- added script to display the list of icons in the notification area and the list of windows (nvda + f11)
+- visual standardization of dialog boxes,
+- addition of new navigation command for the virtual buffer (paragraph, division, anchor)
+- addition of new type of elements for the "nvda + F7" command.
+- Symbol composition: the "non-breaking space" character is now correctly copied to the clipboard.
+
+
++ v2.4.3 (April 11, 2013) +
+- management of keyboard commands defined in the overlay class. (Perky duck addon)
+- problem with the button "global commands / return to commands of the add-on)
+
+
++ v2.4.2 (April 1, 2013) +
+- error with Firefox and thunderbird
+- error with gesture containing "more"
+
+
++ v2.4.1 (March 26, 2013) +
+- display of the keyboard commands of the virtual buffer by the script "NVDA + h"
+- addition of new movement commands for the virtual buffer: paragraph, division, anchor.
+
+
++ v2.3.8 (25 March 2013) +
+- correction file symbolCategories.dic fr and es.
+- fixed problem with accented folder name and their use with os.path.join
+- in onDestroyButton (activeWindowReport)
+
+
++ v2.3.7 (23 March 2013) +
+- Spanish translation
+- text correction and spelling
+- fixes in symbolCategories.dic and symbols-xx.dic files
+
+
++ v2.3.6 (February 4, 2013) +
+- various bugs.
+
+
++ v2.3.4 (January 11, 2013) +
+- untitled window
+- list of symbols truncated
+- spelling mistakes, etc.
+
+
++ v2.3.3 (January 8, 2013) +
+- Bug in the list of categories.
+
++ v2.3.2 (January 8, 2013) ++
+- new script to help with complex symbol composition (NVDA + uppercase + 4)
+
+
++ v2.2.1 (October 27, 2012) +
+
+- resizing the window to 1200X700,
+- capitalization of the first letter of the name of the keys,
+- renaming of the "global" and "application" buttons to "global commands" and "return to the commands of the additional module",
+- modification of the help to indicate the possible use of the "t" and "s" keys as soon as possible.
+
+
++ v2.2.0 (October 6, 2012) +
+- regrouping in a single script (NVDA + h) of the two previous scripts.
+- integration of the global plugin "listDesFenetres-v100225".
+
+
++ v2.0.0 (October 3, 2012) +
+- key translation,
+- simplified navigation between command groups using the "t" key, and between keyboard categories using the "s" key.
+- added a help button
+- taking into account of gestures.ini files
+
+
++ v1.0.0 (July 5, 2012) +
+Creation of the global plugin:
+- script (NVDA + h) to display keyboard commands specific to the active add-on
+- script (NVDA + upper case + h) to display global keyboard commands.

@@ -1,0 +1,152 @@
+#the symbols and their description are divided in category and each category is defined  by a section beginning with the category name enclosed between brackets.
+# Each line of a section define a symbol with its description:
+#- the symbol (one caracter)
+#- the "Tab" separator
+#- the symbol description
+
+[Küçük harf aksanlı ünlüler]
+á	vurgulu  küçük a
+é	vurgulu küçük e
+í	vurgulu küçük i
+ó	vurgulu küçük o
+ú	vurgulu küçük u
+ý	vurgulu küçük y
+à	aksanlı küçük a
+è	aksanlı küçük e
+ì	aksanlı küçük i
+ò	aksanlı küçük o
+ù	aksanlı küçük u
+â	ince küçük a
+ê	ince küçük e
+î	ince küçük i
+ô	ince küçük o
+û	ince küçük u
+ã	tildeli küçük a
+ñ	tildeli küçük n
+õ	tildeli küçük o
+ä	çift noktalı küçük a
+ë	çift noktalı küçük e
+ï	çift noktalı küçük i
+ö	ö
+ü	ü
+
+[Büyük aksanlı ünlüler]
+Á	vurgulu büyük a
+É	vurgulu büyük e
+Í	vurgulu büyük i
+Ó	vurgulu büyük o
+Ú	vurgulu büyük u
+Ý	vurgulu büyük y
+À	aksanlı büyük a
+È	aksanlı büyük e
+Ì	aksanlı büyük i
+Ò	aksanlı büyük o
+Ù	aksanlı büyük u
+Â	ince büyük a
+Ê	ince büyük e
+Î	ince büyük i
+Ô	ince büyük o
+Û	ince büyük u
+Ã	tildeli büyük a
+Ñ	tildeli büyük n
+Õ	tildeli büyük o
+Ä	çift noktalı büyük a
+Ë	çift noktalı büyük e
+Ï	çift noktalı büyük i
+Ö	Ö
+Ü	Ü
+
+[parasal semboller]
+€	Avro para birimi
+$	Dolar işareti
+¢	 sent işareti
+£	İngiliz Sterlini
+¥	Japon Yeni
+ƒ	Hollanda Florini
+₺	türk lirası
+¤	Genel para birimi sembolü
+
+[Matematik sembolleri]
+÷	bölüm işareti
+×	çarpma işareti
+±	Artı/eksi
+¹	üssü 1
+²	üssü 2
+³	üssü 3
+ⁿ	üssü N 
+°	derece sembolü
+µ	Mikro
+‰	binde işareti
+‰	milyonda
+¼	kesir 1/4
+½	kesir 1/2
+¾	kesir 3/4
+⅛	kesir Sekizde Bir
+⅜	kesir sekizde üç
+⅞	kesir sekizde yedi
+¬	mantıkda değil
+≠	eşit değil
+≤	eşit veya küçük
+≥	eşit veya büyük
+∞	sonsuz
+∫	İntegral İşareti
+∂	Kısmi türev İşareti
+∆	artım işareti
+∏	çarpım işareti
+∑	toplam işareti
+√	Kare Kök İşareti
+∟	dik açı işareti
+∩	kesişim işareti
+ƒ	İşlev İşareti
+
+[noktalama işaretleri]
+…	üç nokta
+­	ince tire
+•	madde imi
+∙	madde imi işleci
+‣	üçgen madde imi
+¦	kırık çizgi
+ 	boşluksuz aralık
+§	bölüm sembolü
+¶	Paragraf Sembolü (Yastık)
+†	kama işareti
+‡	çift kama işareti
+“	çift tırnak aç
+”	çift tırnak kapa
+‚	tek alt tırnak
+„	çift alt tırnak
+‹	tek üçgen tırnak aç
+›	tek üçgen tırnak kapa
+«	çift kancalı parantez aç
+»	çift kancalı parantez kapa
+­	ince tire
+–	orta tire
+—	uzun tire
+℅	koruma işareti
+―	yatay çizgi
+‾	üst çizgi
+‼	çift ünlem
+♦	siyah karo
+&	ve
+
+[Diğer semboller]
+©	Telif hakkı sembolü
+®	kayıtlı sembolü
+™	Marka
+Æ	büyük A-E
+æ	A-E
+Œ	büyük O-E
+œ	O-E
+Ø	büyük iskandinav O
+ø	iskandinav O slash 
+º	Eril Sıra Sayısı
+ª	dişil sıra sayısı
+¡	ters ünlem
+¿	ters soru
+¯	makron
+Å	Büyük A, halka (angström)
+å	Küçük a, halka
+Þ	Büyük Thorn, İzlandaca
+þ	Küçük Thorn, İzlandaca
+Ð	Büyük Eth, İzlandaca
+ð	Küçük Eth, İzlandaca

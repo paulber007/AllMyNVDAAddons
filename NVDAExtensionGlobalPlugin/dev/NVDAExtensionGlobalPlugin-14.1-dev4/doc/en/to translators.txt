@@ -1,7 +1,0 @@
-Files to translate:
-addon_informations.t2tconf
-addon_keys.t2tconf
-addonUserManual.t2t
-changes.t2t
-
-The diff.zip contains file changes between this version and previous stable version.

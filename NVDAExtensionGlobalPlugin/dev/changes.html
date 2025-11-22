@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>NVDA global commands extension 15.0-dev24</title>
+<title>NVDA global commands extension 15.0-dev26</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href=..\style_t2t.css>
 
@@ -33,7 +33,7 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. V15.0 (October/06/2025)</H2>
+<H2>1. V15.0 (November/22/2025)</H2>
 <P>
 Compatibility with NVDA 2026.1.
 </P>
@@ -76,7 +76,7 @@ Development :
 <LI>Deletion of the "Markdown" package from the "Utilities" folder. This package is included in NVDA since the 2025.1 version.
 <LI>Deletion of the "Pycaw" package from the "Utilities" folder. This package is included in NVDA since the 2024.2 version.
 <LI>Update to version 311 of the modules included in the Win32Ex folder and part of the "Pywin32" package. The "Win32EX" file is now dependent on the Python version used by NVDA (V3.11 or 3.13).
-<LI>Deletion of the code concerning Wasapi.
+<LI>removed code regarding Wasapi and versions prior to NVDA version 2025.1.
 <LI>Use of the ExecuteMouseeevent method of the Mousehandler module.
 <LI>Correction of Pydub's error under Python 3.13
 </UL>
@@ -87,6 +87,7 @@ Compliance with the NVDA API:
 <UL>
 <LI>Taking into account the movement of the NVDA version in the "Buildversion.py" module.
 <LI>taking into account the new possibility offered by NVDA 2026.1, to simultaneously report spelling errors by sound  and by speech.
+<LI>taking into account the depreciation of the user32 variable of the winUser.py module.
 </UL>
 
 <H2>2. V14.1 (September/16/2025)</H2>

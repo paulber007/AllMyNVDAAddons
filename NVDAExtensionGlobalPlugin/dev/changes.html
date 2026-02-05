@@ -2,11 +2,78 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>NVDA global commands extension 15.0-dev26</title>
+<title>NVDA global commands extension 15.0-dev33</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>NVDA global commands extension - History</H1>
 <FONT SIZE="4">
 <I>Author: paulber19 (paulber19@laposte.net)</I><BR>
@@ -33,7 +100,7 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. V15.0 (November/22/2025)</H2>
+<H2>1. V15.0 (February/02/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1.
 </P>
@@ -53,6 +120,8 @@ Changes:
 </P>
 <UL>
 <LI>for versions higher than NVDA 2026.1, spelling error reporting during playback is configurable separately for sound and speech.
+<LI>by default, reporting spelling errors while typing is disabled.
+<LI>style sheets are now inserted in the extension documentation html files.
 </UL>
 
 <P>
@@ -79,6 +148,9 @@ Development :
 <LI>removed code regarding Wasapi and versions prior to NVDA version 2025.1.
 <LI>Use of the ExecuteMouseeevent method of the Mousehandler module.
 <LI>Correction of Pydub's error under Python 3.13
+<LI>when converting markdown or txt2tags files to html, the style sheets are now inserted in the html document.
+<LI>the rawgit.com site is no longer used for updating the extensions (site closure).
+<LI>to display the "What's new" of a new version of the extension, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
 </UL>
 
 <P>

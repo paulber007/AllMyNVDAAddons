@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>NVDA global commands extension 15.0-dev33</title>
+<title>NVDA global commands extension 15.0-dev35</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -100,7 +100,7 @@ Only the versions of the type major.minor (for example v3.1) are listed in this 
 <P>
 Versions of type major.minor.x (for example v3.1.2) are translation updates.
 </P>
-<H2>1. V15.0 (February/02/2026)</H2>
+<H2>1. V15.0 (February/10/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1.
 </P>
@@ -149,8 +149,9 @@ Development :
 <LI>Use of the ExecuteMouseeevent method of the Mousehandler module.
 <LI>Correction of Pydub's error under Python 3.13
 <LI>when converting markdown or txt2tags files to html, the style sheets are now inserted in the html document.
-<LI>the rawgit.com site is no longer used for updating the extensions (site closure).
 <LI>to display the "What's new" of a new version of the extension, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site for updating add-on.
+<LI>use of json instead of pickle to store the add-on update status.
 </UL>
 
 <P>

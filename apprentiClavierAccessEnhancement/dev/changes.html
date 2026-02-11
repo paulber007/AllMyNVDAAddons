@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>ApprentiClavier: accessibility enhancement 1.14-dev7</title>
+<title>ApprentiClavier: accessibility enhancement 1.14-dev9</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
@@ -20,11 +20,11 @@ Download:
 </P>
 <UL>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.14.nvda-addon">current stable version: 1.14</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.13.2.nvda-addon">previous stable version: 1.13.2</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.13.4.nvda-addon">previous stable version: 1.13.4</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/apprentiClavierAccessEnhancement/dev">development versions:</A>
 </UL>
 
-<H2>1. 1.14 (January/27/2026)</H2>
+<H2>1. 1.14 (February/09/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1
 </P>
@@ -44,7 +44,9 @@ Development:
 <UL>
 <LI>removal of code regarding NVDA versions lower than 2025.1.
 <LI>improved responsiveness of announcing the next letter or word.
+<LI>to display the "What's new" of a new version of the extension, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
 <LI>taking into account the closure of the rawgit.com site for updating add-ons.
+<LI>use of json instead of pickle to store the add-on update status.
 </UL>
 
 <P>

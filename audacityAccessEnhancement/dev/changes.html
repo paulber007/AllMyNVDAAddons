@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Audacity multi-track editor: accessibility enhancement 3.4-dev11</title>
+<title>Audacity multi-track editor: accessibility enhancement 3.4-dev13</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
@@ -20,16 +20,16 @@ Download:
 </P>
 <UL>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-3.4.nvda-addon">Current stable version: 3.4</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-3.3.1.nvda-addon">Previous stable Version: 3.3.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/audacityAccessEnhancement/audacityAccessEnhancement-3.3.2.nvda-addon">Previous stable Version: 3.3.2</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/audacityAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. V3.4 (January/267/2026)</H2>
+<H2>1. V3.4 (February/10/2026)</H2>
 <P>
-Compatibility with NVDA 2025.3.
+Compatibility with NVDA 2026.1.
 </P>
 <P>
 NVDA versions prior to 2025.1 are no longer supported.
@@ -53,7 +53,9 @@ Development:
 </P>
 <UL>
 <LI>removal of code regarding NVDA versions lower than 2025.1.
-<LI>use of the jsdelivr.net site instead of the rawgit.com site (site closure) for updating add-ons.
+<LI>to display the "What's new" of a new version of the add-on, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site for updating add-ons.
+<LI>use of json instead of pickle to store the add-on update status.
 </UL>
 
 <P>

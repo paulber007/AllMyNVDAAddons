@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>VLC multimedia player: Accessibility enhancements 2.14-dev2</title>
+<title>VLC multimedia player: Accessibility enhancements 2.14-dev4</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
@@ -28,7 +28,7 @@ Download:
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/VLCAccessEnhancement/dev">Development Version</A>
 </UL>
 
-<H2>1. v2.14 (January/27/2026)</H2>
+<H2>1. v2.14 (February/10/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1
 </P>
@@ -39,7 +39,9 @@ Versions prior to NVDA version 2025.1 are no longer supported.
 Development:
 </P>
 <UL>
-<LI>use of the jsdelivr.net site instead of the rawgit.com site (site closure) for updating add-ons.
+<LI>to display the "What's new" of a new version of the extension, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site for updating add-on.
+<LI>use of json instead of pickle to store the add-on update status.
 </UL>
 
 <P>

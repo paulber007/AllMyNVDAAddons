@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Notepad++ text's editor : accessibility enhancement 2.9-dev6</title>
+<title>Notepad++ text's editor : accessibility enhancement 2.9-dev8</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
@@ -20,14 +20,14 @@ Download:
 </P>
 <UL>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.nvda-addon">Current stable version: 2.9</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.1.nvda-addon">Previous stable Version: 2.8.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Previous stable Version: 2.8.4</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. V2.9 (January/27/2026)</H2>
+<H2>1. V2.9 (February/10/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1.
 </P>
@@ -44,12 +44,21 @@ Reminder of bug corrections made in versions 2.8.x:
 </UL>
 
 <P>
+Development:
+</P>
+<UL>
+<LI>removal of code regarding NVDA versions lower than 2025.1.
+<LI>to display the "What's new" of a new version of the add-on, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site.
+<LI>use of json instead of pickle to store the add-on update status.
+</UL>
+
+<P>
 Compliance with the NVDA API: 
 </P>
 <UL>
 <LI>Take into account the movement of the NVDA version in the Buildversion.Py module.
 <LI>Taking into account the deletion of the MODULE "imp" in Python 3.13.
-<LI>use of the jsdelivr.net site instead of the rawgit.com site (site closure) for updating add-ons.
 </UL>
 
 <H2>2. v2.8 (June/05/2025)</H2>

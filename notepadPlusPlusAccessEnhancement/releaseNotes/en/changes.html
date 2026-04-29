@@ -2,11 +2,78 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Notepad++ text's editor : accessibility enhancement 2.8.4</title>
+<title>Notepad++ text's editor : accessibility enhancement 2.9</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Notepad++ text's editor : accessibility enhancement - History</H1>
 <FONT SIZE="4">
 <I>Author: paulber19 (paulber19@laposte.net)</I><BR>
@@ -19,15 +86,57 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Current stable version: 2.8.4</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.2.nvda-addon">Previous stable Version: 2.7.2</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.nvda-addon">Current stable version: 2.9</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Previous stable Version: 2.8.4</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v2.8 (June/05/2025)</H2>
+<H2>1. V2.9 (March/16/2026)</H2>
+<P>
+Compatibility with NVDA 2026.1.
+</P>
+<P>
+NVDA versions prior to the 2025.1 version are no longer supported.
+</P>
+<P>
+What's new:
+</P>
+<UL>
+<LI>added an option to enable or disable the report  of the cursor position after pressing the "home" key.
+</UL>
+
+<P>
+Reminder of bug corrections made in versions 2.8.x:
+</P>
+<UL>
+<LI>Indentation with spaces is now properly announced in other languages ​​than French as well as singular or plural.
+<LI>Correction of the bad spelling of the word "workspace".
+<LI>Correction of the error that occurred are the closure of the program.
+<LI>correction of some malfunctions concerning the detection and reporting of lines that are too long.
+</UL>
+
+<P>
+Development:
+</P>
+<UL>
+<LI>removal of code regarding NVDA versions lower than 2025.1.
+<LI>to display the "What's new" of a new version of the add-on, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site.
+<LI>use of json instead of pickle to store the add-on update status.
+</UL>
+
+<P>
+Compliance with the NVDA API: 
+</P>
+<UL>
+<LI>Take into account the movement of the NVDA version in the Buildversion.Py module.
+<LI>Taking into account the deletion of the MODULE "imp" in Python 3.13.
+</UL>
+
+<H2>2. v2.8 (June/05/2025)</H2>
 <P>
 Compatibility with NVDA 2025.1.
 </P>
@@ -38,7 +147,7 @@ NVDA versions earlier than 2024.1 are no longer supported.
 What's new:
 </P>
 <UL>
-<LI>Addition of the "Windows+Control+F9" script to open the folder of the current file as a workspace.
+<LI>Addition of the "Windows+Control+F9" script to open the folder of the current file as a workpace.
 <LI>in the "Document preview" dialog, it is possible to choose with which display the document should be viewed:
  <UL>
  <LI>the default viewer of html documents (in principle a browser)
@@ -76,7 +185,7 @@ Compliance with the NVDA API:
  </UL>
 </UL>
 
-<H2>2. v2.7 (November/28/2024)</H2>
+<H2>3. v2.7 (November/28/2024)</H2>
 <P>
 Compatibilité with NVDA 2024.2, NVDA 2024.3 and NVDA 2024.4.
 </P>
@@ -98,7 +207,7 @@ Development :
 <LI>the temporary file for viewing "markdown" or "txt2tags" documents is now placed in the same folder where the document is located. If this document is a new, unsaved document, then it is placed in the user configuration folder. If the default header is used for viewing, the style files are placed in the same location as the temporary file.
 </UL>
 
-<H2>3. v2.6 (April/02/2024)</H2>
+<H2>4. v2.6 (April/02/2024)</H2>
 <P>
 What's new:
 </P>
@@ -107,7 +216,7 @@ What's new:
 <LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
 </UL>
 
-<H2>4. v2.5 (September/086/2023)</H2>
+<H2>5. v2.5 (September/086/2023)</H2>
 <P>
 New:
 </P>
@@ -149,7 +258,7 @@ Various:
 <LI>modification of the documentation for compatibility with the add-on store.
 </UL>
 
-<H2>5. v2.4 (February/20/2023)</H2>
+<H2>6. v2.4 (February/20/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
@@ -160,7 +269,7 @@ New:
 <LI>reporting of spelling errors found by the DSpellCheck Notepad++ plugin (experimental).
 </UL>
 
-<H2>6. v2.3 (September/27/2022)</H2>
+<H2>7. v2.3 (September/27/2022)</H2>
 <UL>
 <LI>fixed inability to view add-on history using the "View History" button.
 <LI>correction of incorrect movements from method to method or from class to class.
@@ -168,7 +277,7 @@ New:
 <LI>compatibility with notepad++ 8.3 64 bits.
 </UL>
 
-<H2>7. v2.2 (02/04/2022)</H2>
+<H2>8. v2.2 (02/04/2022)</H2>
 <UL>
 <LI>Compatibility with NVDA 2022.1.
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -182,7 +291,7 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>8. v2.1 (13/12/2021)</H2>
+<H2>9. v2.1 (13/12/2021)</H2>
 <P>
 First official stable release
 </P>

@@ -2,11 +2,78 @@
 <html lang="fr" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Lecteur de radios internet  RadioSure: complément d'accessibilité 2.10.1</title>
+<title>Lecteur de radios internet  RadioSure: complément d'accessibilité 2.11</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Lecteur de radios internet  RadioSure: complément d'accessibilité - Historique</H1>
 <FONT SIZE="4">
 <I>Auteur : paulber19 (paulber19@laposte.net)</I><BR>
@@ -19,9 +86,35 @@ URL: <A HREF="https://github.com/paulber19/radioSureAccessEnhancementNVDAAddon.g
 Téléchargement :
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.10.1.nvda-addon">Version stable actuelle : 2.10.1</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.9.1.nvda-addon">Version stable précédente : 2.9.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.11.nvda-addon">Version stable actuelle : 2.11</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.10.1.nvda-addon">Version stable précédente : 2.10.1</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/radioSureAccessEnhancement/dev">versions de développement</A>
+<P></P>
+</UL>
+
+<OL>
+<LI>v2.11 (26/02/2026) +
+Compatibilité avec NVDA 2026.1
+<P></P>
+Les versions antérieures à la version NVDA 2025.1 ne sont plus supportées.
+<P></P>
+Développement :
+</OL>
+
+<UL>
+<LI>suppression du dossier psutil( le package psutil étant embarqué dans NVDA depuis la version 2025.1).
+<LI>suppression du package xml (le package étant embarqué dans NVDA depuis NVDA 2025.1).
+<LI>mise à jour du module "xmltodict.py"  à la version 0.14.2.
+<LI>pour afficher le "Quoi de neuf" d'une nouvelle version de l'extension, le document "changes.html" n'est plus ouvert par"urlopen", mais est téléchargé , enregistré momentanément dans le dossier "appData\local\temp" et ouvert dans le navigateur.
+-  prise en compte de la fermeture du site rawgit.com pour la mise à jour  de l'extension.
+<LI>utilisation de json en lieu et place de pickle pour stoquer l'état de la mise à jour de l'extension.
+</UL>
+
+<P>
+Mise en conformité avec l'API de NVDA :
+</P>
+<UL>
+<LI>prise en compte du déplacement de la version de NVDA dans le module buildVersion.py.
 </UL>
 
 <H2>1. v2.10 (05/06/2025)</H2>

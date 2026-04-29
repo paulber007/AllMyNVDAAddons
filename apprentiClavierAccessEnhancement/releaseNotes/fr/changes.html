@@ -2,12 +2,79 @@
 <html lang="fr" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>ApprentiClavier: compléments d'accessibilité 1.13.4</title>
+<title>ApprentiClavier: compléments d'accessibilité 1.14</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
-<P ALIGN="center"><CENTER><H1>ApprentiClavier : complément d'accessibilité - historique</H1>
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
+<P ALIGN="center"><CENTER><H1>  ApprentiClavier : complément d'accessibilité - historique</H1>
 <FONT SIZE="4">
 <I>Auteur: paulber19 (paulber19@laposte.net)</I><BR>
 </FONT></CENTER>
@@ -19,12 +86,44 @@ URL : <A HREF="https://github.com/paulber19/apprentiClavierAccessEnhancementNVDA
 Téléchargement:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.13.4.nvda-addon">Version stable actuelle: 1.13.4</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.12.nvda-addon">Version stable précédente: 1.12</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.14.nvda-addon">Version stable actuelle: 1.14</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/apprentiClavierAccessEnhancement/apprentiClavierAccessEnhancement-1.13.4.nvda-addon">Version stable précédente: 1.13.4</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/apprentiClavierAccessEnhancement/dev">versions de développement</A>
 </UL>
 
-<H2>1. 1.13 (05/06/2025)</H2>
+<H2>1. 1.14 (26/02/2026)</H2>
+<P>
+Compatibilité avec NVDA 2026.1.
+</P>
+<P>
+Les versions de NVDA antérieures à la 2025.1 ne sont plus supportées.
+</P>
+<P>
+Correction de bogues :
+</P>
+<UL>
+<LI>la lecture des pages d'explication se fait maintenant correctement lorsque le synthétiseur OneCore est utilisé.
+</UL>
+
+<P>
+Développement :
+</P>
+<UL>
+<LI>suppression du code concernant les versions de NVDA inférieures à la 2025.1.
+<LI>amélioration de la réactivité de l'annonce de la lettre ou du mot suivant.
+<LI>pour afficher le "Quoi de neuf" d'une nouvelle version de l'extension, le document "changes.html" n'est plus ouvert par"urlopen", mais est téléchargé , enregistré momentanément dans le dossier "appData\local\temp" et ouvert dans le navigateur.
+-  prise en compte de la fermeture du site rawgit.com pour la mise à jour  des extensions.
+<LI>utilisation de json en lieu et place de pickle pour stoquer l'état de la mise à jour de l'extension.
+</UL>
+
+<P>
+Mise en conformité avec l'API de NVDA : 
+</P>
+<UL>
+<LI>prise en compte du déplacement de la version de NVDA dans le module "buildVersion.py".
+</UL>
+
+<H2>2. 1.13 (05/06/2025)</H2>
 <P>
 Compatibilité avec NVDA 2025.1
 </P>
@@ -56,33 +155,33 @@ Mise en conformité avec l'API de NVDA :
  </UL>
 </UL>
 
-<H2>2. 1.12 (19/10/2024)</H2>
+<H2>3. 1.12 (19/10/2024)</H2>
 <P>
 Compatibilité avec NVDA 2024.2, NVDA 2024.3 et NVDA 2024.4.
 </P>
 <P>
 Les versions de NVDA antérieures à la version 2023.1 ne sont plus prises en charge.
 </P>
-<H2>3. 1.11 (23/03/2024)</H2>
+<H2>4. 1.11 (23/03/2024)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2024.1
 <LI>Abandon du support des versions de NVDA inférieures à la 2022.1.
 </UL>
 
-<H2>4. 1.10 (10/04/2023)</H2>
+<H2>5. 1.10 (10/04/2023)</H2>
 <P>
 Correction du problème du blocage de NVDA 2023.1 au lancement d'ApprentiClavier : problème de compatibilité causé par la modification de la configuration des touches NVDA.
 </P>
-<H2>5. 1.9 (14/02/2023)</H2>
+<H2>6. 1.9 (14/02/2023)</H2>
 <P>
 Compatibilité avec NVDA 2023.1
 </P>
-<H2>6. 1.8 (17/05/2022)</H2>
+<H2>7. 1.8 (17/05/2022)</H2>
 <UL>
 <LI>correction de l'impossibilité de voir l'historique de l'extension.
 </UL>
 
-<H2>7. 1.7 (26/01/2022)</H2>
+<H2>8. 1.7 (26/01/2022)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2022.1.
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -96,25 +195,25 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée qquand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>8. 1.6 (03/11/2021)</H2>
+<H2>9. 1.6 (03/11/2021)</H2>
 <P>
 Compatibilité avec NVDA 2021.3. Les versions de NVDA antérieure à la 2020.4 ne sont pas supportées.
 </P>
-<H2>9. 1.5 (16/06/2021)</H2>
+<H2>10. 1.5 (16/06/2021)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2021.1. Les versions de NVDA antérieure à la 2019.3 ne sont pas supportées.
 <LI>suppression du code spécifique à Python 2.7.
 </UL>
 
-<H2>10. 1.4.2 (04/02/2021)</H2>
+<H2>11. 1.4.2 (04/02/2021)</H2>
 <P>
 Ajout de la traduction arabe
 </P>
-<H2>11. 1.4.1 (28/12/2020)</H2>
+<H2>12. 1.4.1 (28/12/2020)</H2>
 <P>
 Correction du paramètre "lastTestedNVDAVersion" du fichier buildVars.py.
 </P>
-<H2>12. 1.4 (22/12/2020)</H2>
+<H2>13. 1.4 (22/12/2020)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2020.4
 <LI>ajout du bouton "Voir l'historique" dans la catégorie "Mise à jour " des paramètres de l'extension.
@@ -122,58 +221,58 @@ Correction du paramètre "lastTestedNVDAVersion" du fichier buildVars.py.
 <LI>correction des erreurs soulevées par l'outil de validation Flake8.
 </UL>
 
-<H2>13. v1.3 (28/07/2020)</H2>
+<H2>14. v1.3 (28/07/2020)</H2>
 <P>
 Compatibilité avec NVDA 2020.2
 </P>
-<H2>14. v1.2.1 (03/04/2020)</H2>
+<H2>15. v1.2.1 (03/04/2020)</H2>
 <P>
 Correction de l'historique des changements de l'extension.
 </P>
-<H2>15. v1.2 (03/04/2020)</H2>
+<H2>16. v1.2 (03/04/2020)</H2>
 <UL>
 <LI>mise en compatibilité avec NVDA 2020.1,
 <LI>mise en conformité avec NVDA pour le test de compatibilité de l'extension avec NVDA.
 </UL>
 
-<H2>16. v1.1.1 (14/02/2020)</H2>
+<H2>17. v1.1.1 (14/02/2020)</H2>
 <P>
 Correction du fichier addon_build.t2tconf.
 </P>
-<H2>17. v1.1 (29/12/2019)</H2>
+<H2>18. v1.1 (29/12/2019)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2019.3
 <LI>mise en forme de la documentation
 </UL>
 
-<H2>18. v1.0 (17/10/2019)</H2>
+<H2>19. v1.0 (17/10/2019)</H2>
 <UL>
 <LI>Changement du nom de l'extension et retour en version 1.0
 <LI>compatibilité avec NVDA 2019.2 et versions alpha de NVDA 2019.3.
 <LI>mise en place de la mise à jour automatique de l'extension.
 </UL>
 
-<H2>19. v2.2.1 (21 Juillet2016)</H2>
+<H2>20. v2.2.1 (21 Juillet2016)</H2>
 <UL>
 <LI>correction du "y" non prononcé
 </UL>
 
-<H2>20. v2.2 (29 Octobre 2014)</H2>
+<H2>21. v2.2 (29 Octobre 2014)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2014.4
 </UL>
 
-<H2>21. v2.1 (29 Octobre 2014)</H2>
+<H2>22. v2.1 (29 Octobre 2014)</H2>
 <UL>
 <LI>compatibilité avec NVDA 2014.3
 </UL>
 
-<H2>22. v2.0 (10 Juin 2013)</H2>
+<H2>23. v2.0 (10 Juin 2013)</H2>
 <UL>
 <LI>Refonte complète du code source 
 </UL>
 
-<H2>23. v1.0 (2 janvier 2012)</H2>
+<H2>24. v1.0 (2 janvier 2012)</H2>
 <P>
 Création de l'extension
 </P>

@@ -2,11 +2,78 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>RadioSure Internet Radio Player: accessibility enhancement 2.10.1</title>
+<title>RadioSure Internet Radio Player: accessibility enhancement 2.11</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>radioSure Internet Radio Player : accessibility enhancement - History</H1>
 <FONT SIZE="4">
 <I>Author: paulber19 (paulber19@laposte.net)</I><BR>
@@ -19,24 +86,50 @@ URL: <A HREF="https://github.com/paulber19/radioSureAccessEnhancementNVDAAddon.g
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.10.1.nvda-addon">Current stable version: 2.10.1</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.9.1.nvda-addon">Previous stable Version: 2.9.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.11.nvda-addon">Current stable version: 2.11</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.10.1.nvda-addon">Previous stable Version: 2.10.1</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/radioSureAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. v2.10 (June/05/2025)</H2>
+<H2>1. v2.11 (February/26/2026)</H2>
 <P>
+Compatibility with NVDA 2026.1
+</P>
+<P>
+Versions prior to NVDA version 2025.1 are no longer supported.
+</P>
+<P>
+Development:
+</P>
+<UL>
+<LI>deletion of the psutil folder (the psutil package being embedded in NVDA since version 2025.1).
+<LI>removal of the xml package (the package being embedded in NVDA since NVDA 2025.1).
+<LI>update of the "xmltodict.py" module to version 0.14.2.
+<LI>to display the "What's new" of a new version of the extension, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site for updating add-on.
+<LI>use of json instead of pickle to store the add-on update status.
+</UL>
+
+<P>
+Compliance with the NVDA API:
+</P>
+<UL>
+<LI>taking into account the movement of the NVDA version in the buildVersion.py module.
+<P></P>
+</UL>
+
+<OL>
+<LI>v2.10 (June/05/2025) +
 Compatibility with NVDA 2025.1
-</P>
-<P>
+<P></P>
 NVDA versions prior to the 2024.1 version are no longer supported.
-</P>
-<P>
+<P></P>
 Bug fixes:
-</P>
+</OL>
+
 <UL>
 <LI>the update search is no longer done when the "Automatically search for updates" option is unchecked just after starting NVDA.
 </UL>

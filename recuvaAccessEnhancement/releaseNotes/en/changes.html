@@ -2,11 +2,78 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Recuva file recovery: accessibility enhancement 1.10.2</title>
+<title>Recuva file recovery: accessibility enhancement 1.11</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Recuva file recovery: accessibility enhancement - History</H1>
 <FONT SIZE="4">
 <I>Author: paulber19 (paulber19@laposte.net)</I><BR>
@@ -19,15 +86,38 @@ URL: <A HREF="https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git"
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.10.2.nvda-addon">Current stable version: 1.10.2</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.9.1.nvda-addon">Previous stable Version: 1.9.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.11.nvda-addon">Current stable version: 1.11</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.10.2.nvda-addon">Previous stable Version: 1.10.2</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Traductor (s): automatic translation from french language
 </P>
-<H2>1. v1.10 (June/05/2025)</H2>
+<H2>1. v1.11 (February/26/2026)</H2>
+<P>
+Compatibility with NVDA 2026.1
+</P>
+<P>
+Versions prior to NVDA version 2025.1 are no longer supported.
+</P>
+<P>
+Development:
+</P>
+<UL>
+<LI>to display the "What's new" of a new version of the extension, the "changes.html" document is no longer opened by "urlopen", but is downloaded, saved momentarily in the "appData\local\temp" folder and opened in the browser.
+<LI>taking into account the closure of the rawgit.com site for updating add-on.
+<LI>use of json instead of pickle to store the add-on update status.
+</UL>
+
+<P>
+Compliance with the NVDA API:
+</P>
+<UL>
+<LI>taking into account the movement of the NVDA version in the buildVersion.py module.
+</UL>
+
+<H2>2. v1.10 (June/05/2025)</H2>
 <P>
 Compatibility with NVDA 2025.1
 </P>
@@ -59,14 +149,14 @@ Compliance with the NVDA API:
  </UL>
 </UL>
 
-<H2>2. v1.9 (October/18/2024)</H2>
+<H2>3. v1.9 (October/18/2024)</H2>
 <P>
 Compatibility with NVDA 2024.2, NVDA 2024.3 and NVDA24.4.
 </P>
 <P>
 NVDA versions prior to version 2023.1 are no longer supported.
 </P>
-<H2>3. v1.8 (March/25/2024)</H2>
+<H2>4. v1.8 (March/25/2024)</H2>
 <P>
 Compatibility with NVDA 2024.1
 </P>
@@ -86,16 +176,16 @@ Development :
 <LI>removal of code specific to versions prior to NVDA 2022.1.
 </UL>
 
-<H2>4. v1.7 (February/14/2023)</H2>
+<H2>5. v1.7 (February/14/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
-<H2>5. v1.6 (May/31/2022)</H2>
+<H2>6. v1.6 (May/31/2022)</H2>
 <UL>
 <LI>fixed inability to view add-on history using the "View History" button.
 </UL>
 
-<H2>6. v1.5 (01/27/2022)</H2>
+<H2>7. v1.5 (01/27/2022)</H2>
 <UL>
 <LI>compatibility with NVDA 2022.1
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -109,38 +199,38 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>7. v1.4 (11/04/2021)</H2>
+<H2>8. v1.4 (11/04/2021)</H2>
 <P>
 Compatibility with NVDA 2021.3. Versions of NVDA prior to version 2020.4 are not supported.
 </P>
-<H2>8. v1.3 (06/22/2021)</H2>
+<H2>9. v1.3 (06/22/2021)</H2>
 <UL>
 <LI>compatibility with NVDA 2021.1. Versions of NVDA prior to version 2019.3 are not supported.
 <LI>removed code specific to Python 2.7.
 </UL>
 
-<H2>9. v1.2.1 (04/02/2021)</H2>
+<H2>10. v1.2.1 (04/02/2021)</H2>
 <P>
 Adding arabic translation
 </P>
-<H2>10. v1.2 (29/12/2020)</H2>
+<H2>11. v1.2 (29/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.4
 <LI>addition of the "View history" button in the "Update" category of the add-on's parameters.
 </UL>
 
-<H2>11. v1.1.1 (29/10/2020)</H2>
+<H2>12. v1.1.1 (29/10/2020)</H2>
 <P>
 Correction of documentation
 </P>
-<H2>12. v1.1 (27/10/2020)</H2>
+<H2>13. v1.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.3
 <LI>code cleaning (corrections of errors detected by Flake8)
 <LI>addition of the "What's new" button in the dialog proposing the installation of a new update.
 </UL>
 
-<H2>13. v1.0 (28/07/2020)</H2>
+<H2>14. v1.0 (28/07/2020)</H2>
 <P>
 Creation of the add-on.
 </P>

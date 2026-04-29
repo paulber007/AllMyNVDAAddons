@@ -2,11 +2,78 @@
 <html lang="es" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Editor de texto Notepad++: complementos de accesibilidad 2.8.4</title>
+<title>Editor de texto Notepad++: complementos de accesibilidad 2.9</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href=..\style_t2t.css>
+<style media="screen">
+body { 
+margin : 0 5% 0 5%; 
+font-family : Verdana, Arial, Helvetica, Sans-serif;
+font-size: 0.9em;
+background-color : #dce4ed;
+} 
+h1 {
+margin-bottom:1.65em;
+text-align: center;
+font-size: 1.9em;
+color : #cc0000;
+text-decoration : underline;}
+h2 {
+margin : 1.4em 0 1.4em 0;
+text-align: left;
+font-weight: bold;
+font-size: 1.15em;
+text-indent:20px;
+padding-top:0.3em;
+padding-bottom:0.3em;
+background-color : #cccccc;
+color : #0c419a;}
 
-</head><BODY BGCOLOR="white" TEXT="black">
+h3 {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: left;
+  color: #000066;
+  margin-left: 40px;
+}
+
+h4 {
+  list-style-type: none;
+  font-size: 1em;
+  list-style-position: outside;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  text-indent: 100px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+dt { 
+font-weight : bold; 
+float : left; 
+width: 10%;
+clear: left
+} 
+dd { 
+margin : 0 0 0.4em 0; 
+float : left;
+width: 90%;
+display: block;
+} 
+p { clear : both; 
+font-size: 0.9em;
+} 
+li {font-size: 0.9em;} 
+a { text-decoration : none; 
+font-weight : bold;
+} 
+:active { 
+text-decoration : none; 
+}
+a:focus, a:hover {color: red}
+:link {color: rgb(110,110,110)}
+</style>
+</head>
+<BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Editor de texto Notepad++: complementos de accesibilidad - Historial</H1>
 <FONT SIZE="4">
 <I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
@@ -19,12 +86,54 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Versión estable actual: 2.8.4</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.7.2.nvda-addon">Versión anterior: 2.7.2</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.nvda-addon">Versión estable actual: 2.9</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Versión anterior: 2.8.4</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v2.8 (05/06/2025)</H2>
+<H2>1. v2.9 (16/03/2026)</H2>
+<P>
+Compatibilidad con NVDA 2026.1.
+</P>
+<P>
+Las versiones de NVDA anteriores a 2025.1 ya no son soportadas.
+</P>
+<P>
+Nuevas características:
+</P>
+<UL>
+<LI>se ha añadido una opción para habilitar o deshabilitar el anuncio de la posición del cursor después de pulsar la tecla de "inicio".
+</UL>
+
+<P>
+Recordatorio de correcciones de errores realizadas en las versiones 2.8.x:
+</P>
+<UL>
+<LI>la sangría con espacios ahora se anuncia correctamente en idiomas distintos del francés, así como en singular o plural.
+<LI>se corrigió el error de ortografía de la palabra "workspace".
+<LI>se corrigió el error que ocurría a menudo al cerrar el programa.
+<LI>se corrigió algunas fallas relativas a la detección y el anunciado de líneas demasiado largas.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>eliminado código relativo a las versiones de NVDA anteriores a 2025.1.
+<LI>para mostrar el"Qué hay de nuevo" de una nueva versión del complemento, el documento"changes.html" ya no se abre por"urlopen", pero se descarga, se guarda momentáneamente en la carpeta "appData\local\temp" y se abre en el navegador.
+<LI>se toma en cuenta del cierre del sitio rawgit.com para actualizar el complemento.
+<LI>uso de json en lugar de pickle para almacenar el estado de actualización del complemento.
+</UL>
+
+<P>
+Puesta en conformidad con la API de NVDA:
+</P>
+<UL>
+<LI>se toma en cuenta el desplazamiento de la versión de NVDA en el módulo "buildVersion.py".
+<LI>se toma en cuenta la eliminación del módulo "imp" en python 3.13.
+</UL>
+
+<H2>2. v2.8 (05/06/2025)</H2>
 <P>
 Compatibilidad con NVDA 2025.1.
 </P>
@@ -73,14 +182,14 @@ Puesta en conformidad con la API de NVDA:
  </UL>
 </UL>
 
-<H2>2. v2.7 (18/10/2024)</H2>
+<H2>3. v2.7 (18/10/2024)</H2>
 <P>
 compatibilidad con NVDA 2024.2, 2024.3 y 2024.4.
 </P>
 <P>
 las versiones de NVDA anteriores a la 2023.1 ya no son soportadas.
 </P>
-<H2>3. v2.6 (02/04/2024)</H2>
+<H2>4. v2.6 (02/04/2024)</H2>
 <P>
 Nuevas características:
 </P>
@@ -89,7 +198,7 @@ Nuevas características:
 <LI>se toma en cuenta un nuevo modo de "voz a petición" introducido en nvda 2024.1:   todos los scripts que anuncien información verbalizarán esta información. En este modo, todos los demás scripts permanecerán en silencio.
 </UL>
 
-<H2>4. v2.5 (08/09/2023)</H2>
+<H2>5. v2.5 (08/09/2023)</H2>
 <P>
 Nuevas características:
 </P>
@@ -133,7 +242,7 @@ Diversos:
 <LI>modificación de la documentación para la compatibilidad con la Tienda de Complementos (Add-on Store).
 </UL>
 
-<H2>5. v2.4 (20/02/2023)</H2>
+<H2>6. v2.4 (20/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 </UL>
@@ -145,7 +254,7 @@ Nuevas características:
 <LI>anunciar errores de ortografía encontrados mediante el suplemento para el complemento DSpellCheck de Notepad++ (experimental).
 </UL>
 
-<H2>6. v2.3 (27/09/2022)</H2>
+<H2>7. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
 <LI>corrección de movimientos incorrectos de método a método o de clase a clase.
@@ -153,7 +262,7 @@ Nuevas características:
 <LI>Compatibilidad con notepad++ 8.3 64 bits.
 </UL>
 
-<H2>7. v2.2 (04/02/2022)</H2>
+<H2>8. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
 </UL>
@@ -166,7 +275,7 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>8. v2.1 (04/11/2021)</H2>
+<H2>9. v2.1 (04/11/2021)</H2>
 <P>
 Primera versión estable
 </P>

@@ -6,41 +6,41 @@ lastAddonVersions = {
 	"apprentiClavierAccessEnhancement": {
 		"localURL": "apprentiClavierAccessEnhancement",
 		"release":{"version": "1.14", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
-		"dev" : {"version": None, "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev" : {"version": "1.15-dev3", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"audacityAccessEnhancement": {
 		"localURL": "audacityAccessEnhancement",
 		"release" : {"version": "3.4", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
-		"dev" : {"version": None, "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev" : {"version": "3.5-dev2", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"notepadPlusPlusAccessEnhancement": {
 		"localURL" : "notepadPlusPlusAccessEnhancement",
 		"release" :{"version": "2.9", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1",},
-		"dev":{"version": None, "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev":{"version": "2.10-dev2", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"NVDAExtensionGlobalPlugin": {
 		"localURL": "NVDAExtensionGlobalPlugin",
 		"release":{"version": "15.0.1", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
-		"dev" :{"version": "15.1-dev13", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev" :{"version": "15.1-dev14", "minimumNVDAVersion" : "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"radioSureAccessEnhancement": {
 		"localURL" : "radioSureAccessEnhancement",
 		"release" :{"version": "2.11", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1",},
-		"dev":{"version": None, "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev":{"version": "2.12-dev1", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"recuvaAccessEnhancement": {
 		"localURL" : "recuvaAccessEnhancement",
 		"release" :{"version": "1.11", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1",},
-		"dev":{"version": None, "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev":{"version": "1.12-dev1", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"VLCAccessEnhancement": {
 		"localURL" : "VLCAccessEnhancement",
 		"release" :{"version": "2.14.1", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1",},
-		"dev":{"version": None, "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev":{"version": "2.15-dev2", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	"wordAccessEnhancement": {
 		"localURL": "wordAccessEnhancement",
 		"release":{"version": "3.8.1", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
-		"dev":{"version": None, "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
+		"dev":{"version": "3.9-dev1", "minimumNVDAVersion": "2025.1", "lastTestedNVDAVersion": "2026.1"},
 		},
 	}

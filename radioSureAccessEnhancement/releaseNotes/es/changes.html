@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Reproductor de radio por internet RadioSure: complemento de accesibilidad 2.11</title>
+<title>Reproductor de radio por internet RadioSure: complemento de accesibilidad 2.12</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -76,7 +76,7 @@ a:focus, a:hover {color: red}
 <BODY BGCOLOR="white" TEXT="black">
 <P ALIGN="center"><CENTER><H1>Reproductor de radio por internet RadioSure: complemento de accesibilidad - Historial</H1>
 <FONT SIZE="4">
-<I>Autor: paulber19 (paulber19@laposte.net)</I><BR>
+<I>Autor: paulber19 <paulber19@laposte.net></I><BR>
 </FONT></CENTER>
 
 <P>
@@ -86,12 +86,29 @@ URL: <A HREF="https://github.com/paulber19/radioSureAccessEnhancementNVDAAddon.g
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.11.nvda-addon">Versión actual: 2.11</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.10.1.nvda-addon">Versión anterior: 2.10.1</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.12.nvda-addon">Versión actual: 2.12</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/radioSureAccessEnhancement/radioSureAccessEnhancement-2.11.nvda-addon">Versión anterior: 2.11</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/radioSureAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v2.11 (26/02/2026)</H2>
+<H2>1. v2.12 (22/07/2026)</H2>
+<P>
+Corrección de fallos:
+</P>
+<UL>
+<LI>ahora se puede buscar actualizaciones de complementos incluso si se produce un error de certificado SSL.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>puesta en conformidad con el modelo del complemento NVAcess (addonTemplate)
+<LI>eliminación del uso del buildVars.py en el módulo install.py
+<LI>uso de yaml en lugar de pickle para gestionar el estado de verificación de actualización.
+</UL>
+
+<H2>2. v2.11 (26/02/2026)</H2>
 <P>
 Compatibilidad con NVDA 2026.1
 </P>
@@ -117,7 +134,7 @@ Puesta en conformidad con la API de NVDA:
 <LI>se toma en cuenta el desplazamiento de la versión de NVDA en el módulo "buildVersion.py".
 </UL>
 
-<H2>2. v2.10 (05/06/2025)</H2>
+<H2>3. v2.10 (05/06/2025)</H2>
 <P>
 Compatibilidad con NVDA 2025.1
 </P>
@@ -149,14 +166,14 @@ Puesta en conformidad con la API de NVDA:
  </UL>
 </UL>
 
-<H2>3. v2.9 (18/10/2024)</H2>
+<H2>4. v2.9 (18/10/2024)</H2>
 <P>
 Compatibilidad con NVDA 2024.2, 2024.3 y 2024.4.
 </P>
 <P>
 Las versiones de NVDA anteriores a la 2023.1 ya no son soportadas.
 </P>
-<H2>4. v2.8 (23/03/2024)</H2>
+<H2>5. v2.8 (23/03/2024)</H2>
 <P>
 Compatibilidad con NVDA 2024.1
 </P>
@@ -183,7 +200,7 @@ Desarrolladores:
 <LI>eliminación de código específico de versiones anteriores a NVDA 2022.1.
 </UL>
 
-<H2>5. v2.7 (14/02/2023)</H2>
+<H2>6. v2.7 (14/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 <P></P>
@@ -198,7 +215,7 @@ Desarrolladores:
 <LI>corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
 </UL>
 
-<H2>6. v2.5 (04/02/2022)</H2>
+<H2>7. v2.5 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2022.1
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
@@ -212,11 +229,11 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>7. v2.4 (01/11/2021)</H2>
+<H2>8. v2.4 (01/11/2021)</H2>
 <P>
 Compatibilidad con NVDA 2021.3.
 </P>
-<H2>8. v2.3.2 (09/07/2021)</H2>
+<H2>9. v2.3.2 (09/07/2021)</H2>
 <P>
 Corrección de fallos:
 </P>
@@ -224,23 +241,23 @@ Corrección de fallos:
 <LI>algunos gestos de entrada como "control+p", "control+m", no funcionaba.
 </UL>
 
-<H2>9. v2.3.1 (25/06/2021)</H2>
+<H2>10. v2.3.1 (25/06/2021)</H2>
 <P>
 Se añade traducción al turco
 </P>
-<H2>10. v2.3 (22/06/2021)</H2>
+<H2>11. v2.3 (22/06/2021)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2021.1. Las versiones de NVDA anteriores a la 2019.3 ya no son soportadas.
 <LI>eliminado código relativo a Python 2.7.
 </UL>
 
-<H2>11. v2.2 (19/12/2020)</H2>
+<H2>12. v2.2 (19/12/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.4.
 <LI>añadido el botón "Ver historial" que se encuentra en la categoría "Actualización" en las "Opciones" del complemento.
 </UL>
 
-<H2>12. v2.1 (27/10/2020)</H2>
+<H2>13. v2.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.3.
 <LI>cambio de los  gestos de entrada "control+flecha izquierda y derecha" con "alt+flecha izquierda y derecha".
@@ -249,46 +266,46 @@ Se añade traducción al turco
 <LI>añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
 </UL>
 
-<H2>13. v2.0 (07/06/2020)</H2>
+<H2>14. v2.0 (07/06/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.2
 <LI>se añade los scripts para habilitar el menú contextual para cada encabezado de columna de la lista de emisoras.
 <LI>desactivación configurable del seguimiento de la barra de progreso.
 </UL>
 
-<H2>14. v1.1.2 (28/04/2020)</H2>
+<H2>15. v1.1.2 (28/04/2020)</H2>
 <P>
 Se añade la traducción TR
 </P>
-<H2>15. v1.1.1 (06/04/2020)</H2>
+<H2>16. v1.1.1 (06/04/2020)</H2>
 <P>
 Se añade la traducción AR
 </P>
-<H2>16. v1.1 (03/04/2020)</H2>
+<H2>17. v1.1 (03/04/2020)</H2>
 <UL>
 <LI>puesta en compatibilidad con NVDA 2020.1,
 <LI>puesta en conformidad para la prueba de compatibilidad de un complemento con NVDA.
 </UL>
 
-<H2>17. v1.0 (19/02/2020)</H2>
+<H2>18. v1.0 (19/02/2020)</H2>
 <P>
 El complemento cambia de nombre y pasa a la versión 1.0.
 </P>
 <P>
 Puesta en compatibilidad con NVDA 2019.3 y con versiones superiores a 2019.1.
 </P>
-<H2>18. v1.4 (19 Junio 2014)</H2>
+<H2>19. v1.4 (19 Junio 2014)</H2>
 <UL>
 <LI>traducción de la documentación para el complemento RadioSure en español por Rémy Ruiz
 </UL>
 
-<H2>19. v1.3 (17 Junio 2014)</H2>
+<H2>20. v1.3 (17 Junio 2014)</H2>
 <UL>
 <LI>añadido órdenes de teclado para mover el foco al campo de búsqueda y a la lista de emisoras
 <LI>modificación del script clickExpandButton para colocar el foco en la lista de emisoras
 </UL>
 
-<H2>20. v1.2 (5 Junio 2014)</H2>
+<H2>21. v1.2 (5 Junio 2014)</H2>
 <P>
 Reestructuración integral del complemento escrito por un desconocido
 </P>

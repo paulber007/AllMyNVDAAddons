@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Éditeur de texte Notepad++: compléments d'accessibilité 2.9</title>
+<title>Éditeur de texte Notepad++: compléments d'accessibilité 2.10</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -86,12 +86,29 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Téléchargement:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.nvda-addon">Version stable actuelle: 2.9</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Version stable précédente : 2.8.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.10.nvda-addon">Version stable actuelle: 2.10</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.1.nvda-addon">Version stable précédente : 2.9.1</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">versions de développement</A>
 </UL>
 
-<H2>1. v2.9 (16/03/2026)</H2>
+<H2>1. v2.10 (22/07/2026)</H2>
+<P>
+Correction de bogues:
+</P>
+<UL>
+<LI>la recherche de mise à jour de l'extension peut se faire maintenant même si une erreur de certificat SSL se produit.
+</UL>
+
+<P>
+Développement :
+</P>
+<UL>
+<LI>mise en conformité avec le modèle d'extension de NVAcess (addonTemplate)
+<LI>suppression de l'utilisation de buildVars.py dans le module install.py
+<LI>utilisation de yaml à la place de pickle pour gérer l'état de recherche de mise à jour.
+</UL>
+
+<H2>2. v2.9 (16/03/2026)</H2>
 <P>
 Compatibilité avec NVDA 2026.1.
 </P>
@@ -133,7 +150,7 @@ Mise en conformité avec l'API de NVDA :
 <LI>prise en compte de la suppression du module "imp" dans python 3.13.
 </UL>
 
-<H2>2. v2.8 (05/06/2025)</H2>
+<H2>3. v2.8 (05/06/2025)</H2>
 <P>
 Compatibilité avec NVDA 2025.1.
 </P>
@@ -182,14 +199,14 @@ Mise en conformité avec l'API de NVDA :
  </UL>
 </UL>
 
-<H2>3. v2.7 (18/10/2024)</H2>
+<H2>4. v2.7 (18/10/2024)</H2>
 <P>
 Compatibilité avec NVDA 2024.2, NVDA 2024.3 et NVDA 2024.4.
 </P>
 <P>
 Les versions de NVDA antérieures à la version 2023.1 ne sont plus prises en charge.
 </P>
-<H2>4. v2.6 (02/04/2024)</H2>
+<H2>5. v2.6 (02/04/2024)</H2>
 <P>
 Nouveautés : 
 </P>
@@ -198,7 +215,7 @@ Nouveautés :
 <LI>prise en compte du mode "Parole à la demande" introduit dans nvda 2024.1: tous les scripts annonçant une information vocaliseront cette information. Dans ce mode, tous Les autres scripts resteront muets.
 </UL>
 
-<H2>5. v2.5 (08/09/2023)</H2>
+<H2>6. v2.5 (08/09/2023)</H2>
 <P>
 Nouveautés:
 </P>
@@ -240,7 +257,7 @@ Divers:
 <LI>modification de la documentation pour compatibilité avec l'add-on store.
 </UL>
 
-<H2>6. v2.4 (20/02/2023)</H2>
+<H2>7. v2.4 (20/02/2023)</H2>
 <P>
 Compatibilité avec NVDA 2023.1
 </P>
@@ -251,7 +268,7 @@ Nouveautés:
 <LI>signalement des fautes d'orthographe trouvées par le complément DSpellCheck (expérimental).
 </UL>
 
-<H2>7. v2.3 (27/09/2022)</H2>
+<H2>8. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>correction de l'impossibilité d'afficher l'historique de l'extension à l'aide du bouton "Voir l'historique".
 <LI>correction de mauvais déplacements de méthodes en méthodes ou de class en class.
@@ -259,7 +276,7 @@ Nouveautés:
 <LI>compatibilité avec notepad++ 8.3 64 bits.
 </UL>
 
-<H2>8. v2.2 (04/02/2022)</H2>
+<H2>9. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>Compatibilité avec NVDA 2022.1.
 <LI>réinitialisation de la configuration en cas d'erreurs dans le fichier de configuration.
@@ -273,7 +290,7 @@ Changements:
 <LI>lors d'une installation manuelle de l'extension, une demande de confirmation est demandée quand l'utilisateur a choisi de ne pas garder les paramètres actuels de la configuration de l'extension.
 </UL>
 
-<H2>9. v2.1 (13/12/2021)</H2>
+<H2>10. v2.1 (13/12/2021)</H2>
 <P>
 Première version stable officielle.
 </P>

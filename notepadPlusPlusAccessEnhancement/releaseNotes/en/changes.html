@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Notepad++ text's editor : accessibility enhancement 2.9</title>
+<title>Notepad++ text's editor : accessibility enhancement 2.10</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -86,15 +86,32 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.nvda-addon">Current stable version: 2.9</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Previous stable Version: 2.8.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.10.nvda-addon">Current stable version: 2.10</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.1.nvda-addon">Previous stable Version: 2.9.1</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Sorry, but this document is an automatic translation from french language.
 </P>
-<H2>1. V2.9 (March/16/2026)</H2>
+<H2>1. v2.10 (July/22/2026)</H2>
+<P>
+Bug Fixes:
+</P>
+<UL>
+<LI>checking for extension updates can be done now even if an SSL certificate error occurs.
+</UL>
+
+<P>
+Development:
+</P>
+<UL>
+<LI>compliance with the NVAcess extension template (addonTemplate)
+<LI>removed the use of buildVars.py in the install.py module
+<LI>using yaml instead of pickle to manage update check state.
+</UL>
+
+<H2>2. V2.9 (March/16/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1.
 </P>
@@ -136,7 +153,7 @@ Compliance with the NVDA API:
 <LI>Taking into account the deletion of the MODULE "imp" in Python 3.13.
 </UL>
 
-<H2>2. v2.8 (June/05/2025)</H2>
+<H2>3. v2.8 (June/05/2025)</H2>
 <P>
 Compatibility with NVDA 2025.1.
 </P>
@@ -185,7 +202,7 @@ Compliance with the NVDA API:
  </UL>
 </UL>
 
-<H2>3. v2.7 (November/28/2024)</H2>
+<H2>4. v2.7 (November/28/2024)</H2>
 <P>
 Compatibilité with NVDA 2024.2, NVDA 2024.3 and NVDA 2024.4.
 </P>
@@ -207,7 +224,7 @@ Development :
 <LI>the temporary file for viewing "markdown" or "txt2tags" documents is now placed in the same folder where the document is located. If this document is a new, unsaved document, then it is placed in the user configuration folder. If the default header is used for viewing, the style files are placed in the same location as the temporary file.
 </UL>
 
-<H2>4. v2.6 (April/02/2024)</H2>
+<H2>5. v2.6 (April/02/2024)</H2>
 <P>
 What's new:
 </P>
@@ -216,7 +233,7 @@ What's new:
 <LI>taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
 </UL>
 
-<H2>5. v2.5 (September/086/2023)</H2>
+<H2>6. v2.5 (September/086/2023)</H2>
 <P>
 New:
 </P>
@@ -258,7 +275,7 @@ Various:
 <LI>modification of the documentation for compatibility with the add-on store.
 </UL>
 
-<H2>6. v2.4 (February/20/2023)</H2>
+<H2>7. v2.4 (February/20/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
@@ -269,7 +286,7 @@ New:
 <LI>reporting of spelling errors found by the DSpellCheck Notepad++ plugin (experimental).
 </UL>
 
-<H2>7. v2.3 (September/27/2022)</H2>
+<H2>8. v2.3 (September/27/2022)</H2>
 <UL>
 <LI>fixed inability to view add-on history using the "View History" button.
 <LI>correction of incorrect movements from method to method or from class to class.
@@ -277,7 +294,7 @@ New:
 <LI>compatibility with notepad++ 8.3 64 bits.
 </UL>
 
-<H2>8. v2.2 (02/04/2022)</H2>
+<H2>9. v2.2 (02/04/2022)</H2>
 <UL>
 <LI>Compatibility with NVDA 2022.1.
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -291,7 +308,7 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>9. v2.1 (13/12/2021)</H2>
+<H2>10. v2.1 (13/12/2021)</H2>
 <P>
 First official stable release
 </P>

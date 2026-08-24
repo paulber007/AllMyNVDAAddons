@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Editor de texto Notepad++: complementos de accesibilidad 2.9</title>
+<title>Editor de texto Notepad++: complementos de accesibilidad 2.10</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -86,12 +86,29 @@ URL: <A HREF="https://github.com/paulber19/notepadPlusPlusAccessEnhancementNVDAA
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.nvda-addon">Versión estable actual: 2.9</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.8.4.nvda-addon">Versión anterior: 2.8.4</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.10.nvda-addon">Versión estable actual: 2.10</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/notepadPlusPlusAccessEnhancement/notepadPlusPlusAccessEnhancement-2.9.1.nvda-addon">Versión anterior: 2.9.1</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/notepadPlusPlusAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
-<H2>1. v2.9 (16/03/2026)</H2>
+<H2>1. v2.10 (22/07/2026)</H2>
+<P>
+Corrección de fallos:
+</P>
+<UL>
+<LI>ahora se puede buscar actualizaciones de complementos incluso si se produce un error de certificado SSL.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>puesta en conformidad con el modelo del complemento NVAcess (addonTemplate)
+<LI>eliminación del uso del buildVars.py en el módulo install.py
+<LI>uso de yaml en lugar de pickle para gestionar el estado de verificación de actualización.
+</UL>
+
+<H2>2. v2.9 (16/03/2026)</H2>
 <P>
 Compatibilidad con NVDA 2026.1.
 </P>
@@ -133,7 +150,7 @@ Puesta en conformidad con la API de NVDA:
 <LI>se toma en cuenta la eliminación del módulo "imp" en python 3.13.
 </UL>
 
-<H2>2. v2.8 (05/06/2025)</H2>
+<H2>3. v2.8 (05/06/2025)</H2>
 <P>
 Compatibilidad con NVDA 2025.1.
 </P>
@@ -182,14 +199,14 @@ Puesta en conformidad con la API de NVDA:
  </UL>
 </UL>
 
-<H2>3. v2.7 (18/10/2024)</H2>
+<H2>4. v2.7 (18/10/2024)</H2>
 <P>
 compatibilidad con NVDA 2024.2, 2024.3 y 2024.4.
 </P>
 <P>
 las versiones de NVDA anteriores a la 2023.1 ya no son soportadas.
 </P>
-<H2>4. v2.6 (02/04/2024)</H2>
+<H2>5. v2.6 (02/04/2024)</H2>
 <P>
 Nuevas características:
 </P>
@@ -198,7 +215,7 @@ Nuevas características:
 <LI>se toma en cuenta un nuevo modo de "voz a petición" introducido en nvda 2024.1:   todos los scripts que anuncien información verbalizarán esta información. En este modo, todos los demás scripts permanecerán en silencio.
 </UL>
 
-<H2>5. v2.5 (08/09/2023)</H2>
+<H2>6. v2.5 (08/09/2023)</H2>
 <P>
 Nuevas características:
 </P>
@@ -242,7 +259,7 @@ Diversos:
 <LI>modificación de la documentación para la compatibilidad con la Tienda de Complementos (Add-on Store).
 </UL>
 
-<H2>6. v2.4 (20/02/2023)</H2>
+<H2>7. v2.4 (20/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 </UL>
@@ -254,7 +271,7 @@ Nuevas características:
 <LI>anunciar errores de ortografía encontrados mediante el suplemento para el complemento DSpellCheck de Notepad++ (experimental).
 </UL>
 
-<H2>7. v2.3 (27/09/2022)</H2>
+<H2>8. v2.3 (27/09/2022)</H2>
 <UL>
 <LI>corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
 <LI>corrección de movimientos incorrectos de método a método o de clase a clase.
@@ -262,7 +279,7 @@ Nuevas características:
 <LI>Compatibilidad con notepad++ 8.3 64 bits.
 </UL>
 
-<H2>8. v2.2 (04/02/2022)</H2>
+<H2>9. v2.2 (04/02/2022)</H2>
 <UL>
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
 </UL>
@@ -275,7 +292,7 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>9. v2.1 (04/11/2021)</H2>
+<H2>10. v2.1 (04/11/2021)</H2>
 <P>
 Primera versión estable
 </P>

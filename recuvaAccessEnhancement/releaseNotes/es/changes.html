@@ -2,7 +2,7 @@
 <html lang="es" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Software para la recuperación de archivos Recuva: complemento de accesibilidad 1.11</title>
+<title>Software para la recuperación de archivos Recuva: complemento de accesibilidad 1.12</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -86,15 +86,32 @@ URL: <A HREF="https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git"
 Descarga:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.11.nvda-addon">Versión actual: 1.11</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.10.2.nvda-addon">Versión anterior: 1.10.2</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.12.nvda-addon">Versión actual: 1.12</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.11.nvda-addon">Versión anterior: 1.11</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev">Versiones de desarrollo</A>
 </UL>
 
 <P>
 Traducido por Gunther Melendez, cambios por Rémy Ruiz.
 </P>
-<H2>1. v1.11 (26/02/2026)</H2>
+<H2>1. v1.12 (22/07/2026)</H2>
+<P>
+Corrección de fallos:
+</P>
+<UL>
+<LI>ahora se puede buscar actualizaciones de complementos incluso si se produce un error de certificado SSL.
+</UL>
+
+<P>
+Desarrolladores:
+</P>
+<UL>
+<LI>puesta en conformidad con el modelo del complemento NVAcess (addonTemplate)
+<LI>eliminación del uso del buildVars.py en el módulo install.py
+<LI>uso de yaml en lugar de pickle para gestionar el estado de verificación de actualización.
+</UL>
+
+<H2>2. v1.11 (26/02/2026)</H2>
 <P>
 Compatibilidad con NVDA 2026.1
 </P>
@@ -117,7 +134,7 @@ Puesta en conformidad con la API de NVDA:
 <LI>se toma en cuenta el desplazamiento de la versión de NVDA en el módulo "buildVersion.py".
 </UL>
 
-<H2>2. v1.10 (05/06/2025)</H2>
+<H2>3. v1.10 (05/06/2025)</H2>
 <P>
 Compatibilidad con NVDA 2025.1
 </P>
@@ -149,14 +166,14 @@ Puesta en conformidad con la API de NVDA:
  </UL>
 </UL>
 
-<H2>3. v1.9 (18/10/2024)</H2>
+<H2>4. v1.9 (18/10/2024)</H2>
 <P>
 Compatibilidad con NVDA 2024.2, 2024.3 y 2024.4.
 </P>
 <P>
 Las versiones de NVDA anteriores a la 2023.1 ya no son soportadas.
 </P>
-<H2>4. v1.8 (25/03/2024)</H2>
+<H2>5. v1.8 (25/03/2024)</H2>
 <P>
 Compatibilidad con NVDA 2024.1
 </P>
@@ -176,7 +193,7 @@ Desarrolladores:
 <LI>eliminación de código específico de versiones anteriores a NVDA 2022.1.
 </UL>
 
-<H2>5. v1.7 (14/02/2023)</H2>
+<H2>6. v1.7 (14/02/2023)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2023.1
 <P></P>
@@ -190,7 +207,7 @@ Desarrolladores:
 <LI>corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
 </UL>
 
-<H2>6. v1.5 (27/01/2022)</H2>
+<H2>7. v1.5 (27/01/2022)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2022.1
 <LI>reinicialización de la configuración en caso de errores en el archivo de configuración.
@@ -204,38 +221,38 @@ Cambios:
 <LI>durante una instalación manual del complemento, se solicita una solicitud de confirmación cuando el usuario ha elegido no conservar las opciones de configuración actual del complemento.
 </UL>
 
-<H2>7. v1.4 (04/11/2021)</H2>
+<H2>8. v1.4 (04/11/2021)</H2>
 <P>
 Compatibilidad con NVDA 2021.3. Las versiones de NVDA anteriores a la 2020.4 ya no son soportadas.
 </P>
-<H2>8. v1.3 (22/06/2021)</H2>
+<H2>9. v1.3 (22/06/2021)</H2>
 <UL>
 <LI>Compatibilidad con NVDA 2021.1. Las versiones de NVDA anteriores a la 2019.3 ya no son soportadas.
 <LI>eliminado código relativo a Python 2.7.
 </UL>
 
-<H2>9. v1.2.1 (04/02/2021)</H2>
+<H2>10. v1.2.1 (04/02/2021)</H2>
 <P>
 Se añadió traducción árabe.
 </P>
-<H2>10. v1.2 (29/12/2020)</H2>
+<H2>11. v1.2 (29/12/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.4
 <LI>añadido el botón "Ver historial" que se encuentra en la categoría "Actualización" en las "Opciones" del complemento.
 </UL>
 
-<H2>11. v1.1.1 (29/10/2020)</H2>
+<H2>12. v1.1.1 (29/10/2020)</H2>
 <P>
 Corrección de la documentación
 </P>
-<H2>12. v1.1 (27/10/2020)</H2>
+<H2>13. v1.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibilidad con NVDA 2020.3.
 <LI>limpieza del código (correcciones de errores detectados por Flake8)
 <LI>añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
 </UL>
 
-<H2>13. v1.0 (28/07/2020)</H2>
+<H2>14. v1.0 (28/07/2020)</H2>
 <P>
 Creación del complemento.
 </P>

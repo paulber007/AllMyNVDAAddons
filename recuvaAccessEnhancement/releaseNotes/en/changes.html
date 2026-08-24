@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Recuva file recovery: accessibility enhancement 1.11</title>
+<title>Recuva file recovery: accessibility enhancement 1.12</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style media="screen">
 body { 
@@ -86,15 +86,32 @@ URL: <A HREF="https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git"
 Download:
 </P>
 <UL>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.11.nvda-addon">Current stable version: 1.11</A>
-<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.10.2.nvda-addon">Previous stable Version: 1.10.2</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.12.nvda-addon">Current stable version: 1.12</A>
+<LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.11.nvda-addon">Previous stable Version: 1.11</A>
 <LI><A HREF="https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev">Development's versions</A>
 </UL>
 
 <P>
 Traductor (s): automatic translation from french language
 </P>
-<H2>1. v1.11 (February/26/2026)</H2>
+<H2>1. v1.12 (July/22/2026)</H2>
+<P>
+Bug Fixes:
+</P>
+<UL>
+<LI>checking for extension updates can be done now even if an SSL certificate error occurs.
+</UL>
+
+<P>
+Development:
+</P>
+<UL>
+<LI>compliance with the NVAcess extension template (addonTemplate)
+<LI>removed the use of buildVars.py in the install.py module
+<LI>using yaml instead of pickle to manage update check state.
+</UL>
+
+<H2>2. v1.11 (February/26/2026)</H2>
 <P>
 Compatibility with NVDA 2026.1
 </P>
@@ -117,7 +134,7 @@ Compliance with the NVDA API:
 <LI>taking into account the movement of the NVDA version in the buildVersion.py module.
 </UL>
 
-<H2>2. v1.10 (June/05/2025)</H2>
+<H2>3. v1.10 (June/05/2025)</H2>
 <P>
 Compatibility with NVDA 2025.1
 </P>
@@ -149,14 +166,14 @@ Compliance with the NVDA API:
  </UL>
 </UL>
 
-<H2>3. v1.9 (October/18/2024)</H2>
+<H2>4. v1.9 (October/18/2024)</H2>
 <P>
 Compatibility with NVDA 2024.2, NVDA 2024.3 and NVDA24.4.
 </P>
 <P>
 NVDA versions prior to version 2023.1 are no longer supported.
 </P>
-<H2>4. v1.8 (March/25/2024)</H2>
+<H2>5. v1.8 (March/25/2024)</H2>
 <P>
 Compatibility with NVDA 2024.1
 </P>
@@ -176,16 +193,16 @@ Development :
 <LI>removal of code specific to versions prior to NVDA 2022.1.
 </UL>
 
-<H2>5. v1.7 (February/14/2023)</H2>
+<H2>6. v1.7 (February/14/2023)</H2>
 <P>
 Compatibility with NVDA 2023.1
 </P>
-<H2>6. v1.6 (May/31/2022)</H2>
+<H2>7. v1.6 (May/31/2022)</H2>
 <UL>
 <LI>fixed inability to view add-on history using the "View History" button.
 </UL>
 
-<H2>7. v1.5 (01/27/2022)</H2>
+<H2>8. v1.5 (01/27/2022)</H2>
 <UL>
 <LI>compatibility with NVDA 2022.1
 <LI>reset the configuration in the event of errors in the configuration file.
@@ -199,38 +216,38 @@ Changes:
 <LI>during a manual installation of the add-on, a confirmation request is requested when the user has chosen not to keep the current settings of the add-on configuration.
 </UL>
 
-<H2>8. v1.4 (11/04/2021)</H2>
+<H2>9. v1.4 (11/04/2021)</H2>
 <P>
 Compatibility with NVDA 2021.3. Versions of NVDA prior to version 2020.4 are not supported.
 </P>
-<H2>9. v1.3 (06/22/2021)</H2>
+<H2>10. v1.3 (06/22/2021)</H2>
 <UL>
 <LI>compatibility with NVDA 2021.1. Versions of NVDA prior to version 2019.3 are not supported.
 <LI>removed code specific to Python 2.7.
 </UL>
 
-<H2>10. v1.2.1 (04/02/2021)</H2>
+<H2>11. v1.2.1 (04/02/2021)</H2>
 <P>
 Adding arabic translation
 </P>
-<H2>11. v1.2 (29/12/2020)</H2>
+<H2>12. v1.2 (29/12/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.4
 <LI>addition of the "View history" button in the "Update" category of the add-on's parameters.
 </UL>
 
-<H2>12. v1.1.1 (29/10/2020)</H2>
+<H2>13. v1.1.1 (29/10/2020)</H2>
 <P>
 Correction of documentation
 </P>
-<H2>13. v1.1 (27/10/2020)</H2>
+<H2>14. v1.1 (27/10/2020)</H2>
 <UL>
 <LI>compatibility with NVDA 2020.3
 <LI>code cleaning (corrections of errors detected by Flake8)
 <LI>addition of the "What's new" button in the dialog proposing the installation of a new update.
 </UL>
 
-<H2>14. v1.0 (28/07/2020)</H2>
+<H2>15. v1.0 (28/07/2020)</H2>
 <P>
 Creation of the add-on.
 </P>

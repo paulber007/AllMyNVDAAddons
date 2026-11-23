@@ -1,5 +1,5 @@
 {
-	"inMaintenance": False,
+	"inMaintenance": false,
 	"baseURL": "https://github.com/paulber007/AllMyNVDAAddons/raw/master",
 	"devURL": "dev",
 	"apprentiClavierAccessEnhancement": {

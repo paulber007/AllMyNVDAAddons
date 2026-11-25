@@ -1,5 +1,5 @@
 {
-	"inMaintenance": false,
+	"inMaintenance": true,
 	"baseURL": "https://github.com/paulber007/AllMyNVDAAddons/raw/master",
 	"devURL": "dev",
 	"apprentiClavierAccessEnhancement": {
@@ -46,13 +46,14 @@
 		"release": {
 			"version": "15.1",
 			"minimumNVDAVersion": "2025.1",
-			"lastTestedNVDAVersion": "2027.1"
+			"lastTestedNVDAVersion": "2026.3",
+			"SHA256": "55457E45449E050CAA15D4931E84DB4DC3AE0FFEC2C4BA7DDE60627A88CD8F23" 
 		},
 		"dev": {
-			"version": "15.2-dev25",
+			"version": "15.2-dev27",
 			"minimumNVDAVersion": "2025.1",
 			"lastTestedNVDAVersion": "2026.3",
-			"SHA256": "DBFCA7F7D054D30F3723F519CAF9A99B859093CF0CD1661DEBECE813D9BF12C4" 
+			"SHA256": "AFE4EB73DC7AE834285A0B0C7802919F069D4196E8B1C956387E6BD2ECF2A467" 
 		}
 	},
 	"radioSureAccessEnhancement": {
